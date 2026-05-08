@@ -1,6 +1,7 @@
 import { Route,Routes } from 'react-router';
 import './App.css';
 import Nav from './components/Nav';
+import Header from './components/Header';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path='*' element={
           <>
             <Nav></Nav>
+            <Header></Header>
           </>
         }>
         </Route>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Nav() {
   return (
-    <div className='navbar'>
+    <div className='navbar-container'>
 
         <div className='navbar-logo'>
             <img src="" alt="xxxxxxxx" />

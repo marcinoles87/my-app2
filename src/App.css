@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.navbar{
+.navbar-container{
   display: flex;
   flex-direction: column;
 }
@@ -12,4 +12,12 @@
 .navbar-logo{
   display: flex;
   flex-direction: row;
+}
+
+.navbar-elements ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:15px;
+  list-style: none;
 }
