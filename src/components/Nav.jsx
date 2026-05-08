@@ -5,7 +5,10 @@ function Nav() {
     <div className='navbar'>
 
         <div className='navbar-logo'>
-            <img src="" alt="" />
+            <img src="" alt="xxxxxxxx" />
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
         </div>
 
         <div className='navbar-elements'>
@@ -17,6 +20,7 @@ function Nav() {
                 <li>Kontakt</li>
             </ul>
         </div>
+
     </div>
   )
 }
