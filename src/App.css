@@ -15,7 +15,21 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: center;
+  
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: right;
+  gap: 20px;
+  padding: 10px;
+}
+
+
+.logo{
+  width: 60%;
 }
 
 .navbar-logo img{
