@@ -1,14 +1,21 @@
 import React from 'react'
+import logo from '../media/logo_header.png'
 
 function Nav() {
   return (
     <div className='navbar-container'>
 
         <div className='navbar-logo'>
-            <img src="" alt="xxxxxxxx" />
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
+            <div className='logo'>
+                <img src={logo} alt="xxxxxxxx" />
+            </div>
+
+            <div className='links'>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p> 
+            </div>
+            
         </div>
 
         <div className='navbar-elements'>
