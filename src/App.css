@@ -40,9 +40,21 @@
 .navbar-elements ul{
   display: flex;
   flex-direction: row;
+  margin: 10px;
   justify-content: center;
   gap:15px;
   list-style: none;
+}
+
+.navbar-elements ul li a{
+  text-decoration: none;
+  padding: 5px;
+  color:black;
+}
+
+.navbar-elements ul li a:hover{
+  text-underline-offset: 5px;
+  text-decoration: underline;
 }
 
 

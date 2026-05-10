@@ -24,8 +24,7 @@ function Nav() {
                 <li>O Nas</li>
                 <li>Promocje</li>
                 <li><Link to={'produkty'}>Produkty</Link></li>
-                <li>Nasze marki</li>
-                <li>Kontakt</li>
+                <li><Link to={'kontakt'}>Kontakt</Link></li>
             </ul>
         </div>
 
