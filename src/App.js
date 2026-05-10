@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import Header from './components/Header';
 import Produkty from './pages/Produkty';
 import Kontakt from './pages/Kontakt';
+import Wysyłka from './pages/Wysyłka';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 
         <Route path='produkty' element={<Produkty></Produkty>}/>
         <Route path='kontakt' element={<Kontakt></Kontakt>}/>
+        <Route path='wysyłka' element={<Wysyłka></Wysyłka>}/>
 
       </Routes>
       

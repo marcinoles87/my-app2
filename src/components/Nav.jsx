@@ -21,10 +21,10 @@ function Nav() {
 
         <div className='navbar-elements'>
             <ul>
-                <li>O Nas</li>
-                <li>Promocje</li>
                 <li><Link to={'produkty'}>Produkty</Link></li>
                 <li><Link to={'kontakt'}>Kontakt</Link></li>
+                <li><Link to={'wysyłka'}>Wysyłka</Link></li>
+                
             </ul>
         </div>
 
