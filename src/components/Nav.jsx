@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../media/logo_header.png'
+import { Link } from 'react-router'
 
 function Nav() {
   return (
@@ -22,7 +23,7 @@ function Nav() {
             <ul>
                 <li>O Nas</li>
                 <li>Promocje</li>
-                <li>Produkty</li>
+                <li><Link to={'produkty'}>Produkty</Link></li>
                 <li>Nasze marki</li>
                 <li>Kontakt</li>
             </ul>

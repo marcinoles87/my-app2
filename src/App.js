@@ -2,6 +2,7 @@ import { Route,Routes } from 'react-router';
 import './App.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
+import Produkty from './pages/Produkty';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           </>
         }>
         </Route>
+
+        <Route path='produkty' element={<Produkty></Produkty>}/>
 
       </Routes>
       
