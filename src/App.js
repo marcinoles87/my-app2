@@ -11,17 +11,19 @@ function App() {
     <div className="App">
       <Routes>
 
-        <Route path='*' element={
-          <>
-            <Nav></Nav>
-            <Header></Header>
-          </>
-        }>
+        <Route path='*' element={<Nav></Nav>}>
+
+            <Route path='*' element={<Header></Header>}/>
+            <Route path='produkty' element={<Produkty></Produkty>}/>
+            <Route path='kontakt' element={<Kontakt></Kontakt>}/>
+            <Route path='wysyłka' element={<Wysyłka></Wysyłka>}/>
+
+
         </Route>
 
-        <Route path='produkty' element={<Produkty></Produkty>}/>
-        <Route path='kontakt' element={<Kontakt></Kontakt>}/>
-        <Route path='wysyłka' element={<Wysyłka></Wysyłka>}/>
+
+
+        
 
       </Routes>
       
