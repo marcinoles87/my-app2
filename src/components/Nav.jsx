@@ -25,6 +25,7 @@ function Nav() {
 
         <div className='navbar-elements'>
             <ul>
+                <li><Link to={'/'}>Home</Link></li>
                 <li><Link to={'produkty'}>Produkty</Link></li>
                 <li><Link to={'kuchnia'}>Kuchnia</Link></li>
                 <li><Link to={'jadalnia'}>Jadalnia</Link></li>
