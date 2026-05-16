@@ -6,6 +6,10 @@ function Nav() {
   return (
     <div className='navbar-container'>
 
+        <div className='navbar-promo'>
+                <h1>Promocja -20% tylko dziś ....</h1>
+        </div>
+
         <div className='navbar-logo'>
             <div className='logo'>
                 <img src={logo} alt="xxxxxxxx" />
@@ -22,6 +26,9 @@ function Nav() {
         <div className='navbar-elements'>
             <ul>
                 <li><Link to={'produkty'}>Produkty</Link></li>
+                <li><Link to={'kuchnia'}>Kuchnia</Link></li>
+                <li><Link to={'jadalnia'}>Jadalnia</Link></li>
+                <li><Link to={'łazienka'}>Łazienka</Link></li>
                 <li><Link to={'kontakt'}>Kontakt</Link></li>
                 <li><Link to={'wysyłka'}>Wysyłka</Link></li>
                 

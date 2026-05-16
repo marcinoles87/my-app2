@@ -11,6 +11,14 @@
   flex-direction: column;
 }
 
+.navbar-promo{
+  width: 100vw;
+  text-align: center;
+  padding: 15px;
+  background-color: rgb(161, 165, 134);
+  color:white;
+}
+
 .navbar-logo{
   display: flex;
   flex-direction: row;
