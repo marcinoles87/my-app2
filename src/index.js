@@ -9,12 +9,9 @@ import { Routes } from 'react-router';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
-    <Routes>
-      <Route path='*' element={<App></App>}></Route>
-    </Routes>
+      <App></App>
   
-  </BrowserRouter>
+  
   </React.StrictMode>
 );
 
