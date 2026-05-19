@@ -30,6 +30,78 @@ function Database() {
             cena:'14.99'
 
         },
+
+         {
+            img:logoHeader,
+            Product:'test1',
+            Nazwa:'test1',
+            Cena:'14.99'
+
+        },
+
+        {
+            img:logoHeader,
+            Product:'test1',
+            Nazwa:'test1',
+            Cena:'14.99'
+
+        },
+
+        {
+            img:logoHeader,
+            product:'test1',
+            nazwa:'test1',
+            cena:'14.99'
+
+        },
+
+         {
+            img:logoHeader,
+            Product:'test1',
+            Nazwa:'test1',
+            Cena:'14.99'
+
+        },
+
+        {
+            img:logoHeader,
+            Product:'test1',
+            Nazwa:'test1',
+            Cena:'14.99'
+
+        },
+
+        {
+            img:logoHeader,
+            product:'test1',
+            nazwa:'test1',
+            cena:'14.99'
+
+        },
+
+         {
+            img:logoHeader,
+            Product:'test1',
+            Nazwa:'test1',
+            Cena:'14.99'
+
+        },
+
+        {
+            img:logoHeader,
+            Product:'test1',
+            Nazwa:'test1',
+            Cena:'14.99'
+
+        },
+
+        {
+            img:logoHeader,
+            product:'test1',
+            nazwa:'test1',
+            cena:'14.99'
+
+        },
         
     ]
 

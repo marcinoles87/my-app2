@@ -81,12 +81,13 @@
   flex-wrap: wrap;
   margin: 20px;
   justify-content: space-around;
+  gap:10px;
 
 }
 
 .database-element{
   width: 20%;
-  height: 30vh;
+  height: 40vh;
   border: 1px solid black;
   box-shadow: 4px 4px 15px -1px black;
 }

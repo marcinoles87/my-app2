@@ -7,7 +7,7 @@ function Nav() {
     <div className='navbar-container'>
 
         <div className='navbar-promo'>
-                <h1>Promocja -20% tylko dziś ....</h1>
+                <h1>Promocja -20% od ceny podstawowej ....</h1>
         </div>
 
         <div className='navbar-logo'>
