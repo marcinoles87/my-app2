@@ -68,9 +68,21 @@
 
 /*header*/
 
-.header-container{
+.header-elements{
   display: flex;
   width: 100%;
   height: 50vh;
   background-color: blueviolet;
+}
+
+.database-product{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.database-element{
+  width: 30%;
 }
