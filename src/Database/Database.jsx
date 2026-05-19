@@ -36,7 +36,7 @@ function Database() {
         {database2.map( (item,index) => {
             return(
                 <div className='database-element' key={index}>
-                    <img src="" alt="" />
+                    <img src={item.img} alt="" />
                     <h3>Produkt</h3>
                     <p>Nazwa</p>
                     <h4>Cena  {item.cena}</h4>
