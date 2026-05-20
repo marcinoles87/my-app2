@@ -105,3 +105,15 @@
 .database-element-info{
   padding: 5px;
 }
+
+/*wysylka */
+
+.wysylka-container{
+  margin: 50px;
+
+}
+
+.wysylka-header{
+  margin: 50px;
+  text-align: center;
+}
