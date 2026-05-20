@@ -5,12 +5,12 @@ function Wysyłka() {
     <div className='wysylka-container'>
 
       <div className='wysylka-header'>
-        <h2 style={{color:'#2727c4'}}>Dostawa</h2>
-        <h3 style={{color:'#333399'}}>Dostawa powyżej 250 zł - gratis !</h3>
+        <h1 style={{color:'#2727c4'}}>Dostawa</h1>
+        <h3 style={{color:'#2727c4'}}>Dostawa powyżej 250 zł - gratis !</h3>
       </div>
 
       <div className='wysylka-info'>
-        <p><span style={{color:'#333399'}}>Dostawa zam&oacute;wionego towaru zostanie zrealizowana tylko wtedy, kiedy zamawiany towar znajduje się fizycznie na stanach magazynu</span></p>
+        <p><span style={{color:'#2727c4'}}>Dostawa zam&oacute;wionego towaru zostanie zrealizowana tylko wtedy, kiedy zamawiany towar znajduje się fizycznie na stanach magazynu</span></p>
           <div>&nbsp;</div>
           <div>Przedmiot zam&oacute;wienia może być dostarczony do Klienta w&nbsp;zależności od jego wyboru:</div>
           <div>a) na adres wskazany przez Klienta w&nbsp;zam&oacute;wieniu. Towar dostarczany jest przez Firmę kurierską FEDEX / DPD</div>
