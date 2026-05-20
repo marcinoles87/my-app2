@@ -125,13 +125,37 @@
   display: flex;
   flex: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 50px;
+  color:rgb(99, 99, 99);
 }
 
 .kontakt-form{
   width: 70%;
   margin: 50px;
+  padding: 10px;
   border: 1px solid black;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.form-group input{
+  padding: 8px 15px;
+}
+
+.kontakt-form button{
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #2727c4;
+  color:white;
+  border: none;
+  cursor: pointer;
 }
 
 
