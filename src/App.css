@@ -117,3 +117,21 @@
   margin: 50px;
   text-align: center;
 }
+
+
+/*kontakt*/
+
+.kontakt-container{
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.kontakt-form{
+  width: 70%;
+  margin: 50px;
+  border: 1px solid black;
+}
+
+
