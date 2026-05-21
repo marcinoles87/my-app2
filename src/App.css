@@ -87,7 +87,7 @@
 
 .database-element{
   width: 20%;
-  height: 40vh;
+  height: 50vh;
   border: 1px solid black;
   box-shadow: 4px 4px 15px -1px rgb(96, 96, 96);
 }
@@ -103,7 +103,15 @@
 }
 
 .database-element-info{
+  margin: 5px;
   padding: 5px;
+}
+
+.database-element-info button{
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /*wysylka */
