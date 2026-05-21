@@ -5,6 +5,7 @@ import logoHeader from '../media/logo_header.png'
 function Database() {
 
     const [database,setDatabase] = useState([])
+    
 
     const database2 = [
         {
@@ -106,8 +107,7 @@ function Database() {
     ]
 
     const handleAddProduct = (item) =>{
-        console.log(item.index)
-
+        
     }
 
   return (
@@ -122,7 +122,7 @@ function Database() {
                          <h3>Produkt</h3>
                          <p>Nazwa</p>
                          <h4>Cena  {item.cena}</h4>
-                         <button onClick={() => handleAddProduct(index)}>Dodaj</button>
+                         <button onClick={() => handleAddProduct(item)}>Dodaj</button>
                     </div>
                     
                    
