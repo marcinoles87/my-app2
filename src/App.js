@@ -8,6 +8,7 @@ import Jadalnia from './pages/Jadalnia'
 import Łazienka from './pages/Łazienka'
 import Kontakt from './pages/Kontakt';
 import Wysyłka from './pages/Wysyłka';
+import Koszyk from './pages/Koszyk';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 
     <BrowserRouter>
       <Nav></Nav>
+      <Koszyk></Koszyk>
       <Routes>
 
 

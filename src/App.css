@@ -133,6 +133,26 @@
   text-align: center;
 }
 
+/*koszyk*/
+
+.koszyk-container {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 100px;
+  height: 100px;
+  background-color: #0000ae;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.koszyk-container p{
+}
+
 
 /*kontakt*/
 
