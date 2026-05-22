@@ -10,7 +10,8 @@ function Header() {
   let index = 0;
 
    setInterval(() => {
-    
+    index = (index + 1) % imagesLoop.length
+
   }, 2000);
 
 
