@@ -6,20 +6,20 @@ import ifg from '../media/ifLoop.png'
 
 function Header() {
 
-  const imagesLoop =  [{kai},{wl},{ifg}]
+  const imagesLoop =  [kai,wl,ifg]
   let index = 0;
 
    setInterval(() => {
     index = (index + 1) % imagesLoop.length
-
-  }, 2000);
+    document.getElementById('slideshow').src = imagesLoop[index]
+    console.log(index)
+  }, 5000);
 
 
   return (
     <div className='header-container'>
         <div className='header-elements'>
-            <h1>Produkty w loopie</h1>
-            <img id="slideshow" src="img1.jpg" width="400" alt='loopimg'/>
+            <img id="slideshow" src={kai} width="400" alt='loopimg'/>
 
         </div>
 

@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+
+
+
 /*navbar*/
 
 .navbar-container{
@@ -68,6 +71,10 @@
 
 /*header*/
 
+#slideshow{
+  width: 100%;
+}
+
 .header-elements{
   display: flex;
   width: 100%;
@@ -79,7 +86,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 40px;
   justify-content: space-around;
   gap:10px;
 
