@@ -81,6 +81,7 @@
   left: 5%;
   font-size: 50px;
   color:white;
+  cursor: pointer;
 }
 
 .right{
@@ -89,6 +90,7 @@
   right: 5%;
   font-size: 50px;
   color:white;
+  cursor: pointer;
 
 }
 

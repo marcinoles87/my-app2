@@ -9,14 +9,20 @@ function Header() {
   const handleLoopLeft = () =>{
 
       const imagesLoop =  [kai,wl,ifg]
-  let index = 0;
+      let index = 0;
 
-   setInterval(() => {
+    index = (index - 1) % imagesLoop.length
+    document.getElementById('slideshow').src = imagesLoop[index]
+
+  }
+
+  const handleLoopRight = () =>{
+
+      const imagesLoop =  [kai,wl,ifg]
+      let index = 0;
+
     index = (index + 1) % imagesLoop.length
     document.getElementById('slideshow').src = imagesLoop[index]
-    console.log(index)
-  }, 5000);
-
 
   }
 
@@ -27,7 +33,7 @@ function Header() {
         <div className='header-elements'>
 
             <p className='left' onClick={handleLoopLeft}>{'<'}</p>
-            <p className='right'>{'>'}</p>
+            <p className='right' onClick={handleLoopRight}>{'>'}</p>
             <img id="slideshow" src={kai} width="400" alt='loopimg'/>
 
         </div>
