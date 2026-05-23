@@ -75,6 +75,23 @@
   width: 100%;
 }
 
+.left{
+  position: absolute;
+  top:60%;
+  left: 5%;
+  font-size: 50px;
+  color:white;
+}
+
+.right{
+    position: absolute;
+  top:60%;
+  right: 5%;
+  font-size: 50px;
+  color:white;
+
+}
+
 .header-elements{
   display: flex;
   width: 100%;

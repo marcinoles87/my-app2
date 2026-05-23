@@ -6,7 +6,9 @@ import ifg from '../media/ifLoop.png'
 
 function Header() {
 
-  const imagesLoop =  [kai,wl,ifg]
+  const handleLoopLeft = () =>{
+
+      const imagesLoop =  [kai,wl,ifg]
   let index = 0;
 
    setInterval(() => {
@@ -16,11 +18,15 @@ function Header() {
   }, 5000);
 
 
+  }
+
+
+
   return (
     <div className='header-container'>
         <div className='header-elements'>
 
-            <p className='left'>{'<'}</p>
+            <p className='left' onClick={handleLoopLeft}>{'<'}</p>
             <p className='right'>{'>'}</p>
             <img id="slideshow" src={kai} width="400" alt='loopimg'/>
 
