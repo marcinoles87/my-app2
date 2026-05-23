@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Database from '../Database/Database'
 import kai from '../media/kaiLoop.png'
 import wl from '../media/wlLoop.png'
@@ -6,12 +6,15 @@ import ifg from '../media/ifLoop.png'
 
 function Header() {
 
+  const [indexLoop , setIndexLoop] = useState(0);
+
   const handleLoopLeft = () =>{
 
       const imagesLoop =  [kai,wl,ifg]
       let index = 0;
+      setIndexLoop(index-1)
 
-    index = (index - 1) % imagesLoop.length
+    
     document.getElementById('slideshow').src = imagesLoop[index]
 
   }
@@ -22,7 +25,7 @@ function Header() {
       let index = 0;
 
     index = (index + 1) % imagesLoop.length
-    document.getElementById('slideshow').src = imagesLoop[index]
+    document.getElementById('slideshow').src = imagesLoop[indexLoop]
 
   }
 
