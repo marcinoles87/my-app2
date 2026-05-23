@@ -9,8 +9,12 @@ import Łazienka from './pages/Łazienka'
 import Kontakt from './pages/Kontakt';
 import Wysyłka from './pages/Wysyłka';
 import Koszyk from './pages/Koszyk';
+import { useState } from 'react';
 
 function App() {
+
+  const [koszyk,setKoszyk] = useState([])
+  
   return (
     <div className="App">
 

@@ -19,6 +19,9 @@ function Header() {
   return (
     <div className='header-container'>
         <div className='header-elements'>
+
+            <p className='left'>{'<'}</p>
+            <p className='right'>{'>'}</p>
             <img id="slideshow" src={kai} width="400" alt='loopimg'/>
 
         </div>
