@@ -4,22 +4,16 @@ import kai from '../media/kaiLoop.png'
 import wl from '../media/wlLoop.png'
 import ifg from '../media/ifLoop.png'
 
-function Header() {
+function Header({koszyk,setKoszyk}) {
 
-  const [indexLoop , setIndexLoop] = useState(1);
-
-  useEffect( () =>{
-    setIndexLoop(indexLoop)
-  },[])
+  const [indexLoop , setIndexLoop] = useState(0);
 
 
   const handleLoopLeft = () =>{
-    console.log(indexLoop)
 
       const imagesLoop =  [kai,wl,ifg]
       setIndexLoop(indexLoop-1)
-      console.log(indexLoop)
-      if(indexLoop<1){
+      if(indexLoop<imagesLoop.length-1){
         setIndexLoop(0)
       } 
 
@@ -30,7 +24,7 @@ function Header() {
 
   const handleLoopRight = () =>{
 
-       const imagesLoop =  [kai,wl,ifg]
+      const imagesLoop =  [kai,wl,ifg]
       setIndexLoop(indexLoop+1)
       console.log(indexLoop)
 
@@ -47,14 +41,14 @@ function Header() {
     <div className='header-container'>
         <div className='header-elements'>
 
-            <p className='left' onClick={ () =>handleLoopLeft(indexLoop-1)}>{'<'}</p>
-            <p className='right' onClick={() =>handleLoopRight(indexLoop+1)}>{'>'}</p>
+            <p className='left' onClick={handleLoopLeft}>{'<'}</p>
+            <p className='right' onClick={handleLoopRight}>{'>'}</p>
             <img id="slideshow" src={kai} width="400" alt='loopimg'/>
 
         </div>
 
         <div className='header-product'>
-          <Database></Database>
+          <Database koszyk={koszyk} setKoszyk={setKoszyk}></Database>
         </div>
 
     </div>

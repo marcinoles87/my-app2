@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import logoHeader from '../media/logo_header.png'
 
-function Database() {
+function Database({koszyk,setKoszyk}) {
 
     const [database,setDatabase] = useState([])
     
@@ -18,7 +18,7 @@ function Database() {
 
         {
             img:logoHeader,
-            Product:'test1',
+            Product:'test2',
             Nazwa:'test1',
             Cena:'14.99'
 
@@ -26,7 +26,7 @@ function Database() {
 
         {
             img:logoHeader,
-            product:'test1',
+            product:'test3',
             nazwa:'test1',
             cena:'14.99'
 
@@ -34,7 +34,7 @@ function Database() {
 
          {
             img:logoHeader,
-            Product:'test1',
+            Product:'test4',
             Nazwa:'test1',
             Cena:'14.99'
 
@@ -42,72 +42,18 @@ function Database() {
 
         {
             img:logoHeader,
-            Product:'test1',
+            Product:'test5',
             Nazwa:'test1',
             Cena:'14.99'
 
         },
 
-        {
-            img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
-            cena:'14.99'
-
-        },
-
-         {
-            img:logoHeader,
-            Product:'test1',
-            Nazwa:'test1',
-            Cena:'14.99'
-
-        },
-
-        {
-            img:logoHeader,
-            Product:'test1',
-            Nazwa:'test1',
-            Cena:'14.99'
-
-        },
-
-        {
-            img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
-            cena:'14.99'
-
-        },
-
-         {
-            img:logoHeader,
-            Product:'test1',
-            Nazwa:'test1',
-            Cena:'14.99'
-
-        },
-
-        {
-            img:logoHeader,
-            Product:'test1',
-            Nazwa:'test1',
-            Cena:'14.99'
-
-        },
-
-        {
-            img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
-            cena:'14.99'
-
-        },
-        
     ]
 
     const handleAddProduct = (item) =>{
-        
+
+        setKoszyk( prev =>[...prev,item])
+
     }
 
   return (

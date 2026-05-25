@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Koszyk() {
+function Koszyk({koszyk}) {
   return (
     <div className='koszyk-container'>
-        <p>koszyk</p>
+        <p>koszyk {koszyk.length}</p>
 
     </div>
   )

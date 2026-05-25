@@ -15,16 +15,17 @@ function App() {
 
   const [koszyk,setKoszyk] = useState([])
   
+
   return (
     <div className="App">
 
     <BrowserRouter>
       <Nav></Nav>
-      <Koszyk></Koszyk>
+      <Koszyk koszyk={koszyk}></Koszyk>
       <Routes>
 
 
-            <Route path='/' element={<Header></Header>}/>
+            <Route path='/' element={<Header koszyk={koszyk} setKoszyk={setKoszyk}></Header>}/>
             <Route path='produkty' element={<Produkty></Produkty>}/>
             <Route path='kuchnia' element={<Kuchnia></Kuchnia>}/>
             <Route path='jadalnia' element={<Jadalnia></Jadalnia>}/>
