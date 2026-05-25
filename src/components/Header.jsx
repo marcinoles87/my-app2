@@ -11,20 +11,24 @@ function Header() {
   const handleLoopLeft = () =>{
 
       const imagesLoop =  [kai,wl,ifg]
-      let index = 0;
-      setIndexLoop(index-1)
+      setIndexLoop(indexLoop-1)
+      if(indexLoop>imagesLoop.length){
+        setIndexLoop(0)
+      } 
 
     
-    document.getElementById('slideshow').src = imagesLoop[index]
+    document.getElementById('slideshow').src = imagesLoop[indexLoop]
 
   }
 
   const handleLoopRight = () =>{
 
-      const imagesLoop =  [kai,wl,ifg]
-      let index = 0;
+       const imagesLoop =  [kai,wl,ifg]
+      setIndexLoop(indexLoop+1)
 
-    index = (index + 1) % imagesLoop.length
+      if(indexLoop>imagesLoop.length){
+        setIndexLoop(0)
+      }    
     document.getElementById('slideshow').src = imagesLoop[indexLoop]
 
   }
