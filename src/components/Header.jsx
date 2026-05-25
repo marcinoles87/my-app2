@@ -6,15 +6,16 @@ import ifg from '../media/ifLoop.png'
 
 function Header() {
 
-  const [indexLoop , setIndexLoop] = useState(1);
+  const [indexLoop , setIndexLoop] = useState(2);
 
   const handleLoopLeft = () =>{
 
       const imagesLoop =  [kai,wl,ifg]
       setIndexLoop(indexLoop-1)
-      if(indexLoop%imagesLoop.length){
-        setIndexLoop(0)
-      } 
+      console.log(indexLoop)
+      // if(indexLoop<=imagesLoop.length+1){
+      //   setIndexLoop(0)
+      // } 
 
     
     document.getElementById('slideshow').src = imagesLoop[indexLoop]
@@ -24,11 +25,12 @@ function Header() {
   const handleLoopRight = () =>{
 
        const imagesLoop =  [kai,wl,ifg]
-      setIndexLoop(indexLoop+1)
+      setIndexLoop(prev => prev + 1)
+      console.log(indexLoop)
 
-      if(indexLoop%imagesLoop.length){
-        setIndexLoop(0)
-      }    
+      // if(indexLoop>=imagesLoop.length-1){
+      //   setIndexLoop(0)
+      // }    
     document.getElementById('slideshow').src = imagesLoop[indexLoop]
 
   }
