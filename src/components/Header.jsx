@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Database from '../Database/Database'
 import kai from '../media/kaiLoop.png'
 import wl from '../media/wlLoop.png'
@@ -6,16 +6,22 @@ import ifg from '../media/ifLoop.png'
 
 function Header() {
 
-  const [indexLoop , setIndexLoop] = useState(2);
+  const [indexLoop , setIndexLoop] = useState(1);
+
+  useEffect( () =>{
+    setIndexLoop(indexLoop)
+  },[])
+
 
   const handleLoopLeft = () =>{
+    console.log(indexLoop)
 
       const imagesLoop =  [kai,wl,ifg]
       setIndexLoop(indexLoop-1)
       console.log(indexLoop)
-      // if(indexLoop<=imagesLoop.length+1){
-      //   setIndexLoop(0)
-      // } 
+      if(indexLoop<1){
+        setIndexLoop(0)
+      } 
 
     
     document.getElementById('slideshow').src = imagesLoop[indexLoop]
@@ -25,12 +31,12 @@ function Header() {
   const handleLoopRight = () =>{
 
        const imagesLoop =  [kai,wl,ifg]
-      setIndexLoop(prev => prev + 1)
+      setIndexLoop(indexLoop+1)
       console.log(indexLoop)
 
-      // if(indexLoop>=imagesLoop.length-1){
-      //   setIndexLoop(0)
-      // }    
+      if(indexLoop>=imagesLoop.length-1){
+        setIndexLoop(0)
+      }    
     document.getElementById('slideshow').src = imagesLoop[indexLoop]
 
   }
@@ -41,8 +47,8 @@ function Header() {
     <div className='header-container'>
         <div className='header-elements'>
 
-            <p className='left' onClick={handleLoopLeft}>{'<'}</p>
-            <p className='right' onClick={handleLoopRight}>{'>'}</p>
+            <p className='left' onClick={ () =>handleLoopLeft(indexLoop-1)}>{'<'}</p>
+            <p className='right' onClick={() =>handleLoopRight(indexLoop+1)}>{'>'}</p>
             <img id="slideshow" src={kai} width="400" alt='loopimg'/>
 
         </div>
