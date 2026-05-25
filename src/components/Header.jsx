@@ -6,13 +6,13 @@ import ifg from '../media/ifLoop.png'
 
 function Header() {
 
-  const [indexLoop , setIndexLoop] = useState(0);
+  const [indexLoop , setIndexLoop] = useState(1);
 
   const handleLoopLeft = () =>{
 
       const imagesLoop =  [kai,wl,ifg]
       setIndexLoop(indexLoop-1)
-      if(indexLoop>imagesLoop.length){
+      if(indexLoop%imagesLoop.length){
         setIndexLoop(0)
       } 
 
@@ -26,7 +26,7 @@ function Header() {
        const imagesLoop =  [kai,wl,ifg]
       setIndexLoop(indexLoop+1)
 
-      if(indexLoop>imagesLoop.length){
+      if(indexLoop%imagesLoop.length){
         setIndexLoop(0)
       }    
     document.getElementById('slideshow').src = imagesLoop[indexLoop]
