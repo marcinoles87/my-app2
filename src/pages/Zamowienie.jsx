@@ -1,6 +1,10 @@
 import React from 'react'
 
 function Zamowienie({koszyk}) {
+
+let sumaZamowienia = koszyk.reduce( (suma,item) =>{
+    return suma+item
+})
   return (
     <div className='zamowienie-container'>
         <div className='zamowienie-info'>
@@ -16,7 +20,8 @@ function Zamowienie({koszyk}) {
             })}
         </div>
 
-        <p>Podsumowanie :</p>
+        <p>Ilość produktów : {koszyk.length}</p>
+        <p>Wartość zamówienia : {sumaZamowienia} </p>
         </div>
   )
 }

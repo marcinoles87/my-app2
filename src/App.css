@@ -169,12 +169,20 @@
   
 }
 
+.koszyk-container a{
+  text-decoration: none;
+  color:white;
+}
+
 /*zamowienia*/
+
+.zamowienie-container{
+  margin: 10px;
+}
 
 .zamowienie-info{
   display: flex;
   flex-direction: column;
-  margin: 10px;
 }
 
 .zamowienie-elements{
