@@ -1,9 +1,12 @@
 import React from 'react'
+import {Link} from 'react-router'
 
 function Koszyk({koszyk}) {
   return (
     <div className='koszyk-container'>
-        <p>koszyk {koszyk.length}</p>
+        
+        <Link to='/zamowienie'>{koszyk.length}</Link>
+       
 
     </div>
   )
