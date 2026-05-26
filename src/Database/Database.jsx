@@ -10,43 +10,34 @@ function Database({koszyk,setKoszyk}) {
     const database2 = [
         {
             img:logoHeader,
-            Product:'test1',
-            Nazwa:'test1',
-            Cena:'14.99'
+            product:'test1',
+            nazwa:'test1',
+            cena:'14.99'
 
         },
-
         {
             img:logoHeader,
-            Product:'test2',
-            Nazwa:'test1',
-            Cena:'14.99'
+            product:'test1',
+            nazwa:'test1',
+            cena:'14.99'
 
         },
-
         {
             img:logoHeader,
-            product:'test3',
+            product:'test1',
+            nazwa:'test1',
+            cena:'14.99'
+
+        },
+        {
+            img:logoHeader,
+            product:'test1',
             nazwa:'test1',
             cena:'14.99'
 
         },
 
-         {
-            img:logoHeader,
-            Product:'test4',
-            Nazwa:'test1',
-            Cena:'14.99'
-
-        },
-
-        {
-            img:logoHeader,
-            Product:'test5',
-            Nazwa:'test1',
-            Cena:'14.99'
-
-        },
+    
 
     ]
 

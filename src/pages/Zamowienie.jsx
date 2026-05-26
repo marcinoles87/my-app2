@@ -8,13 +8,15 @@ function Zamowienie({koszyk}) {
             {koszyk.map( (item,index) =>{
                 return(
                     <div className='zamowienie-elements'>
-                        <p>{item.Product}</p>
-                        <p>{item.Nazwa}</p>
-                        <p>{item.Cena}</p>
+                        <p>{item.product}</p>
+                        <p>{item.nazwa}</p>
+                        <p>{item.cena}</p>
                     </div>
                 )
             })}
         </div>
+
+        <p>Podsumowanie :</p>
         </div>
   )
 }

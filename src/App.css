@@ -169,6 +169,22 @@
   
 }
 
+/*zamowienia*/
+
+.zamowienie-info{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.zamowienie-elements{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
 
 /*kontakt*/
 
