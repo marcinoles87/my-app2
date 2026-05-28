@@ -9,7 +9,7 @@ function Zamowienie({koszyk}) {
             <p>Twoje zamowienie :</p>
             {koszyk.map( (item,index) =>{
                 return(
-                    <div className='zamowienie-elements'>
+                    <div className='zamowienie-elements' key={index}>
                         <p>{item.product}</p>
                         <p>{item.nazwa}</p>
                         <p>{item.cena}</p>
@@ -20,6 +20,7 @@ function Zamowienie({koszyk}) {
 
         <p>Ilość produktów : {koszyk.length}</p>
         <p>Wartość zamówienia :  </p>
+        <button>Zamawiam</button>
         </div>
   )
 }
