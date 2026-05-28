@@ -16,20 +16,6 @@ function App() {
 
   const [koszyk,setKoszyk] = useState([])
 
-
-
-  
-  const [sum,setSum] = useState([])
-
-  for(let i=0;i++;koszyk.length){
-    setSum(prev => [...prev,koszyk[i]])
-
-    console.log(koszyk[i].cena)
-  }
-
-  console.log(sum)
-  
-
   return (
     <div className="App">
 
