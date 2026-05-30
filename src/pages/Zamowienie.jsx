@@ -2,13 +2,17 @@ import React, { useState } from 'react'
 
 function Zamowienie({koszyk}) {
 
-    const [suma,setSuma] = useState('')
+    // const [suma,setSuma] = useState('')
 
-const [allPrice,setallPrice] = useState([])
+const [allPrice,setallPrice] = useState('')
+
+const suma = [...koszyk]
+
+console.log(suma)
 
 const handleSum = () =>{
 
-        setallPrice( koszyk.reduce( (prev,current) => prev + current.cena ))
+        setallPrice( suma.reduce( (prev,current) => prev+current.cena ))
 
         console.log(allPrice)
 
