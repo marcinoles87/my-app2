@@ -8,7 +8,9 @@ const [allPrice,setallPrice] = useState([])
 
 const handleSum = () =>{
 
-        setallPrice( koszyk.reduce( (prev,current) => prev + current.cena , 0))
+        setallPrice( koszyk.reduce( (prev,current) => prev + current.cena ))
+
+        console.log(allPrice)
 
 
 }
