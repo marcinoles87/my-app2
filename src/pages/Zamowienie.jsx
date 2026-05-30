@@ -6,10 +6,14 @@ function Zamowienie({koszyk}) {
 
 const [allPrice,setallPrice] = useState([])
 
-if(koszyk){
+const handleSum = () =>{
 
-    setallPrice( )
+        setallPrice( koszyk.reduce( (prev,current) => prev + current.cena , 0))
+
+
 }
+
+
 
   return (
     <div className='zamowienie-container'>
@@ -27,8 +31,10 @@ if(koszyk){
         </div>
 
         <p>Ilość produktów : {koszyk.length}</p>
-        <p>Wartość zamówienia :  </p>
+        <p>Wartość zamówienia : {allPrice} </p>
+        <button onClick={handleSum}>Podsumuj</button>
         <button>Zamawiam</button>
+
         </div>
   )
 }
