@@ -2,16 +2,14 @@ import React, { useState } from 'react'
 
 function Zamowienie({koszyk}) {
 
-const [suma,setSuma] = useState([])
+    const [suma,setSuma] = useState('')
 
-for(let i=0;i++;koszyk.length){
+const [allPrice,setallPrice] = useState([])
 
-    console.log('koszyk ' ,koszyk[i].cena)
+if(koszyk){
 
-    }
-
-
-
+    setallPrice( )
+}
 
   return (
     <div className='zamowienie-container'>
