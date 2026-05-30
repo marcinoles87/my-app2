@@ -16,6 +16,9 @@ function App() {
 
   const [koszyk,setKoszyk] = useState([])
 
+
+  
+
   return (
     <div className="App">
 

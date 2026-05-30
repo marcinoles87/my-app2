@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Zamowienie({koszyk}) {
+
+const [suma,setSuma] = useState([])
+
+for(let i=0;i++;koszyk.length){
+
+    console.log('koszyk ' ,koszyk[i].cena)
+
+    }
+
+
 
 
   return (
