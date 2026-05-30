@@ -4,7 +4,7 @@ function Zamowienie({koszyk}) {
 
     // const [suma,setSuma] = useState('')
 
-const [allPrice,setallPrice] = useState('')
+const [allPrice,setallPrice] = useState([])
 
 const suma = [...koszyk]
 
@@ -12,9 +12,13 @@ console.log(suma)
 
 const handleSum = () =>{
 
-        setallPrice( suma.reduce( (prev,current) => prev+current.cena ))
+        // setallPrice( suma.reduce( (prev,current) => prev + current.cena,0 ))
 
-        console.log(allPrice)
+        // console.log(allPrice)
+
+        setallPrice( koszyk.map( (item) => {
+           return allPrice.push(item.cena)
+        }))
 
 
 }
