@@ -8,17 +8,17 @@ const [allPrice,setallPrice] = useState([])
 
 const suma = [...koszyk]
 
-
+console.log(suma)
 
 const handleSum = () =>{
 
-        const sumaZamowienia =  koszyk.reduce( (prev,current) => prev+current.cena,0 )
+        let total = koszyk.reduce( (prev,current) => {
+            return prev + current.cena
+        },0)
 
-        return <h1>{sumaZamowienia}</h1>
+        setallPrice(total)
 
-
-       
-
+        console.log(total)
 
 }
 
