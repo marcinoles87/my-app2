@@ -12,28 +12,28 @@ function Database({koszyk,setKoszyk}) {
             img:logoHeader,
             product:'test1',
             nazwa:'test1',
-            cena:'14.99'
+            cena:'1'
 
         },
         {
             img:logoHeader,
             product:'test1',
             nazwa:'test1',
-            cena:'14.99'
+            cena:'14'
 
         },
         {
             img:logoHeader,
             product:'test1',
             nazwa:'test1',
-            cena:'14.99'
+            cena:'15'
 
         },
         {
             img:logoHeader,
             product:'test1',
             nazwa:'test1',
-            cena:'14.99'
+            cena:'16'
 
         },
 

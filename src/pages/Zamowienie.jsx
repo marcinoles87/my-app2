@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Zamowienie({koszyk}) {
 
@@ -8,17 +8,16 @@ const [allPrice,setallPrice] = useState([])
 
 const suma = [...koszyk]
 
-console.log(suma)
+
 
 const handleSum = () =>{
 
-        // setallPrice( suma.reduce( (prev,current) => prev + current.cena,0 ))
+        const sumaZamowienia =  koszyk.reduce( (prev,current) => prev+current.cena,0 )
 
-        // console.log(allPrice)
+        return <h1>{sumaZamowienia}</h1>
 
-        setallPrice( koszyk.map( (item) => {
-           return allPrice.push(item.cena)
-        }))
+
+       
 
 
 }
