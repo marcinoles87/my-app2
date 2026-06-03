@@ -192,6 +192,28 @@
   padding: 10px;
 }
 
+.zamowienie-podsumowanie{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.zamowienie-podsumowanie button{
+  width: 150px;
+  margin: 10px 15px;
+  padding: 15px 32px;
+  background-color: #0000ae;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.zamowienie-podsumowanie button:hover{
+  background-color: #3e3ee0;
+}
+
 
 /*kontakt*/
 
