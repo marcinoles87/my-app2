@@ -32,7 +32,7 @@ const handleSum = () =>{
                     <div className='zamowienie-elements' key={index}>
                         <p>{item.product}</p>
                         <p>{item.nazwa}</p>
-                        <p>{item.cena}</p>
+                        <p>{item.cena} pln</p>
                     </div>
                 )
             })}
@@ -40,7 +40,7 @@ const handleSum = () =>{
     
     <div className='zamowienie-podsumowanie'>
         <p>Ilość produktów : {koszyk.length}</p>
-        <p>Wartość zamówienia : {allPrice} </p>
+        <p className='zamowienie-wartosc'>Wartość zamówienia : {allPrice} pln </p>
         <button onClick={handleSum}>Podsumuj</button>
         <button>Zamawiam</button>
 
