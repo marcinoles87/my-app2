@@ -85,8 +85,8 @@ function Database({koszyk,setKoszyk}) {
                        <img src={item.img} alt="" /> 
                     </div>
                     <div className='database-element-info'>
-                         <h3>Produkt</h3>
-                         <p>Nazwa</p>
+                         <h3>Nazwa</h3>
+                         <p>Kod</p>
                          <h4>Cena  {item.cena}</h4>
                          <button onClick={() => handleAddProduct(item)}>Dodaj</button>
                     </div>
