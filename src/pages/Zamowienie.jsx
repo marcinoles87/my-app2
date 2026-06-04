@@ -26,10 +26,11 @@ const handleSum = () =>{
   return (
     <div className='zamowienie-container'>
         <div className='zamowienie-info'>
-            <p>Twoje zamowienie :</p>
+            <p>Twoje zamowienie </p>
             {koszyk.map( (item,index) =>{
                 return(
                     <div className='zamowienie-elements' key={index}>
+                        <img src={item.img} alt={index} />
                         <p>{item.product}</p>
                         <p>{item.nazwa}</p>
                         <p>{item.cena} pln</p>

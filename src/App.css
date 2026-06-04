@@ -203,9 +203,20 @@
 .zamowienie-elements{
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
   border-bottom: 1px solid black;
   padding: 10px;
+}
+
+.zamowienie-elements img{
+  width: 130px;
+  height: 130px;
+  transition: 0.9s ease;
+}
+
+.zamowienie-elements img:hover{
+  
 }
 
 .zamowienie-podsumowanie{
