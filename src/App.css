@@ -140,9 +140,19 @@
   width: 100%;
   padding: 10px;
   text-align: center;
-  background-color: #0000ae;
+  background-color: #6060ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   color:white;
+  border-left: none;
+  border-right: none;
   cursor: pointer;
+  transition: 0.7s ease;
+}
+
+.database-element-info button:hover{
+  background-color: #0000ae;
+  
 }
 
 /*wysylka */
