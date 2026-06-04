@@ -10,44 +10,44 @@ function Database({koszyk,setKoszyk}) {
     const database2 = [
         {
             img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
+            product:'KA DM-718',
+            nazwa:'Nóz Deba 14 cm',
             cena:'1'
 
         },
         {
             img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
-            cena:'14'
+            product:'WL E98120',
+            nazwa:'Patelnia 28/7 kuta',
+            cena:'140'
 
         },
         {
             img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
+            product:'BR 12-20-12',
+            nazwa:'Kosz 12L',
             cena:'15'
 
         },
         {
             img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
+            product:'SK 1220',
+            nazwa:'Patelnio-rondel 20/2',
             cena:'16'
 
         },
 
          {
             img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
-            cena:'1'
+            product:'SP 11180',
+            nazwa:'Forma okrągła',
+            cena:'133'
 
         },
         {
             img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
+            product:'WL H122220',
+            nazwa:'Młynek 12 cm',
             cena:'14'
 
         },
@@ -85,9 +85,12 @@ function Database({koszyk,setKoszyk}) {
                        <img src={item.img} alt="" /> 
                     </div>
                     <div className='database-element-info'>
-                         <h3>Nazwa</h3>
-                         <p>Kod</p>
-                         <h4>Cena  {item.cena}</h4>
+                        <div className='database-element-info2'>
+                            <h3>{item.nazwa}</h3>
+                            <p>{item.product}</p>
+                            <h2>Cena : {item.cena}</h2> 
+                        </div>
+                        
                          <button onClick={() => handleAddProduct(item)}>Dodaj</button>
                     </div>
                     
