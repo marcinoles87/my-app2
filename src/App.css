@@ -143,8 +143,8 @@ i{
 }
 
 .database-element-img img{
-  width: 200px;
-  height: 200px;
+  width:100%;
+  height:100%;
 }
 
 .database-element-info2{
@@ -295,6 +295,18 @@ i{
   color:white;
   border: none;
   cursor: pointer;
+}
+
+/*main*/
+
+.main-container{
+
+}
+
+.main-element{
+  width: 100vw;
+  height: 80vh;
+  background-color: #afafaf;
 }
 
 

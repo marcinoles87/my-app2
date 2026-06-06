@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 
-import logoHeader from '../media/logo_header.png'
+// import logoHeader from '../media/logo_header.png'
 import wl1 from '../media/wl1.jpg'
 import vi1 from '../media/vi1.jpg'
 import gw1 from '../media/gw1.jpg'
+import logoHeader from '../media/logoHeader.png'
 
 function Database({koszyk,setKoszyk}) {
 
