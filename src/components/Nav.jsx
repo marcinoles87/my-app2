@@ -16,8 +16,8 @@ function Nav() {
             </div>
 
             <div className='links'>
-                <p>1</p>
-                <p>2</p>
+                <i class="fa-regular fa-envelope fa-2xl"></i>
+                <i class="fa-regular fa-circle-user fa-2xl"></i>
                 <p>3</p> 
             </div>
             
