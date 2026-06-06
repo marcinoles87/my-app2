@@ -86,9 +86,8 @@ function Database({koszyk,setKoszyk}) {
                     </div>
                     <div className='database-element-info'>
                         <div className='database-element-info2'>
-                            <h3>{item.nazwa}</h3>
-                            <p>{item.product}</p>
-                            <h2>Cena : {item.cena} pln</h2> 
+                            <p>{item.nazwa}</p>
+                            <h2 style={{color:'rgb(0,0,190'}}>Cena : {item.cena} pln</h2> 
                         </div>
                         
                          <button onClick={() => handleAddProduct(item)}>Dodaj</button>

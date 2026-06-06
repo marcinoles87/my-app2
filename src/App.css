@@ -8,6 +8,7 @@
   --primary-color:#0000ae;
   --font-basic-color:rgb(95, 95, 95);
   --font-second-color:rgb(162, 162, 162);
+  --price-color:rgb(2, 2, 90);
 }
 
 
@@ -118,9 +119,8 @@
 
 .database-element{
   width: 20%;
-  height: 41vh;
+  height: 100%;
   margin: 20px;
-  border: 1px solid black;
   color:var(--font-basic-color);
   transition: 0.6s ease;
   overflow: hidden;
@@ -134,7 +134,7 @@
 .database-element-img{
   width: 100%;
   height: 60%;
-  border-bottom: 1px solid black;
+  
 }
 
 .database-element-img img{
@@ -154,8 +154,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   color:white;
-  border-left: none;
-  border-right: none;
+  border: none;
   cursor: pointer;
   transition: 0.7s ease;
 }
