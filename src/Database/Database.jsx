@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
 import logoHeader from '../media/logo_header.png'
+import wl1 from '../media/wl1.jpg'
+import vi1 from '../media/vi1.jpg'
 
 function Database({koszyk,setKoszyk}) {
 
@@ -9,14 +11,14 @@ function Database({koszyk,setKoszyk}) {
 
     const database2 = [
         {
-            img:logoHeader,
+            img:wl1,
             product:'KA DM-718',
             nazwa:'Nóz Deba 14 cm',
             cena:'1'
 
         },
         {
-            img:logoHeader,
+            img:vi1,
             product:'WL E98120',
             nazwa:'Patelnia 28/7 kuta',
             cena:'140'
