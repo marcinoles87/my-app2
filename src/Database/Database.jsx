@@ -90,7 +90,7 @@ function Database({koszyk,setKoszyk}) {
                     <div className='database-element-info'>
                         <div className='database-element-info2'>
                             <p>{item.nazwa}</p>
-                            <h2 style={{color:'rgb(0,0,190'}}>Cena : {item.cena} pln</h2> 
+                            <h2 style={{color:'rgb(0,0,190'}}> {item.cena},00 PLN</h2> 
                         </div>
                         
                          <button onClick={() => handleAddProduct(item)}>Dodaj</button>

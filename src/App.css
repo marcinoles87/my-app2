@@ -19,6 +19,7 @@
 .navbar-container{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .navbar-promo{
@@ -137,9 +138,13 @@
   
 }
 
+i{
+  line-height: 1rem!important;
+}
+
 .database-element-img img{
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
 }
 
 .database-element-info2{
@@ -180,10 +185,10 @@
 
 .koszyk-container {
   position: fixed;
-  top: 5%;
+  bottom: 5%;
   right: 5%;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-color: #0000ae;
   border-radius: 100px;
   color: white;
