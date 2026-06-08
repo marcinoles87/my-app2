@@ -14,6 +14,7 @@ import Wysyłka from './pages/Wysyłka';
 import Koszyk from './pages/Koszyk';
 import { useState } from 'react';
 import Zamowienie from './pages/Zamowienie';
+import Formularz from './pages/Formularz';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
             <Route path='kontakt' element={<Kontakt></Kontakt>}/>
             <Route path='wysyłka' element={<Wysyłka></Wysyłka>}/>
             <Route path='zamowienie' element={<Zamowienie koszyk={koszyk}></Zamowienie>}/>
+            <Route path='formularz' element={<Formularz></Formularz>}/>
 
 
       </Routes>

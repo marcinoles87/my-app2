@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router'
 
 function Zamowienie({koszyk}) {
 
@@ -43,7 +44,7 @@ const handleSum = () =>{
         <p>Ilość produktów : {koszyk.length}</p>
         <p className='zamowienie-wartosc'>Wartość zamówienia : {allPrice} pln </p>
         <button onClick={handleSum}>Podsumuj</button>
-        <button>Zamawiam</button>
+        <button><Link to={'formularz'}>Zamawiam</Link></button>
 
     </div>
         
