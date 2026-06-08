@@ -259,9 +259,8 @@ i{
 /*formularz*/
 
 .formularz-container{
-  width: 1000px;
-  height: 200px;
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
 }
 
 

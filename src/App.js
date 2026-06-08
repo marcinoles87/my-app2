@@ -42,7 +42,7 @@ function App() {
             <Route path='kontakt' element={<Kontakt></Kontakt>}/>
             <Route path='wysyłka' element={<Wysyłka></Wysyłka>}/>
             <Route path='zamowienie' element={<Zamowienie koszyk={koszyk} allPrice={allPrice} setallPrice={setallPrice}></Zamowienie>}/>
-            <Route path='/formularz' element={<Formularz></Formularz>}/>
+            <Route path='/formularz' element={<Formularz koszyk={koszyk} allPrice={allPrice} setallPrice={setallPrice}></Formularz>}/>
 
 
       </Routes>
