@@ -2,7 +2,7 @@ import React from 'react'
 
 function Formularz() {
   return (
-    <div>
+    <div className='formularz-container'>
         <h1>Formularz zamowienia</h1>
     </div>
   )

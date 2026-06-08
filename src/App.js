@@ -1,4 +1,4 @@
-import { BrowserRouter, Route,Routes } from 'react-router';
+import { BrowserRouter, Link, Route,Routes } from 'react-router';
 import './App.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
@@ -19,6 +19,8 @@ import Formularz from './pages/Formularz';
 function App() {
 
   const [koszyk,setKoszyk] = useState([])
+  const [allPrice,setallPrice] = useState('')
+
 
 
   
@@ -39,8 +41,8 @@ function App() {
             <Route path='łazienka' element={<Łazienka></Łazienka>}/>
             <Route path='kontakt' element={<Kontakt></Kontakt>}/>
             <Route path='wysyłka' element={<Wysyłka></Wysyłka>}/>
-            <Route path='zamowienie' element={<Zamowienie koszyk={koszyk}></Zamowienie>}/>
-            <Route path='formularz' element={<Formularz></Formularz>}/>
+            <Route path='zamowienie' element={<Zamowienie koszyk={koszyk} allPrice={allPrice} setallPrice={setallPrice}></Zamowienie>}/>
+            <Route path='/formularz' element={<Formularz></Formularz>}/>
 
 
       </Routes>
