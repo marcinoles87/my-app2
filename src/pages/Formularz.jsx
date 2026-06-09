@@ -24,7 +24,7 @@ function Formularz({koszyk,allPrice,setAllPrice}) {
                 )
             })}
 
-            <h3>Podsumowanie : Ilość produktów : {koszyk.length} Wartość zamowienia : {allPrice} PLN</h3>
+            <h3>Podsumowanie : Ilość produktów : {koszyk.length} Wartość zamowienia : <span style={{fontSize:'2rem',borderBottom:'2px solid blue'}}>{allPrice}</span> PLN</h3>
 
         </div>
 
