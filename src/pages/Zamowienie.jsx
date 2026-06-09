@@ -43,7 +43,7 @@ const handleSum = () =>{
         <p>Ilość produktów : {koszyk.length}</p>
         <p className='zamowienie-wartosc'>Wartość zamówienia : {allPrice} pln </p>
         <button onClick={handleSum}>Podsumuj</button>
-        <Link to={'/formularz'}>Zamawiam</Link>
+        <button><Link to={'/formularz'}>Zamawiam</Link></button>
 
     </div>
         
