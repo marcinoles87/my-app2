@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Formularz({koszyk,allPrice,setAllPrice}) {
+
+  const [imie,setImie] = useState('')
+  const [adres,setAdres] = useState('')
+  const [telefon,setTelefon] = useState('')
+  const [email,setEmail] = useState('')
+
   return (
     <div className='formularz-container'>
 
            <div className='zamowienie-container'>
         <div className='zamowienie-info'>
-            <p>Twoje zamowienie </p>
+            
             {koszyk.map( (item,index) =>{
                 return(
                     <div className='zamowienie-elements' key={index}>
@@ -29,6 +35,8 @@ function Formularz({koszyk,allPrice,setAllPrice}) {
              <input placeholder='adres dostawy'></input>
              <input placeholder='telefon'></input>
              <input placeholder='email'></input>
+
+             <button>Wyślij</button>
            </div>
     </div>
   )
