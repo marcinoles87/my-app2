@@ -7,6 +7,11 @@ function Formularz({koszyk,allPrice,setAllPrice}) {
   const [telefon,setTelefon] = useState('')
   const [email,setEmail] = useState('')
 
+  const handleSend = () =>{
+    alert(`${imie} dostawa ${adres} telefon ${telefon} email ${email} do zapłaty ${allPrice}` )
+
+  }
+
   return (
     <div className='formularz-container'>
 
@@ -31,12 +36,12 @@ function Formularz({koszyk,allPrice,setAllPrice}) {
            </div>
 
            <div className='formularz-klient'>
-             <input placeholder='imie'></input>
-             <input placeholder='adres dostawy'></input>
-             <input placeholder='telefon'></input>
-             <input placeholder='email'></input>
+             <input placeholder='imie' onChange={ (e) =>setImie(e.target.value)}></input>
+             <input placeholder='adres dostawy' onChange={ (e) =>setAdres(e.target.value)}></input>
+             <input placeholder='telefon' onChange={ (e) =>setTelefon(e.target.value)}></input>
+             <input placeholder='email' onChange={ (e) =>setEmail(e.target.value)}></input>
 
-             <button>Wyślij</button>
+             <button onClick={handleSend}>Wyślij</button>
            </div>
     </div>
   )
