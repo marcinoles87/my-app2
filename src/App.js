@@ -32,6 +32,7 @@ function App() {
     <BrowserRouter>
       <Nav></Nav>
       <Koszyk koszyk={koszyk}></Koszyk>
+      
       <Routes>
 
 
@@ -48,7 +49,7 @@ function App() {
 
 
       </Routes>
-      <Main></Main>
+
       </BrowserRouter>
       
     </div>
