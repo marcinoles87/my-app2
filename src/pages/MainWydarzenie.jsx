@@ -2,7 +2,7 @@ import React from 'react'
 
 function MainWydarzenie() {
   return (
-    <div>MainWydarzenie</div>
+    <div>Wydarzenie</div>
   )
 }
 

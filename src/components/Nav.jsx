@@ -13,6 +13,7 @@ function Nav() {
         <div className='navbar-logo'>
             <div className='logo'>
                 <img src={logo} alt="xxxxxxxx" />
+                <input placeholder='Szukaj to czego chcesz....'></input>
             </div>
 
             <div className='links'>

@@ -37,6 +37,19 @@
   
 }
 
+.logo{
+  display: flex;
+  flex: row;
+  align-items: center;
+}
+
+.logo input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(201, 201, 201);
+}
+
 .links{
   display: flex;
   flex-direction: row;
