@@ -24,8 +24,9 @@ function Formularz({koszyk,allPrice,setAllPrice}) {
                 return(
                     <div className='zamowienie-elements' key={index}>
                         <img src={item.img} alt={index} />
-                        <p>{item.product}</p>
-                        <p>{item.nazwa}</p>
+                        <p>{item.product} |</p>
+                        <p>{item.nazwa} |</p>
+                        <p>sztuk 1 |</p>
                         <p>Wartość : {item.cena} pln</p>
                     </div>
                 )

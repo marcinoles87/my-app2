@@ -269,6 +269,8 @@ i{
     flex-direction: row;
     justify-content: space-evenly;
     align-items:first baseline;
+    margin-top: 50px;
+    border-top: 2px solid black;
 }
 
 .formularz-klient{
@@ -343,7 +345,7 @@ i{
 /*main*/
 
 .main-container{
-   width: 100vw;
+  width: 100vw;
   height: 80vh;
 
 }
