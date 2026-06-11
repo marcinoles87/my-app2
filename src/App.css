@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position:fixed;
   background-color: rgba(255, 255, 255, 0.659);
 }
 
@@ -360,15 +359,39 @@ i{
 /*main*/
 
 .main-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   width: 100vw;
   height: 80vh;
+
 
 }
 
-.main-element{
-  width: 100vw;
+.main-container a{
+  width: 100%;
+  height: 100%;
+}
+
+.main-element-one{
+  width: 30vw;
   height: 80vh;
-  background-color: #afafaf;
+  background-image: url('./media/kuchnia.jpg');
+}
+
+.main-element-two{
+  width: 30vw;
+  height: 80vh;
+  background-image: url('./media/łazienka.jpg');
+}
+
+.main-element-three{
+  width: 30vw;
+  height: 80vh;
+  background-image: url('./media/restauracja.jpg');
 }
 
 .main-element a{
