@@ -10,12 +10,12 @@ function Main() {
       </div>
 
       <div className='main-element-two'>
-        <Link to={'/mainWydarzenie'}></Link>
+        <Link to={'/mainWydarzenie'}>-</Link>
         
       </div>
 
       <div className='main-element-three'>
-        <Link to={'/mainWydarzenie'}></Link>
+        <Link to={'/mainWydarzenie'}>-</Link>
         
       </div>
 
