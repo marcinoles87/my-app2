@@ -5,19 +5,19 @@ function Main() {
   return (
     <div className='main-container'>
       <div className='main-element-one'>
-        <Link to={'/mainWydarzenie'}></Link>
+        <Link to={'/kuchnia'}></Link>
         <p>Kuchnia</p>
         
       </div>
 
       <div className='main-element-two'>
-        <Link to={'/mainWydarzenie'}>-</Link>
+        <Link to={'/łazienka'}>-</Link>
         <p>Łazienka</p>
         
       </div>
 
       <div className='main-element-three'>
-        <Link to={'/mainWydarzenie'}>-</Link>
+        <Link to={'/horeca'}>-</Link>
         <p>HoReCa</p>
         
       </div>

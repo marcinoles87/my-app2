@@ -16,6 +16,7 @@ import { useState } from 'react';
 import Zamowienie from './pages/Zamowienie';
 import Formularz from './pages/Formularz';
 import MainWydarzenie from './pages/MainWydarzenie';
+import Horeca from './pages/Horeca';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
             <Route path='zamowienie' element={<Zamowienie koszyk={koszyk} allPrice={allPrice} setallPrice={setallPrice}></Zamowienie>}/>
             <Route path='/formularz' element={<Formularz koszyk={koszyk} allPrice={allPrice} setallPrice={setallPrice}></Formularz>}/>
             <Route path='/mainWydarzenie' element={<MainWydarzenie></MainWydarzenie>}/>
+            <Route path='/horeca' element={<Horeca></Horeca>}></Route>
 
 
       </Routes>
