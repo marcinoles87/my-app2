@@ -50,6 +50,7 @@ function Header({koszyk,setKoszyk}) {
         </div>
 
         <div className='header-product'>
+          <h1>Bestsellery </h1>
           <Database koszyk={koszyk} setKoszyk={setKoszyk}></Database>
           <Main></Main>
           <Newsletter></Newsletter>
