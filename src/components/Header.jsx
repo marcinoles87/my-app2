@@ -4,6 +4,7 @@ import kai from '../media/kaiLoop.png'
 import wl from '../media/wlLoop.png'
 import ifg from '../media/ifLoop.png'
 import Main from './Main'
+import Newsletter from './Newsletter'
 
 function Header({koszyk,setKoszyk}) {
 
@@ -51,6 +52,7 @@ function Header({koszyk,setKoszyk}) {
         <div className='header-product'>
           <Database koszyk={koszyk} setKoszyk={setKoszyk}></Database>
           <Main></Main>
+          <Newsletter></Newsletter>
         </div>
 
     </div>

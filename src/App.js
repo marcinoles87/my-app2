@@ -38,10 +38,10 @@ function App() {
 
 
             <Route path='/' element={<Header koszyk={koszyk} setKoszyk={setKoszyk}></Header>}/>
-            <Route path='produkty' element={<Produkty></Produkty>}/>
-            <Route path='kuchnia' element={<Kuchnia></Kuchnia>}/>
-            <Route path='jadalnia' element={<Jadalnia></Jadalnia>}/>
-            <Route path='łazienka' element={<Łazienka></Łazienka>}/>
+            <Route path='/produkty' element={<Produkty></Produkty>}/>
+            <Route path='/kuchnia' element={<Kuchnia></Kuchnia>}/>
+            <Route path='/jadalnia' element={<Jadalnia></Jadalnia>}/>
+            <Route path='/łazienka' element={<Łazienka></Łazienka>}/>
             <Route path='kontakt' element={<Kontakt></Kontakt>}/>
             <Route path='wysyłka' element={<Wysyłka></Wysyłka>}/>
             <Route path='zamowienie' element={<Zamowienie koszyk={koszyk} allPrice={allPrice} setallPrice={setallPrice}></Zamowienie>}/>
