@@ -4,6 +4,8 @@ import { Link } from 'react-router'
 function Main() {
   return (
     <div className='main-container'>
+
+      <h1>Poznaj nasze możliwości w każdej przestrzeni</h1>
       <div className='main-element-one'>
         <Link to={'/kuchnia'}></Link>
         <p>Kuchnia</p>
