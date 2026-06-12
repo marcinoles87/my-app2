@@ -6,7 +6,7 @@ function Newsletter() {
       <div className='newsletter-element'>
         <h1>KUCHNIA x CLUB</h1>
         <h4>Jedna platforma wiele korzyści</h4>
-        <p> Promocje tylko dla Klubowiczów, wydłużony czas na zwrot i wiele więcej. <br></br>Odblokuj MODIVOclub GOLD i zyskuj zwrot środków na każdych zakupach! </p>
+        <p> Promocje tylko dla Klubowiczów, wydłużony czas na zwrot i wiele więcej. <br></br>Odblokuj KUCHNIAclub GOLD i zyskuj zwrot środków na każdych zakupach! </p>
 
       </div>
 
