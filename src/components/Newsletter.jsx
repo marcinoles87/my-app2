@@ -10,6 +10,11 @@ function Newsletter() {
 
       </div>
 
+      <div className='newsletter-buttons'>
+        <button>Zapisz sie</button>
+        <button>Dowiedz sie wiecej</button>
+      </div>
+
     </div>
   )
 }

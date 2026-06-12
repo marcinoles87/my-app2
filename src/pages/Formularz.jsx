@@ -47,7 +47,7 @@ function Formularz({koszyk,allPrice,setAllPrice}) {
              <input placeholder='telefon' onChange={ (e) =>setTelefon(e.target.value)}></input>
              <input placeholder='email' onChange={ (e) =>setEmail(e.target.value)}></input>
 
-             <button onClick={handleSend}>Wyślij</button>
+             <button onClick={handleSend}>Zamawiam</button>
            </div>
     </div>
   )

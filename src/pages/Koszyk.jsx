@@ -6,7 +6,7 @@ function Koszyk({koszyk}) {
   return (
     <div className='koszyk-container'>
 
-        <Link to='/zamowienie'><i className="fa-solid fa-cart-plus fa-xl"></i> {koszyk.length}</Link>
+        <Link to='/zamowienie'><i className="fa-solid fa-cart-plus fa-lg"></i> {koszyk.length}</Link>
        
 
     </div>
