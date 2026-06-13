@@ -191,6 +191,32 @@ i{
   
 }
 
+
+.filters{
+  display:flex;
+  margin-top: 50px;
+  margin-left: 10px;
+  gap:10px;
+  
+}
+
+.filters h1{
+  color:grey;
+  font-weight: 400;
+}
+
+.filters input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  transition: 1s ease;
+  
+}
+
+.filters input:hover{
+  background-color: rgb(210, 210, 210);
+}
+
 /*wysylka */
 
 .wysylka-container{

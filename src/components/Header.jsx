@@ -55,6 +55,7 @@ function Header({koszyk,setKoszyk}) {
               <input placeholder='name'></input>
               <input placeholder='price'></input>
               <input placeholder='category'></input>
+              <button>Zastosuj</button>
 
             
 
