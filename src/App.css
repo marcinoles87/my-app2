@@ -9,6 +9,7 @@
   --font-basic-color:rgb(95, 95, 95);
   --font-second-color:rgb(162, 162, 162);
   --price-color:rgb(2, 2, 90);
+  --background-site-color:rgb(236, 236, 236);
 }
 
 
@@ -527,6 +528,26 @@ i{
 .newsletter-buttons button:nth-child(1){
   background-color: black;
   color:white;
+}
+
+/*footer*/
+
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  background-color:var(--background-site-color) ;
+}
+
+.footer-left{
+  margin: 10px;
+  font-size: larger;
+
+}
+
+.footer-left a{
+  text-decoration: none;
+  color:black;
 }
 
 

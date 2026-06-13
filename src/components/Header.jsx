@@ -5,6 +5,7 @@ import wl from '../media/wlLoop.png'
 import ifg from '../media/ifLoop.png'
 import Main from './Main'
 import Newsletter from './Newsletter'
+import Footer from './Footer'
 
 function Header({koszyk,setKoszyk}) {
 
@@ -66,6 +67,7 @@ function Header({koszyk,setKoszyk}) {
           <Database koszyk={koszyk} setKoszyk={setKoszyk}></Database>
           <Main></Main>
           <Newsletter></Newsletter>
+          <Footer></Footer>
         </div>
 
     </div>
