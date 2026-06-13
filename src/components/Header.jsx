@@ -47,6 +47,17 @@ function Header({koszyk,setKoszyk}) {
             <p className='right' onClick={handleLoopRight}>{'>'}</p>
             <img id="slideshow" src={kai} width="400" alt='loopimg'/>
 
+           
+            </div>
+
+             <div className='filters'>
+              <h1>Filters</h1>
+              <input placeholder='name'></input>
+              <input placeholder='price'></input>
+              <input placeholder='category'></input>
+
+            
+
         </div>
 
         <div className='header-product'>
