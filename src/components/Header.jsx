@@ -7,9 +7,10 @@ import Main from './Main'
 import Newsletter from './Newsletter'
 import Footer from './Footer'
 
-function Header({koszyk,setKoszyk}) {
+function Header({koszyk,setKoszyk,setDatabase,database}) {
 
   const [indexLoop , setIndexLoop] = useState(0);
+  const [filterData,setFiltereddata] = useState('')
 
 
   const handleLoopLeft = () =>{
@@ -38,6 +39,13 @@ function Header({koszyk,setKoszyk}) {
 
   }
 
+  const handleFilterName = (e) =>{
+
+    const newDatabase = [...database]
+    setFiltereddata(e.target.value)
+    console.log(filterData)
+  }
+
 
 
   return (
@@ -53,7 +61,7 @@ function Header({koszyk,setKoszyk}) {
 
              <div className='filters'>
               <h1>Filters</h1>
-              <input placeholder='name'></input>
+              <input placeholder='name' onChange={handleFilterName}></input>
               <input placeholder='price'></input>
               <input placeholder='category'></input>
               <button>Zastosuj</button>
@@ -64,7 +72,7 @@ function Header({koszyk,setKoszyk}) {
 
         <div className='header-product'>
           <h1>Bestsellery </h1>
-          <Database koszyk={koszyk} setKoszyk={setKoszyk}></Database>
+          <Database koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase}></Database>
           <Main></Main>
           <Newsletter></Newsletter>
           <Footer></Footer>

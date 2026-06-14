@@ -20,6 +20,8 @@ import Horeca from './pages/Horeca';
 
 function App() {
 
+
+  const [database,setDatabase] = useState([])
   const [koszyk,setKoszyk] = useState([])
   const [allPrice,setallPrice] = useState('')
 
@@ -36,7 +38,7 @@ function App() {
       <Routes>
 
 
-            <Route path='/' element={<Header koszyk={koszyk} setKoszyk={setKoszyk}></Header>}/>
+            <Route path='/' element={<Header koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database}></Header>}/>
             <Route path='/produkty' element={<Produkty></Produkty>}/>
             <Route path='/kuchnia' element={<Kuchnia></Kuchnia>}/>
             <Route path='/jadalnia' element={<Jadalnia></Jadalnia>}/>
