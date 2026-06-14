@@ -14,6 +14,29 @@ function Footer() {
          <li><Link to={'kontakt'}>Kontakt</Link></li>
          <li><Link to={'wysyłka'}>Wysyłka</Link></li>
       </div>
+
+      <div className='footer-left'>
+        <h4>Dołacz do nas</h4>
+        <ul>
+          <li>CardGold</li>
+          <li>CardSilver</li>
+          <li>CardClub</li>
+          <li>Newsletter</li>
+        </ul>
+        </div>
+
+      <div className='footer-left'>
+        <h4>Informacje</h4>
+        <ul>
+          <li>Reklamacje</li>
+          <li>Wysyłka</li>
+          <li>Regulamin</li>
+          <li>O nas</li>
+        </ul>
+      
+      </div>
+
+      
     </div>
   )
 }
