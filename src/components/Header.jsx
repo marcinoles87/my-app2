@@ -11,6 +11,7 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
   const [indexLoop , setIndexLoop] = useState(0);
   const [filterData,setFiltereddata] = useState('')
+  const [filteredDatabase , setFilteredDatabase] = ([])
 
 
   const handleLoopLeft = () =>{
@@ -44,6 +45,12 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
     const newDatabase = [...database]
     const searchNameitem = filterData
 
+    console.log(searchNameitem)
+    const filtered = newDatabase.filter(item => item.nazwa.includes(searchNameitem))
+    console.log(filtered)
+
+    setDatabase(filtered)
+
   }
 
 
@@ -72,7 +79,7 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
         <div className='header-product'>
           <h1>Bestsellery </h1>
-          <Database koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase}></Database>
+          <Database koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database}></Database>
           <Main></Main>
           <Newsletter></Newsletter>
           <Footer></Footer>
