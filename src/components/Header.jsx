@@ -11,7 +11,8 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
   const [indexLoop , setIndexLoop] = useState(0);
   const [filterData,setFiltereddata] = useState('')
-  const [filteredDatabase , setFilteredDatabase] = ([])
+  const [filteredDatabase , setFilteredDatabase] =useState([])
+  const [flag,setFlag] = useState(false)
 
 
   const handleLoopLeft = () =>{
@@ -43,15 +44,22 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
   const handleFilterName = (e) =>{
 
     const newDatabase = [...database]
-    const searchNameitem = filterData
+    // const searchNameitem = filterData
 
-    console.log(searchNameitem)
-    const filtered = newDatabase.filter(item => item.nazwa.includes(searchNameitem))
+    // console.log(searchNameitem)
+    const filtered = newDatabase.filter(item => item.nazwa.includes(filterData))
     console.log(filtered)
 
-    setDatabase(filtered)
+    setFlag(true)
+    setFilteredDatabase(filtered)
 
   }
+
+   const handleAddProduct = (item) =>{
+
+        setKoszyk( prev =>[...prev,item])
+
+    }
 
 
 
@@ -79,7 +87,28 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
         <div className='header-product'>
           <h1>Bestsellery </h1>
+          {flag ? 
+          filteredDatabase.map( (item,index) =>{
+             return(
+                <div className='database-element' key={index}>
+                    <div className='database-element-img'>
+                       <img src={item.img} alt="" /> 
+                    </div>
+                    <div className='database-element-info'>
+                        <div className='database-element-info2'>
+                            <p>{item.nazwa}</p>
+                            <h2 style={{color:'rgb(0,0,190'}}> {item.cena},00 PLN</h2> 
+                        </div>
+                        
+                         <button onClick={() => handleAddProduct(item)}>Dodaj</button>
+                    </div>
+                    </div>
+            )})
+          
+          : 
           <Database koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database}></Database>
+          }
+          
           <Main></Main>
           <Newsletter></Newsletter>
           <Footer></Footer>
