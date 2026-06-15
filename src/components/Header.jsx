@@ -42,8 +42,8 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
   const handleFilterName = (e) =>{
 
     const newDatabase = [...database]
-    setFiltereddata(e.target.value)
-    console.log(filterData)
+    const searchNameitem = filterData
+
   }
 
 
@@ -61,10 +61,10 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
              <div className='filters'>
               <h1>Filters</h1>
-              <input placeholder='name' onChange={handleFilterName}></input>
+              <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value)}></input>
               <input placeholder='price'></input>
               <input placeholder='category'></input>
-              <button>Zastosuj</button>
+              <button onClick={handleFilterName}>Zastosuj</button>
 
             
 
