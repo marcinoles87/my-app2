@@ -47,7 +47,7 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
     // const searchNameitem = filterData
 
     // console.log(searchNameitem)
-    const filtered = newDatabase.filter(item => item.nazwa.includes(filterData))
+    const filtered = newDatabase.filter(item => item.nazwa.toUpperCase().includes(filterData))
     console.log(filtered)
 
     setFlag(true)
@@ -58,6 +58,11 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
    const handleAddProduct = (item) =>{
 
         setKoszyk( prev =>[...prev,item])
+
+    }
+
+    const handleReset = () =>{
+      setFlag(false)
 
     }
 
@@ -76,10 +81,11 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
              <div className='filters'>
               <h1>Filters</h1>
-              <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value)}></input>
+              <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value.toUpperCase())}></input>
               <input placeholder='price'></input>
               <input placeholder='category'></input>
               <button onClick={handleFilterName}>Zastosuj</button>
+              <button onClick={handleReset}>Resetuj</button>
 
             
 

@@ -13,22 +13,22 @@ function Database({koszyk,setKoszyk,setDatabase}) {
     const database2 = [
         {
             img:wl1,
-            product:'KA DM-718',
-            nazwa:'Nóz Deba 14 cm',
+            product:'WL H1222020',
+            nazwa:'Młynek 12cm',
             cena:'1'
 
         },
         {
             img:vi1,
-            product:'WL E98120',
-            nazwa:'Patelnia 28/7 kuta',
+            product:'VI 0.3303',
+            nazwa:'Scyroryk Hunt',
             cena:'140'
 
         },
         {
             img:gw1,
-            product:'BR 12-20-12',
-            nazwa:'Kosz 12L',
+            product:'GW SVB-1000',
+            nazwa:'Termos 1L',
             cena:'15'
 
         },
@@ -54,20 +54,7 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             cena:'14'
 
         },
-        {
-            img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
-            cena:'15'
-
-        },
-        {
-            img:logoHeader,
-            product:'test1',
-            nazwa:'test1',
-            cena:'16'
-
-        },
+       
 
     
 
