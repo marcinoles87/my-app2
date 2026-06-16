@@ -330,6 +330,7 @@ i{
   text-decoration: none;
   color:white;
   width: 100%;
+  
 }
 
 /*formularz*/
@@ -366,6 +367,7 @@ i{
   background-color: var(--primary-color);
   color:white;
   border-radius: 10px;
+  cursor: pointer;
 
 }
 
@@ -457,6 +459,10 @@ i{
   height: 80vh;
   background-image: url('./media/kuchnia.jpg');
   position: relative;
+}
+
+.main-container p{
+  font-size: 2rem;
 }
 
 .main-element-two{
