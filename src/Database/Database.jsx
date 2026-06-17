@@ -70,10 +70,10 @@ function Database({koszyk,setKoszyk,setDatabase}) {
         },
         {
             img:logoHeader,
-            product:'WL H122220',
-            nazwa:'Młynek 12 cm',
+            product:'KA DM 777',
+            nazwa:'Noż 12 cm',
             cena:'14',
-            category:'młynki'
+            category:'noże'
 
         },
        

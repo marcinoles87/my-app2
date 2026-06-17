@@ -86,13 +86,13 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
               <h1>Filters</h1>
               <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value.toUpperCase())}></input>
               <input placeholder='price'></input>
-              <input placeholder='category' onChange={ (e) =>setCategory(e.target.value)}></input>
+              {/* <input placeholder='category' onChange={ (e) =>setCategory(e.target.value)}></input> */}
               <select name="select" id="" onChange={ (e) =>setCategory(e.target.value)}>
                 <option value="0" >Select category</option>
-                <option value="Patelnie">Patelnie</option>
-                <option value="Młynki">Młynki</option>
-                <option value="Noże">Noże</option>
-                <option value="Scyzoryki">Scyroryki</option>
+                <option value="patelnie">Patelnie</option>
+                <option value="młynki">Młynki</option>
+                <option value="noże">Noże</option>
+                <option value="scyzoryki">Scyzoryki</option>
 
               </select>
               <button onClick={handleFilterName}>Zastosuj</button>
