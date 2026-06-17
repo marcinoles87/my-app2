@@ -17,7 +17,7 @@ function Nav() {
             </div>
 
             <div className='links'>
-                <i className="fa-regular fa-envelope fa-2xl"></i>
+                <i className="fa-regular fa-envelope fa-2xl"><Link to={'kontakt'}></Link></i>
                 <i className="fa-regular fa-circle-user fa-2xl"></i>
                 
             </div>
@@ -31,7 +31,6 @@ function Nav() {
                 <li><Link to={'kuchnia'}>Kuchnia</Link></li>
                 <li><Link to={'jadalnia'}>Jadalnia</Link></li>
                 <li><Link to={'łazienka'}>Łazienka</Link></li>
-                <li><Link to={'kontakt'}>Kontakt</Link></li>
                 <li><Link to={'wysyłka'}>Wysyłka</Link></li>
                 
             </ul>

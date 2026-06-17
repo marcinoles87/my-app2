@@ -67,6 +67,8 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
     }
 
+    console.log(filterCategory)
+
 
 
   return (
@@ -85,6 +87,14 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
               <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value.toUpperCase())}></input>
               <input placeholder='price'></input>
               <input placeholder='category' onChange={ (e) =>setCategory(e.target.value)}></input>
+              <select name="select" id="" onChange={ (e) =>setCategory(e.target.value)}>
+                <option value="0" >Select category</option>
+                <option value="Patelnie">Patelnie</option>
+                <option value="Młynki">Młynki</option>
+                <option value="Noże">Noże</option>
+                <option value="Scyzoryki">Scyroryki</option>
+
+              </select>
               <button onClick={handleFilterName}>Zastosuj</button>
               <button onClick={handleReset}>Resetuj</button>
 
