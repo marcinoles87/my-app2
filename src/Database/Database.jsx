@@ -77,6 +77,72 @@ function Database({koszyk,setKoszyk,setDatabase}) {
 
         },
        
+        {
+            img:wl1,
+            product:'WL H1222020',
+            nazwa:'Młynek 12cm',
+            cena:'1',
+            category:'młynki'
+
+        },
+        {
+            img:vi1,
+            product:'VI 0.3303',
+            nazwa:'Scyroryk Hunt',
+            cena:'140',
+            category:'scyzoryki'
+
+        },
+        {
+            img:vi1,
+            product:'VI 0.3303',
+            nazwa:'Scyroryk Hunt',
+            cena:'140',
+            category:'scyzoryki'
+
+        },
+        {
+            img:vi1,
+            product:'VI 0.3303',
+            nazwa:'Scyroryk Hunt',
+            cena:'140',
+            category:'scyzoryki'
+
+        },
+        {
+            img:gw1,
+            product:'GW SVB-1000',
+            nazwa:'Termos 1L',
+            cena:'15',
+            category:'termosy'
+
+        },
+        {
+            img:logoHeader,
+            product:'SK 1220',
+            nazwa:'Patelnio-rondel 20/2',
+            cena:'16',
+            category:'patelnie'
+
+        },
+
+         {
+            img:logoHeader,
+            product:'SP 11180',
+            nazwa:'Forma okrągła',
+            cena:'133',
+            category:'formy'
+
+        },
+        {
+            img:logoHeader,
+            product:'KA DM 777',
+            nazwa:'Noż 12 cm',
+            cena:'14',
+            category:'noże'
+
+        },
+       
 
     
 
@@ -93,7 +159,7 @@ function Database({koszyk,setKoszyk,setDatabase}) {
     }
 
   return (
-    <div className='database-product'>
+    <>
         {database2.map( (item,index) => {
             return(
                 <div className='database-element' key={index}>
@@ -116,7 +182,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             )
         })}
 
-    </div>
+        </>
+
   )
 }
 

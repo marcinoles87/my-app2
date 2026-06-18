@@ -104,7 +104,10 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
         <div className='header-product'>
           <h1>Bestsellery </h1>
+          <div className='database-product'>
           {flag ? 
+
+          
           filteredDatabase.map( (item,index) =>{
              return(
                 <div className='database-element' key={index}>
@@ -121,10 +124,14 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
                     </div>
                     </div>
             )})
+
+           
           
           : 
           <Database koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database}></Database>
           }
+
+           </div>
           
           <Main></Main>
           <Newsletter></Newsletter>
