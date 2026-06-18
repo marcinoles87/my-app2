@@ -572,4 +572,11 @@ i{
   color:black;
 }
 
+.stopka{
+  padding: 10px;
+  text-align:right;
+  background-color: black;
+  color:var(--font-second-color);
+}
+
 

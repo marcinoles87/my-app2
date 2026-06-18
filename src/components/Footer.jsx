@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 
 function Footer() {
   return (
+    <>
     <div className='footer-container'>
       <div className='footer-left'>
         <h4>Mapa strony</h4>
@@ -35,9 +36,13 @@ function Footer() {
         </ul>
       
       </div>
-
-      
     </div>
+
+    <div className='stopka'>
+        <p>copyright 2026 MRC87 </p>
+      </div>
+
+    </>
   )
 }
 
