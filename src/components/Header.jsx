@@ -12,6 +12,7 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
   const [indexLoop , setIndexLoop] = useState(0);
   const [filterData,setFiltereddata] = useState('')
   const [filteredDatabase , setFilteredDatabase] =useState([])
+  const [filterPrice , setFileredPrice] = useState('')
   const [filterCategory , setCategory] = useState([])
   const [flag,setFlag] = useState(false)
 
@@ -45,14 +46,28 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
   const handleFilterName = (e) =>{
 
     const newDatabase = [...database]
-    // const searchNameitem = filterData
-
-    // console.log(searchNameitem)
-    const filtered = newDatabase.filter(item => item.nazwa.toUpperCase().includes(filterData) && item.category.includes(filterCategory))
-    console.log(filtered)
+    const filtered = newDatabase.filter(item => item.nazwa.toUpperCase().includes(filterData) && item.category.includes(filterCategory) )
 
     setFlag(true)
     setFilteredDatabase(filtered)
+
+  
+
+    if(filterPrice){
+
+    const filtered = newDatabase.filter(item => item.cena > filterPrice)
+    console.log(filtered)
+
+    }
+
+  }
+
+  const handleFilerPrice = (e) =>{
+
+    console.log(filterPrice)
+
+    const newDatabase = [...database]
+    const filtered = newDatabase()
 
   }
 
@@ -67,7 +82,6 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
     }
 
-    console.log(filterCategory)
 
 
 
@@ -85,7 +99,7 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
              <div className='filters'>
               <h1>Filters</h1>
               <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value.toUpperCase())}></input>
-              <input placeholder='price'></input>
+              <input placeholder='price' onChange={ (e) =>setFileredPrice(e.target.value)}></input>
               {/* <input placeholder='category' onChange={ (e) =>setCategory(e.target.value)}></input> */}
               <select name="select" id="" onChange={ (e) =>setCategory(e.target.value)}>
                 <option value="0" >Select category</option>
