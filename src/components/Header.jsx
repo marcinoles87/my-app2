@@ -12,7 +12,7 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
   const [indexLoop , setIndexLoop] = useState(0);
   const [filterData,setFiltereddata] = useState('')
   const [filteredDatabase , setFilteredDatabase] =useState([])
-  const [filterPrice , setFileredPrice] = useState('')
+  const [filterPriceDo , setFileredPriceDo] = useState(Number)
   const [filterCategory , setCategory] = useState([])
   const [flag,setFlag] = useState(false)
 
@@ -51,29 +51,17 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
     setFlag(true)
     setFilteredDatabase(filtered)
 
-  
+    if(filterPriceDo>0){
+          console.log('do')
+          const filtered = newDatabase.filter(item => item.cena <= filterPriceDo)
+          console.log(filtered)
 
-    if(filterPrice){
-
-    console.log(filterPrice)
-    const filteredPrice = newDatabase.filter(item => item.cena < filterPrice)
-    console.log(filteredPrice)
-
-
-    setFilteredDatabase(filteredPrice)
 
     }
 
   }
 
-  const handleFilerPrice = (e) =>{
 
-    console.log(filterPrice)
-
-    const newDatabase = [...database]
-    const filtered = newDatabase()
-
-  }
 
    const handleAddProduct = (item) =>{
 
@@ -103,7 +91,7 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
              <div className='filters'>
               <h1>Filters</h1>
               <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value.toUpperCase())}></input>
-              <input placeholder='price' onChange={ (e) =>setFileredPrice(e.target.value)}></input>
+              <input type='number' placeholder='price - do' onChange={ (e) =>setFileredPriceDo(e.target.value)}></input>
               {/* <input placeholder='category' onChange={ (e) =>setCategory(e.target.value)}></input> */}
               <select name="select" id="" onChange={ (e) =>setCategory(e.target.value)}>
                 <option value="0" >Select category</option>
