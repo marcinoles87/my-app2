@@ -16,7 +16,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'WL H1222020',
             nazwa:'Młynek 12cm',
             cena:1,
-            category:'młynki'
+            category:'młynki',
+            cenaRegularna :199,
 
         },
         {
@@ -24,7 +25,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'VI 0.3303',
             nazwa:'Scyroryk Hunt',
             cena:140,
-            category:'scyzoryki'
+            category:'scyzoryki',
+            cenaRegularna :199,
 
         },
         {
@@ -32,7 +34,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'VI 0.3303',
             nazwa:'Scyroryk Hunt',
             cena:140,
-            category:'scyzoryki'
+            category:'scyzoryki',
+            cenaRegularna :199,
 
         },
         {
@@ -40,7 +43,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'VI 0.3303',
             nazwa:'Scyroryk Hunt',
             cena:160,
-            category:'scyzoryki'
+            category:'scyzoryki',
+            cenaRegularna :199,
 
         },
         {
@@ -48,7 +52,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'GW SVB-1000',
             nazwa:'Termos 1L',
             cena:89,
-            category:'termosy'
+            category:'termosy',
+            cenaRegularna :199,
 
         },
         {
@@ -56,7 +61,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'SK 1220',
             nazwa:'Patelnio-rondel 20/2',
             cena:529,
-            category:'patelnie'
+            category:'patelnie',
+            cenaRegularna :199,
 
         },
 
@@ -65,7 +71,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'SP 11180',
             nazwa:'Forma okrągła',
             cena:159,
-            category:'formy'
+            category:'formy',
+            cenaRegularna :199,
 
         },
         {
@@ -73,7 +80,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'KA DM 777',
             nazwa:'Noż 12 cm',
             cena:99,
-            category:'noże'
+            category:'noże',
+            cenaRegularna :199,
 
         },
        
@@ -82,7 +90,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'WL H1222020',
             nazwa:'Młynek 12cm',
             cena:129,
-            category:'młynki'
+            category:'młynki',
+            cenaRegularna :199,
 
         },
         {
@@ -90,7 +99,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'VI 0.3303',
             nazwa:'Scyroryk Hunt',
             cena:199,
-            category:'scyzoryki'
+            category:'scyzoryki',
+            cenaRegularna :199,
 
         },
         {
@@ -98,7 +108,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'VI 0.3303',
             nazwa:'Scyroryk Hunt',
             cena:229,
-            category:'scyzoryki'
+            category:'scyzoryki',
+            cenaRegularna :199,
 
         },
         {
@@ -106,7 +117,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'VI 0.3303',
             nazwa:'Scyroryk Hunt',
             cena:140,
-            category:'scyzoryki'
+            category:'scyzoryki',
+            cenaRegularna :199,
 
         },
         {
@@ -114,7 +126,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'GW SVB-1000',
             nazwa:'Termos 1L',
             cena:16,
-            category:'termosy'
+            category:'termosy',
+            cenaRegularna :199,
 
         },
         {
@@ -122,7 +135,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'SK 1220',
             nazwa:'Patelnio-rondel 20/2',
             cena:129,
-            category:'patelnie'
+            category:'patelnie',
+            cenaRegularna :199,
 
         },
 
@@ -131,7 +145,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'SP 11180',
             nazwa:'Forma okrągła',
             cena:55,
-            category:'formy'
+            category:'formy',
+            cenaRegularna :199,
 
         },
         {
@@ -139,7 +154,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             product:'KA DM 777',
             nazwa:'Noż 23 cm',
             cena:220,
-            category:'noże'
+            category:'noże',
+            cenaRegularna :199,
 
         },
        
@@ -169,7 +185,8 @@ function Database({koszyk,setKoszyk,setDatabase}) {
                     <div className='database-element-info'>
                         <div className='database-element-info2'>
                             <p>{item.nazwa}</p>
-                            <h2 style={{color:'rgb(0,0,190'}}> {item.cena},00 PLN</h2> 
+                            <h2 style={{color:'rgb(0,0,190'}}>{item.cena},00 zł</h2> 
+                            <p style={{padding:'10px 0px'}}>Cena regularna : <span style={{textDecoration:'line-through'}}>{item.cenaRegularna},00 zł</span></p>
                         </div>
                         
                          <button onClick={() => handleAddProduct(item)}>Dodaj</button>
