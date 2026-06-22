@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import wl1 from '../media/wl1.jpg'
 import vi1 from '../media/vi1.jpg'
 import gw1 from '../media/gw1.jpg'
+import skk1 from '../media/skk1.jpg'
 import logoHeader from '../media/logoHeader.png'
 
 function Database({koszyk,setKoszyk,setDatabase}) {
@@ -57,7 +58,7 @@ function Database({koszyk,setKoszyk,setDatabase}) {
 
         },
         {
-            img:logoHeader,
+            img:skk1,
             product:'SK 1220',
             nazwa:'Patelnio-rondel 20/2',
             cena:529,
@@ -131,7 +132,7 @@ function Database({koszyk,setKoszyk,setDatabase}) {
 
         },
         {
-            img:logoHeader,
+            img:skk1,
             product:'SK 1220',
             nazwa:'Patelnio-rondel 20/2',
             cena:129,

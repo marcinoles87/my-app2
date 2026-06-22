@@ -13,6 +13,7 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
   const [filterData,setFiltereddata] = useState('')
   const [filteredDatabase , setFilteredDatabase] =useState([])
   const [filterPriceDo , setFileredPriceDo] = useState(Number)
+  const [filterPriceOd , setFileredPriceOd] = useState(Number)
   const [filterCategory , setCategory] = useState([])
   const [flag,setFlag] = useState(false)
 
@@ -57,6 +58,13 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
           console.log(filtered)
           setFilteredDatabase(filtered)
 
+    }
+
+    if(filterPriceOd>0){
+      console.log(filterPriceOd)
+          const filtered = newDatabase.filter(item => item.cena <= filterPriceOd)
+          console.log(filtered)
+          setFilteredDatabase(filtered)
 
     }
 
@@ -93,12 +101,14 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
               <h1>Filters</h1>
               <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value.toUpperCase())}></input>
               <input type='number' placeholder='price - do' onChange={ (e) =>setFileredPriceDo(e.target.value)}></input>
+              <input type='number' placeholder='price - od' onChange={ (e) =>setFileredPriceOd(e.target.value)}></input>
               {/* <input placeholder='category' onChange={ (e) =>setCategory(e.target.value)}></input> */}
               <select name="select" id="" onChange={ (e) =>setCategory(e.target.value)}>
                 <option value="0" >Select category</option>
                 <option value="patelnie">Patelnie</option>
                 <option value="młynki">Młynki</option>
                 <option value="noże">Noże</option>
+                <option value="termosy">Termosy / Kubki</option>
                 <option value="scyzoryki">Scyzoryki</option>
 
               </select>
