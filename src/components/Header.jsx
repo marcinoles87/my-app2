@@ -80,6 +80,7 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
     const handleReset = () =>{
       setFlag(false)
+      
 
     }
 
