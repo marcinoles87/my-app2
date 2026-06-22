@@ -62,7 +62,7 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
     if(filterPriceOd>0){
       console.log(filterPriceOd)
-          const filtered = newDatabase.filter(item => item.cena <= filterPriceOd)
+          const filtered = newDatabase.filter(item => item.cena >= filterPriceOd)
           console.log(filtered)
           setFilteredDatabase(filtered)
 
