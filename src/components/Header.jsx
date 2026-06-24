@@ -80,7 +80,10 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
 
     const handleReset = () =>{
       setFlag(false)
-      
+      const resetElement = document.querySelector('input[type=number]')
+      resetElement.value = ''
+      const secondElement = document.querySelector('input:nth-of-type(3')
+      secondElement.value = ''
 
     }
 
@@ -101,8 +104,9 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
              <div className='filters'>
               <h1>Filters</h1>
               <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value.toUpperCase())}></input>
-              <input type='number' placeholder='price - do' onChange={ (e) =>setFileredPriceDo(e.target.value)}></input>
-              <input type='number' placeholder='price - od' onChange={ (e) =>setFileredPriceOd(e.target.value)}></input>
+              <input type='number' placeholder='cena - od' onChange={ (e) =>setFileredPriceOd(e.target.value)}></input>
+              <input type='number' placeholder='cena - do' onChange={ (e) =>setFileredPriceDo(e.target.value)}></input>
+              
               {/* <input placeholder='category' onChange={ (e) =>setCategory(e.target.value)}></input> */}
               <select name="select" id="" onChange={ (e) =>setCategory(e.target.value)}>
                 <option value="0" >Select category</option>
