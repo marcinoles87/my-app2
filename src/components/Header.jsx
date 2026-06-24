@@ -82,8 +82,10 @@ function Header({koszyk,setKoszyk,setDatabase,database}) {
       setFlag(false)
       const resetElement = document.querySelector('input[type=number]')
       resetElement.value = ''
-      const secondElement = document.querySelector('input:nth-of-type(3')
+      const secondElement = document.querySelector('input:nth-of-type(3)')
       secondElement.value = ''
+      const firstInput = document.querySelector('input:nth-of-type(1)')
+      firstInput.value = ''
 
     }
 
