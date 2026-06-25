@@ -496,6 +496,16 @@ i{
   height: 100%;
 }
 
+.mark-items img{
+  filter: grayscale(100%);
+  transition: 0.6s ease;
+}
+
+.mark-items img:hover{
+  filter:  grayscale(0%);
+
+}
+
 /*newsletter*/
 
 .newsletter-container{

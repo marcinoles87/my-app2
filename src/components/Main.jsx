@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router'
+import mark1 from '../media/logo_header.png'
 
 function Main() {
   return (
+    <>
     <div className='main-container'>
 
       <h1>Poznaj nasze możliwości w każdej przestrzeni</h1>
@@ -25,6 +27,19 @@ function Main() {
       </div>
 
     </div>
+
+    <div className='mark-container'>
+      <div className='mark-items'>
+        <img src={mark1} alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+    </div>
+    </>
+    
   )
 }
 
