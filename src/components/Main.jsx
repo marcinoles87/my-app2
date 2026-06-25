@@ -33,6 +33,8 @@ function Main() {
         <img src={mark1} alt="" />
         <img src={mark1} alt="" />
         <img src={mark1} alt="" />
+        <img src={mark1} alt="" />
+        <img src={mark1} alt="" />
         
       </div>
 
