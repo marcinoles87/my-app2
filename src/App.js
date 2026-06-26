@@ -25,8 +25,10 @@ function App() {
   const [database,setDatabase] = useState([])
   const [koszyk,setKoszyk] = useState([])
   const [allPrice,setallPrice] = useState('')
+  const [produktOpis,setProduktOpis] = useState()
 
 
+  console.log(produktOpis)
 
   return (
     <div className="App">
@@ -39,7 +41,7 @@ function App() {
       <Routes>
 
 
-            <Route path='/' element={<Header koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database}></Header>}/>
+            <Route path='/' element={<Header koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database} setProduktOpis={setProduktOpis}></Header>}/>
             <Route path='/produkty' element={<Produkty></Produkty>}/>
             <Route path='/kuchnia' element={<Kuchnia></Kuchnia>}/>
             <Route path='/jadalnia' element={<Jadalnia></Jadalnia>}/>
@@ -50,7 +52,7 @@ function App() {
             <Route path='/formularz' element={<Formularz koszyk={koszyk} allPrice={allPrice} setallPrice={setallPrice}></Formularz>}/>
             <Route path='/mainWydarzenie' element={<MainWydarzenie></MainWydarzenie>}/>
             <Route path='/horeca' element={<Horeca></Horeca>}></Route>
-            <Route path='/produktOpis' element={<ProduktOpis></ProduktOpis>}></Route>
+            <Route path='/produktOpis' element={<ProduktOpis produktOpis={produktOpis}></ProduktOpis>}></Route>
 
 
       </Routes>

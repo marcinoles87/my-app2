@@ -9,7 +9,7 @@ import logoHeader from '../media/logoHeader.png'
 import kai from '../media/kai.webp'
 import ProduktOpis from '../pages/ProduktOpis'
 import { Link } from 'react-router'
-function Database({koszyk,setKoszyk,setDatabase}) {
+function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {
 
     
 
@@ -183,7 +183,7 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             return(
                 <div className='database-element' key={index}>
                     <div className='database-element-img'>
-                       <Link to={'produktOpis'} item={item}>sw</Link>
+                       <Link to={'produktOpis'}  onClick={ () =>setProduktOpis(item) }>sw</Link>
                        <img src={item.img} alt="" /> 
                     </div>
                     <div className='database-element-info'>

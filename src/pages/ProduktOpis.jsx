@@ -1,9 +1,12 @@
 import React from 'react'
 
-function ProduktOpis({item}) {
-    console.log(item)
+function ProduktOpis({produktOpis}) {
+    console.log(produktOpis)
   return (
-    <div>ProduktOpis</div>
+    <div>
+        <p>{produktOpis.nazwa}</p>
+        {produktOpis.cena}
+    </div>
   )
 }
 
