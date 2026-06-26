@@ -6,7 +6,8 @@ import vi1 from '../media/vi1.jpg'
 import gw1 from '../media/gw1.jpg'
 import skk1 from '../media/skk1.jpg'
 import logoHeader from '../media/logoHeader.png'
-
+import kai from '../media/kai.webp'
+import ProduktOpis from '../pages/ProduktOpis'
 function Database({koszyk,setKoszyk,setDatabase}) {
 
     
@@ -77,7 +78,7 @@ function Database({koszyk,setKoszyk,setDatabase}) {
 
         },
         {
-            img:logoHeader,
+            img:kai,
             product:'KA DM 777',
             nazwa:'Noż 12 cm',
             cena:99,
@@ -151,7 +152,7 @@ function Database({koszyk,setKoszyk,setDatabase}) {
 
         },
         {
-            img:logoHeader,
+            img:kai,
             product:'KA DM 777',
             nazwa:'Noż 23 cm',
             cena:220,
@@ -181,6 +182,7 @@ function Database({koszyk,setKoszyk,setDatabase}) {
             return(
                 <div className='database-element' key={index}>
                     <div className='database-element-img'>
+                        <ProductOpis item={item}></ProductOpis>
                        <img src={item.img} alt="" /> 
                     </div>
                     <div className='database-element-info'>
