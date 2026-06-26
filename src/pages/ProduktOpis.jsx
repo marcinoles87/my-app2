@@ -1,6 +1,7 @@
 import React from 'react'
 
-function ProduktOpis() {
+function ProduktOpis({item}) {
+    console.log(item)
   return (
     <div>ProduktOpis</div>
   )
