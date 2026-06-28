@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 // import logoHeader from '../media/logo_header.png'
 import wl1 from '../media/wl1.jpg'
@@ -7,7 +7,6 @@ import gw1 from '../media/gw1.jpg'
 import skk1 from '../media/skk1.jpg'
 import logoHeader from '../media/logoHeader.png'
 import kai from '../media/kai1.jpg'
-import ProduktOpis from '../pages/ProduktOpis'
 import { Link } from 'react-router'
 function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {
 
@@ -183,8 +182,8 @@ function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {
             return(
                 <div className='database-element' key={index}>
                     <div className='database-element-img'>
-                       <Link to={'produktOpis'}  onClick={ () =>setProduktOpis(item) }>sw</Link>
-                       <img src={item.img} alt="" /> 
+                       <Link to={'produktOpis'}  onClick={ () =>setProduktOpis(item) }><img src={item.img} alt="" /> </Link>
+                       
                     </div>
                     <div className='database-element-info'>
                         <div className='database-element-info2'>
