@@ -243,6 +243,15 @@ i{
 
 }
 
+/*opis produktow*/
+
+.produkt-opis-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
 /*wysylka */
 
 .wysylka-container{
