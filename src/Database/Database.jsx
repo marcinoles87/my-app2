@@ -6,7 +6,7 @@ import vi1 from '../media/vi1.jpg'
 import gw1 from '../media/gw1.jpg'
 import skk1 from '../media/skk1.jpg'
 import logoHeader from '../media/logoHeader.png'
-import kai from '../media/kai.webp'
+import kai from '../media/kai1.jpg'
 import ProduktOpis from '../pages/ProduktOpis'
 import { Link } from 'react-router'
 function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {

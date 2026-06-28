@@ -98,16 +98,16 @@
 .left{
   position: absolute;
   top:60%;
-  left: 5%;
+  left: 2%;
   font-size: 50px;
   color:white;
   cursor: pointer;
 }
 
 .right{
-    position: absolute;
+  position: absolute;
   top:60%;
-  right: 5%;
+  right: 2%;
   font-size: 50px;
   color:white;
   cursor: pointer;
@@ -155,7 +155,7 @@
 
 .database-element-img{
   width: 100%;
-  height: 60%;
+  height: auto;
   
 }
 
