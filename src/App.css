@@ -318,6 +318,18 @@ i{
   transition: 0.9s ease;
 }
 
+.zamowienie-elements button{
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #6060ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:white;
+  border: none;
+  cursor: pointer;
+}
+
 .zamowienie-podsumowanie{
   display: flex;
   flex-direction: column;

@@ -27,9 +27,6 @@ function App() {
   const [allPrice,setallPrice] = useState('')
   const [produktOpis,setProduktOpis] = useState()
 
-
-  console.log(produktOpis)
-
   return (
     <div className="App">
 

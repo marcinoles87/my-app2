@@ -12,6 +12,12 @@ function Formularz({koszyk,allPrice,setAllPrice}) {
 
   }
 
+  const handleDeleteItem = (item) =>{
+    console.log(item)
+    console.log('jestem')
+
+  }
+
   return (
     <div className='formularz-container'>
 
@@ -28,6 +34,8 @@ function Formularz({koszyk,allPrice,setAllPrice}) {
                         <p>{item.nazwa} |</p>
                         <p>sztuk 1 |</p>
                         <p>Wartość : {item.cena} pln</p>
+                        <button onClick={() => handleDeleteItem(item)}>Usuń</button>
+
                     </div>
                 )
             })}

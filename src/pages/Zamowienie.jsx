@@ -22,7 +22,6 @@ const handleSum = () =>{
 }
 
 
-
   return (
     <div className='zamowienie-container'>
         <div className='zamowienie-info'>
@@ -34,6 +33,7 @@ const handleSum = () =>{
                         <p>{item.product}</p>
                         <p>{item.nazwa}</p>
                         <p>{item.cena} pln</p>
+
                     </div>
                 )
             })}
