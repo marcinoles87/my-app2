@@ -129,6 +129,7 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
         <div className='header-product'>
           <h1>Bestsellery </h1>
           <div className='database-product'>
+            
           {flag ? 
 
           

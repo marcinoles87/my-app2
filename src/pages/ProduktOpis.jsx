@@ -24,7 +24,7 @@ function ProduktOpis({produktOpis}) {
           <p>Marka : </p>
           <p>Kod produktu : {produktOpis.product}</p>
           <h2 style={{color:'rgb(0,0,190'}}> {produktOpis.cena},00 PLN</h2> 
-          <p>Opis : </p>
+          <p>Opis : {produktOpis.opis}</p>
 
         </div>
     </div>

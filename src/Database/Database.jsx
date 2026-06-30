@@ -20,6 +20,7 @@ function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {
             cena:1,
             category:'młynki',
             cenaRegularna :199,
+            opis:'młynek wysokość 12 cm szeroki '
 
         },
         {
