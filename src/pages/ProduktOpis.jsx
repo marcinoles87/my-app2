@@ -1,6 +1,12 @@
 import React from 'react'
 
-function ProduktOpis({produktOpis}) {
+function ProduktOpis({produktOpis,setKoszyk}) {
+
+  const handleAddProduct = (item) =>{
+
+        setKoszyk( prev =>[...prev,item])
+
+    }
     console.log(produktOpis)
   return (
   
@@ -25,6 +31,8 @@ function ProduktOpis({produktOpis}) {
           <p>Kod produktu : {produktOpis.product}</p>
           <h2 style={{color:'rgb(0,0,190'}}> {produktOpis.cena},00 PLN</h2> 
           <p>Opis : {produktOpis.opis}</p>
+          <button onClick={() => handleAddProduct(produktOpis)}>Dodaj</button>
+
 
         </div>
     </div>
