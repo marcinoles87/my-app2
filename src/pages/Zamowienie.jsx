@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link , Outlet } from 'react-router'
 
-function Zamowienie({koszyk,allPrice,setallPrice}) {
+function Zamowienie({koszyk,allPrice,setallPrice,setKoszyk}) {
 
     // const [suma,setSuma] = useState('')
 
 
 let suma = [...koszyk]
 
-console.log(suma)
 
 const handleSum = () =>{
 
@@ -19,6 +18,12 @@ const handleSum = () =>{
        console.log(allPrice)
     
 
+}
+
+const handleDeleteItem = (item) =>{
+    
+    
+    
 }
 
 
@@ -33,6 +38,8 @@ const handleSum = () =>{
                         <p>{item.product}</p>
                         <p>{item.nazwa}</p>
                         <p>{item.cena} pln</p>
+                        <button onClick={() => handleDeleteItem(item)}>Usuń</button>
+
 
                     </div>
                 )
