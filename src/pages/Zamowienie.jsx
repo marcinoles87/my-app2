@@ -3,7 +3,6 @@ import { Link , Outlet } from 'react-router'
 
 function Zamowienie({koszyk,allPrice,setallPrice,setKoszyk}) {
 
-    // const [suma,setSuma] = useState('')
 
 
 let suma = [...koszyk]
@@ -22,6 +21,9 @@ const handleSum = () =>{
 
 const handleDeleteItem = (item) =>{
     
+    
+    const tablica = suma.filter( (e) => e.nazwa !== item.nazwa )
+    setKoszyk(tablica)
     
     
 }

@@ -1,22 +1,21 @@
 import React, { useState } from 'react'
 
-function Formularz({koszyk,allPrice,setAllPrice}) {
+function Formularz({koszyk,allPrice,setAllPrice,setKoszyk}) {
 
   const [imie,setImie] = useState('')
   const [adres,setAdres] = useState('')
   const [telefon,setTelefon] = useState('')
   const [email,setEmail] = useState('')
 
+
+  let suma = [...koszyk]
+
   const handleSend = () =>{
     alert(`${imie} dostawa ${adres} telefon ${telefon} email ${email} do zapłaty ${allPrice}` )
 
   }
 
-  const handleDeleteItem = (item) =>{
-    console.log(item)
-    console.log('jestem')
-
-  }
+  
 
   return (
     <div className='formularz-container'>
@@ -34,7 +33,6 @@ function Formularz({koszyk,allPrice,setAllPrice}) {
                         <p>{item.nazwa} |</p>
                         <p>sztuk 1 |</p>
                         <p>Wartość : {item.cena} pln</p>
-                        <button onClick={() => handleDeleteItem(item)}>Usuń</button>
 
                     </div>
                 )
