@@ -48,10 +48,10 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk}) {
                         <h3>Wartość zamowienia : <span style={{fontSize:'2rem',borderBottom:'2px solid blue'}}>{allPrice}</span> PLN</h3>
                         <h1>Twoje dane do wysyłki</h1>
 
-             <input placeholder='imie i nazwisko' onChange={ (e) =>setImie(e.target.value)}></input>
-             <input placeholder='adres dostawy' onChange={ (e) =>setAdres(e.target.value)}></input>
-             <input placeholder='telefon' onChange={ (e) =>setTelefon(e.target.value)}></input>
-             <input placeholder='email' onChange={ (e) =>setEmail(e.target.value)}></input>
+             <input type='text' placeholder='imie i nazwisko' onChange={ (e) =>setImie(e.target.value)}></input>
+             <input type='text' placeholder='adres dostawy' onChange={ (e) =>setAdres(e.target.value)}></input>
+             <input type='number' placeholder='telefon' onChange={ (e) =>setTelefon(e.target.value)}></input>
+             <input type='email' placeholder='email' onChange={ (e) =>setEmail(e.target.value)}></input>
 
              <button onClick={handleSend}>Zamawiam</button>
            </div>
