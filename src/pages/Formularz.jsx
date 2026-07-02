@@ -10,10 +10,28 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk}) {
 
   let suma = [...koszyk]
 
-  const handleSend = () =>{
-    alert(`${imie} dostawa ${adres} telefon ${telefon} email ${email} do zapłaty ${allPrice}` )
+  const handleZamawiam = () =>{
+    // alert(`${imie} dostawa ${adres} telefon ${telefon} email ${email} do zapłaty ${allPrice}` )
+
+    const imieForm = document.querySelector('#imie')
+    const adresForm = document.querySelector('#adres').value
+    const telefonForm = document.querySelector('#telefon').value
+    const emailForm = document.querySelector('#email').value
+
+    console.log(imieForm,adresForm,telefonForm,emailForm)
+
+    if(imieForm.value.length < 1){
+      alert('za krotkie imie i nazwisko')
+      setImie('')
+      imieForm.style.borderColor = 'red'
+    }else{
+      imieForm.style.borderColor = 'black'
+
+    }
 
   }
+
+  
 
   
 
@@ -48,12 +66,12 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk}) {
                         <h3>Wartość zamowienia : <span style={{fontSize:'2rem',borderBottom:'2px solid blue'}}>{allPrice}</span> PLN</h3>
                         <h1>Twoje dane do wysyłki</h1>
 
-             <input type='text' placeholder='imie i nazwisko' onChange={ (e) =>setImie(e.target.value)}></input>
-             <input type='text' placeholder='adres dostawy' onChange={ (e) =>setAdres(e.target.value)}></input>
-             <input type='number' placeholder='telefon' onChange={ (e) =>setTelefon(e.target.value)}></input>
-             <input type='email' placeholder='email' onChange={ (e) =>setEmail(e.target.value)}></input>
+             <input id='imie' type='text' placeholder='imie i nazwisko' onChange={ (e) =>setImie(e.target.value)}></input>
+             <input id='adres' type='text' placeholder='adres dostawy' onChange={ (e) =>setAdres(e.target.value)}></input>
+             <input id='telefon' type='number' placeholder='telefon' onChange={ (e) =>setTelefon(e.target.value)}></input>
+             <input id='email' type='email' placeholder='email' onChange={ (e) =>setEmail(e.target.value)}></input>
 
-             <button onClick={handleSend}>Zamawiam</button>
+             <button onClick={handleZamawiam}>Zamawiam</button>
            </div>
     </div>
   )
