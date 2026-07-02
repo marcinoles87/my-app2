@@ -489,7 +489,9 @@ i{
   height: 80vh;
   background-image: url('./media/kuchnia.jpg');
   position: relative;
+
 }
+
 
 .main-container p{
   font-size: 2rem;
@@ -623,7 +625,7 @@ i{
 
 .stopka{
   padding: 10px;
-  text-align:right;
+  text-align:center;
   background-color: black;
   color:var(--font-second-color);
 }
