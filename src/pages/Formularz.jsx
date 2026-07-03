@@ -10,13 +10,13 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk}) {
 
   let suma = [...koszyk]
 
-  const handleZamawiam = () =>{
-    // alert(`${imie} dostawa ${adres} telefon ${telefon} email ${email} do zapłaty ${allPrice}` )
+  const handleZamawiam = (e) =>{
+    e.preventDefault();
 
     const imieForm = document.querySelector('#imie')
-    const adresForm = document.querySelector('#adres').value
-    const telefonForm = document.querySelector('#telefon').value
-    const emailForm = document.querySelector('#email').value
+    const adresForm = document.querySelector('#adres')
+    const telefonForm = document.querySelector('#telefon')
+    const emailForm = document.querySelector('#email')
 
     console.log(imieForm,adresForm,telefonForm,emailForm)
 
@@ -26,6 +26,33 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk}) {
       imieForm.style.borderColor = 'red'
     }else{
       imieForm.style.borderColor = 'black'
+
+    }
+
+    if(adresForm.value.length < 1){
+      alert('za krotki adres')
+      setImie('')
+      adresForm.style.borderColor = 'red'
+    }else{
+      adresForm.style.borderColor = 'black'
+
+    }
+
+    if(telefonForm.value.length < 8){
+      alert('nieprawidłowy numer')
+      setImie('')
+      telefonForm.style.borderColor = 'red'
+    }else{
+      telefonForm.style.borderColor = 'black'
+
+    }
+
+    if(emailForm.value.length < 1){
+      alert('za krotkie imie i nazwisko')
+      setImie('')
+      emailForm.style.borderColor = 'red'
+    }else{
+      emailForm.style.borderColor = 'black'
 
     }
 
