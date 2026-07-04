@@ -5,8 +5,12 @@ import wl1 from '../media/wl1.jpg'
 import vi1 from '../media/vi1.jpg'
 import gw1 from '../media/gw1.jpg'
 import skk1 from '../media/skk1.jpg'
+import ht1 from '../media/ht1.jpg'
 import logoHeader from '../media/logoHeader.png'
 import kai from '../media/kai1.jpg'
+import deska1 from '../media/deska1.webp'
+import łopatka1 from '../media/łopatka1.jpg'
+
 import { Link } from 'react-router'
 function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {
 
@@ -15,15 +19,15 @@ function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {
 
 const database2 = [
   {
-    img: "/images/deska-bambusowa.jpg",
+    img: deska1,
     product: "K001",
     nazwa: "Deska bambusowa",
     cena: 49.99,
-    category: "Deski do krojenia",
+    category: "Deski",
     description: "Wytrzymała deska bambusowa odporna na wilgoć i zarysowania."
   },
   {
-    img: "/images/noz-szefa.jpg",
+    img:kai,
     product: "K002",
     nazwa: "Nóż szefa kuchni 20 cm",
     cena: 129.99,
@@ -31,15 +35,15 @@ const database2 = [
     description: "Profesjonalny nóż ze stali nierdzewnej o ergonomicznym uchwycie."
   },
   {
-    img: "/images/zestaw-nozy.jpg",
+    img: kai,
     product: "K003",
-    nazwa: "Zestaw noży 5 elementów",
+    nazwa: "Zestaw noży Kai 5 elementów",
     cena: 249.99,
     category: "Noże",
     description: "Komplet pięciu noży kuchennych z drewnianym stojakiem."
   },
   {
-    img: "/images/patelnia.jpg",
+    img: skk1,
     product: "K004",
     nazwa: "Patelnia nieprzywierająca 28 cm",
     cena: 159.99,
@@ -47,7 +51,7 @@ const database2 = [
     description: "Patelnia z powłoką non-stick, idealna do codziennego gotowania."
   },
   {
-    img: "/images/garnek.jpg",
+    img: ht1,
     product: "K005",
     nazwa: "Garnek stalowy 5 l",
     cena: 189.99,
@@ -55,7 +59,7 @@ const database2 = [
     description: "Garnek wykonany ze stali nierdzewnej z pokrywką."
   },
   {
-    img: "/images/trzepaczka.jpg",
+    img: łopatka1,
     product: "K006",
     nazwa: "Trzepaczka silikonowa",
     cena: 24.99,
@@ -63,7 +67,7 @@ const database2 = [
     description: "Elastyczna trzepaczka bezpieczna dla naczyń z powłoką."
   },
   {
-    img: "/images/lopatka.jpg",
+    img: łopatka1,
     product: "K007",
     nazwa: "Łopatka silikonowa",
     cena: 19.99,
@@ -73,7 +77,7 @@ const database2 = [
   {
     img: vi1,
     product: "K008",
-    nazwa: "Chochla stalowa",
+    nazwa: "Scyzoryk Huntsman",
     cena: 34.99,
     category: "Scyzoryki",
     description: "Solidna chochla wykonana ze stali nierdzewnej."
@@ -81,7 +85,7 @@ const database2 = [
   {
     img: skk1,
     product: "K009",
-    nazwa: "Patelnie",
+    nazwa: "Patelnia Tytanowa Skk 20/4",
     cena: 54.99,
     category: "Patelnie",
     description: "Duży durszlak z wygodnymi uchwytami."
@@ -89,7 +93,7 @@ const database2 = [
   {
     img: gw1,
     product: "K010",
-    nazwa: "Termosy",
+    nazwa: "Termos 0,5 L",
     cena: 39.99,
     category: "Miski",
     description: "Uniwersalna miska do przygotowywania potraw."
@@ -97,7 +101,7 @@ const database2 = [
   {
     img: kai,
     product: "K011",
-    nazwa: "Noże",
+    nazwa: "Noż Kai 20cm Yanagiba",
     cena: 44.99,
     category: "Akcesoria",
     description: "Tarka z czterema rodzajami ostrzy do warzyw i sera."
@@ -111,11 +115,11 @@ const database2 = [
     description: "Ostra obieraczka z ergonomicznym uchwytem."
   },
   {
-    img: "/images/waga.jpg",
+    img: wl1,
     product: "K013",
-    nazwa: "Waga kuchenna elektroniczna",
+    nazwa: "młynek rex",
     cena: 79.99,
-    category: "Elektronika",
+    category: "Młynki",
     description: "Precyzyjna waga z wyświetlaczem LCD do 5 kg."
   },
   {
@@ -155,23 +159,23 @@ const database2 = [
     product: "K018",
     nazwa: "Inne",
     cena: 22.99,
-    category: "Tekstylia",
+    category: "Termosy",
     description: "Gruba rękawica chroniąca przed wysoką temperaturą."
   },
   {
     img:gw1,
     product: "K019",
-    nazwa: "Termos",
+    nazwa: "Termos 1L ",
     cena: 29.99,
-    category: "Akcesoria",
+    category: "Termosy",
     description: "Stalowy zaparzacz do herbat liściastych."
   },
   {
     img: wl1,
     product: "K020",
-    nazwa: "Młynki",
+    nazwa: "Młynek Hoxton",
     cena: 59.99,
-    category: "Akcesoria",
+    category: "Młynki",
     description: "Ceramiczny mechanizm mielenia z regulacją grubości."
   }
 ];

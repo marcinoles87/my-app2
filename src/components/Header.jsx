@@ -118,6 +118,7 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
                 <option value="Noże">Noże</option>
                 <option value="Termosy">Termosy / Kubki</option>
                 <option value="Scyzoryki">Scyzoryki</option>
+                <option value="Deski">Deski</option>
                 <option value="Akcesoria">Akcesoria</option>
 
               </select>
