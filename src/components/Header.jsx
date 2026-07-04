@@ -113,11 +113,12 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
               {/* <input placeholder='category' onChange={ (e) =>setCategory(e.target.value)}></input> */}
               <select name="select" id="" onChange={ (e) =>setCategory(e.target.value)}>
                 <option value="0" >Select category</option>
-                <option value="patelnie">Patelnie</option>
-                <option value="młynki">Młynki</option>
-                <option value="noże">Noże</option>
-                <option value="termosy">Termosy / Kubki</option>
-                <option value="scyzoryki">Scyzoryki</option>
+                <option value="Patelnie">Patelnie</option>
+                <option value="Młynki">Młynki</option>
+                <option value="Noże">Noże</option>
+                <option value="Termosy">Termosy / Kubki</option>
+                <option value="Scyzoryki">Scyzoryki</option>
+                <option value="Akcesoria">Akcesoria</option>
 
               </select>
               <button onClick={handleFilterName}>Zastosuj</button>

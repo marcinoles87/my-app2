@@ -12,160 +12,178 @@ function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {
 
     
 
-    const database2 = [
-        {
-            img:wl1,
-            product:'WL H1222020',
-            nazwa:'Młynek 12cm',
-            cena:1,
-            category:'młynki',
-            cenaRegularna :199,
-            opis:'młynek wysokość 12 cm szeroki '
 
-        },
-        {
-            img:vi1,
-            product:'VI 0.3303',
-            nazwa:'Scyroryk Hunt',
-            cena:140,
-            category:'scyzoryki',
-            cenaRegularna :199,
+const database2 = [
+  {
+    img: "/images/deska-bambusowa.jpg",
+    product: "K001",
+    nazwa: "Deska bambusowa",
+    cena: 49.99,
+    category: "Deski do krojenia",
+    description: "Wytrzymała deska bambusowa odporna na wilgoć i zarysowania."
+  },
+  {
+    img: "/images/noz-szefa.jpg",
+    product: "K002",
+    nazwa: "Nóż szefa kuchni 20 cm",
+    cena: 129.99,
+    category: "Noże",
+    description: "Profesjonalny nóż ze stali nierdzewnej o ergonomicznym uchwycie."
+  },
+  {
+    img: "/images/zestaw-nozy.jpg",
+    product: "K003",
+    nazwa: "Zestaw noży 5 elementów",
+    cena: 249.99,
+    category: "Noże",
+    description: "Komplet pięciu noży kuchennych z drewnianym stojakiem."
+  },
+  {
+    img: "/images/patelnia.jpg",
+    product: "K004",
+    nazwa: "Patelnia nieprzywierająca 28 cm",
+    cena: 159.99,
+    category: "Patelnie",
+    description: "Patelnia z powłoką non-stick, idealna do codziennego gotowania."
+  },
+  {
+    img: "/images/garnek.jpg",
+    product: "K005",
+    nazwa: "Garnek stalowy 5 l",
+    cena: 189.99,
+    category: "Garnki",
+    description: "Garnek wykonany ze stali nierdzewnej z pokrywką."
+  },
+  {
+    img: "/images/trzepaczka.jpg",
+    product: "K006",
+    nazwa: "Trzepaczka silikonowa",
+    cena: 24.99,
+    category: "Akcesoria",
+    description: "Elastyczna trzepaczka bezpieczna dla naczyń z powłoką."
+  },
+  {
+    img: "/images/lopatka.jpg",
+    product: "K007",
+    nazwa: "Łopatka silikonowa",
+    cena: 19.99,
+    category: "Akcesoria",
+    description: "Odporna na wysokie temperatury łopatka do smażenia."
+  },
+  {
+    img: vi1,
+    product: "K008",
+    nazwa: "Chochla stalowa",
+    cena: 34.99,
+    category: "Scyzoryki",
+    description: "Solidna chochla wykonana ze stali nierdzewnej."
+  },
+  {
+    img: skk1,
+    product: "K009",
+    nazwa: "Patelnie",
+    cena: 54.99,
+    category: "Patelnie",
+    description: "Duży durszlak z wygodnymi uchwytami."
+  },
+  {
+    img: gw1,
+    product: "K010",
+    nazwa: "Termosy",
+    cena: 39.99,
+    category: "Miski",
+    description: "Uniwersalna miska do przygotowywania potraw."
+  },
+  {
+    img: kai,
+    product: "K011",
+    nazwa: "Noże",
+    cena: 44.99,
+    category: "Akcesoria",
+    description: "Tarka z czterema rodzajami ostrzy do warzyw i sera."
+  },
+  {
+    img: vi1,
+    product: "K012",
+    nazwa: "Obieraczka do warzyw",
+    cena: 18.99,
+    category: "Scyzoryki",
+    description: "Ostra obieraczka z ergonomicznym uchwytem."
+  },
+  {
+    img: "/images/waga.jpg",
+    product: "K013",
+    nazwa: "Waga kuchenna elektroniczna",
+    cena: 79.99,
+    category: "Elektronika",
+    description: "Precyzyjna waga z wyświetlaczem LCD do 5 kg."
+  },
+  {
+    img: "/images/pojemniki.jpg",
+    product: "K014",
+    nazwa: "Pojemniki na żywność 5 szt.",
+    cena: 69.99,
+    category: "Przechowywanie",
+    description: "Hermetyczne pojemniki do przechowywania produktów spożywczych."
+  },
+  {
+    img: "/images/chlebak.jpg",
+    product: "K015",
+    nazwa: "Chlebak bambusowy",
+    cena: 119.99,
+    category: "Przechowywanie",
+    description: "Elegancki chlebak utrzymujący świeżość pieczywa."
+  },
+  {
+    img: "/images/przyprawnik.jpg",
+    product: "K016",
+    nazwa: "Organizer na przyprawy",
+    cena: 89.99,
+    category: "Przechowywanie",
+    description: "Obrotowy stojak z 12 pojemnikami na przyprawy."
+  },
+  {
+    img: "/images/fartuch.jpg",
+    product: "K017",
+    nazwa: "Fartuch kuchenny",
+    cena: 39.99,
+    category: "Tekstylia",
+    description: "Bawełniany fartuch z regulowanym paskiem na szyję."
+  },
+  {
+    img:gw1,
+    product: "K018",
+    nazwa: "Inne",
+    cena: 22.99,
+    category: "Tekstylia",
+    description: "Gruba rękawica chroniąca przed wysoką temperaturą."
+  },
+  {
+    img:gw1,
+    product: "K019",
+    nazwa: "Termos",
+    cena: 29.99,
+    category: "Akcesoria",
+    description: "Stalowy zaparzacz do herbat liściastych."
+  },
+  {
+    img: wl1,
+    product: "K020",
+    nazwa: "Młynki",
+    cena: 59.99,
+    category: "Akcesoria",
+    description: "Ceramiczny mechanizm mielenia z regulacją grubości."
+  }
+];
 
-        },
-        {
-            img:vi1,
-            product:'VI 0.3303',
-            nazwa:'Scyroryk Hunt',
-            cena:140,
-            category:'scyzoryki',
-            cenaRegularna :199,
 
-        },
-        {
-            img:vi1,
-            product:'VI 0.3303',
-            nazwa:'Scyroryk Hunt',
-            cena:160,
-            category:'scyzoryki',
-            cenaRegularna :199,
 
-        },
-        {
-            img:gw1,
-            product:'GW SVB-1000',
-            nazwa:'Termos 1L',
-            cena:89,
-            category:'termosy',
-            cenaRegularna :199,
 
-        },
-        {
-            img:skk1,
-            product:'SK 1220',
-            nazwa:'Patelnio-rondel 20/2',
-            cena:529,
-            category:'patelnie',
-            cenaRegularna :199,
-
-        },
-
-         {
-            img:logoHeader,
-            product:'SP 11180',
-            nazwa:'Forma okrągła',
-            cena:159,
-            category:'formy',
-            cenaRegularna :199,
-
-        },
-        {
-            img:kai,
-            product:'KA DM 777',
-            nazwa:'Noż 12 cm',
-            cena:99,
-            category:'noże',
-            cenaRegularna :199,
-
-        },
-       
-        {
-            img:wl1,
-            product:'WL H1222020',
-            nazwa:'Młynek 12cm',
-            cena:129,
-            category:'młynki',
-            cenaRegularna :199,
-
-        },
-        {
-            img:vi1,
-            product:'VI 0.3303',
-            nazwa:'Scyroryk Hunt',
-            cena:199,
-            category:'scyzoryki',
-            cenaRegularna :199,
-
-        },
-        {
-            img:vi1,
-            product:'VI 0.3303',
-            nazwa:'Scyroryk Hunt',
-            cena:229,
-            category:'scyzoryki',
-            cenaRegularna :199,
-
-        },
-        {
-            img:vi1,
-            product:'VI 0.3303',
-            nazwa:'Scyroryk Hunt',
-            cena:140,
-            category:'scyzoryki',
-            cenaRegularna :199,
-
-        },
-        {
-            img:gw1,
-            product:'GW SVB-1000',
-            nazwa:'Termos 1L',
-            cena:16,
-            category:'termosy',
-            cenaRegularna :199,
-
-        },
-        {
-            img:skk1,
-            product:'SK 1220',
-            nazwa:'Patelnio-rondel 20/2',
-            cena:129,
-            category:'patelnie',
-            cenaRegularna :199,
-
-        },
-
-         {
-            img:logoHeader,
-            product:'SP 11180',
-            nazwa:'Forma okrągła',
-            cena:55,
-            category:'formy',
-            cenaRegularna :199,
-
-        },
-        {
-            img:kai,
-            product:'KA DM 777',
-            nazwa:'Noż 23 cm',
-            cena:220,
-            category:'noże',
-            cenaRegularna :199,
-
-        },
-       
+   
 
     
 
-    ]
+    
 
     useEffect( () =>{
         setDatabase(database2)
