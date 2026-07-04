@@ -10,6 +10,7 @@ import logoHeader from '../media/logoHeader.png'
 import kai from '../media/kai1.jpg'
 import deska1 from '../media/deska1.webp'
 import łopatka1 from '../media/łopatka1.jpg'
+import chlebak1 from '../media/chlebak1.jpg'
 
 import { Link } from 'react-router'
 function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {
@@ -18,6 +19,15 @@ function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {
 
 
 const database2 = [
+
+   {
+    img: chlebak1,
+    product: "K001",
+    nazwa: "Deska bambusowa",
+    cena: 49.99,
+    category: "Chlebak",
+    description: "Wytrzymała deska bambusowa odporna na wilgoć i zarysowania."
+  },
   {
     img: deska1,
     product: "K001",
@@ -122,38 +132,9 @@ const database2 = [
     category: "Młynki",
     description: "Precyzyjna waga z wyświetlaczem LCD do 5 kg."
   },
-  {
-    img: "/images/pojemniki.jpg",
-    product: "K014",
-    nazwa: "Pojemniki na żywność 5 szt.",
-    cena: 69.99,
-    category: "Przechowywanie",
-    description: "Hermetyczne pojemniki do przechowywania produktów spożywczych."
-  },
-  {
-    img: "/images/chlebak.jpg",
-    product: "K015",
-    nazwa: "Chlebak bambusowy",
-    cena: 119.99,
-    category: "Przechowywanie",
-    description: "Elegancki chlebak utrzymujący świeżość pieczywa."
-  },
-  {
-    img: "/images/przyprawnik.jpg",
-    product: "K016",
-    nazwa: "Organizer na przyprawy",
-    cena: 89.99,
-    category: "Przechowywanie",
-    description: "Obrotowy stojak z 12 pojemnikami na przyprawy."
-  },
-  {
-    img: "/images/fartuch.jpg",
-    product: "K017",
-    nazwa: "Fartuch kuchenny",
-    cena: 39.99,
-    category: "Tekstylia",
-    description: "Bawełniany fartuch z regulowanym paskiem na szyję."
-  },
+ 
+
+ 
   {
     img:gw1,
     product: "K018",
