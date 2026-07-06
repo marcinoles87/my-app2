@@ -51,13 +51,15 @@ const reviews = [
   }
 ];
   return (
+    <>
+    <h1>Opinie</h1>
     <div className='opinie-container'>
         {reviews.map( (item,index) =>{
             return(
                 <div className='opinia' key={index}>
-                    <h2>{item.name}</h2>
+                    <h3>{item.name}</h3>
                     <p>Ocena: {item.rating}</p>
-                    <p>{item.title} / dodano {item.date}</p>
+                    <p>{item.title}</p>
                     <p>{item.content}</p>
 
                 </div>
@@ -65,6 +67,8 @@ const reviews = [
         })}
 
     </div>
+
+    </>
   )
 }
 

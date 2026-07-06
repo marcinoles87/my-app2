@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router'
 import mark1 from '../media/logoHeader.png'
+import zylissLogo from '../media/zylisLogo.jpg'
+import kaiLogo from '../media/kaiLogo.webp'
+import gwLogo from '../media/gwLogo.webp'
 
 function Main() {
   return (
@@ -30,11 +33,9 @@ function Main() {
         <h1>Nasze marki</h1>
       <div className='mark-items'>
         <img src={mark1} alt="" />
-        <img src={mark1} alt="" />
-        <img src={mark1} alt="" />
-        <img src={mark1} alt="" />
-        <img src={mark1} alt="" />
-        <img src={mark1} alt="" />
+        <img src={zylissLogo} alt="" />
+        <img src={kaiLogo} alt="" />
+        <img src={gwLogo} alt="" />
         
       </div>
 
