@@ -19,9 +19,9 @@ function Footer() {
       <div className='footer-left'>
         <h4>Dołacz do nas</h4>
         <ul>
-          <li>CardGold</li>
-          <li>CardSilver</li>
-          <li>CardClub</li>
+          <li>CardGold x -10%</li>
+          <li>CardSilver x -7%</li>
+          <li>CardClub x -5%</li>
           <li>Newsletter</li>
         </ul>
         </div>

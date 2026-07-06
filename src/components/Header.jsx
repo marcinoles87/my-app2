@@ -6,6 +6,7 @@ import ifg from '../media/ifLoop.png'
 import Main from './Main'
 import Newsletter from './Newsletter'
 import Footer from './Footer'
+import Opinie from '../pages/Opinie'
 
 function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
 
@@ -162,6 +163,7 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
            </div>
           
           <Main></Main>
+          <Opinie></Opinie>
           <Newsletter></Newsletter>
           <Footer></Footer>
         </div>
