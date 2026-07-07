@@ -2,14 +2,18 @@ import React from 'react'
 
 function Opinie() {
 
-  const ratingStar = (rating) =>{
-    console.log(rating)
+  let ratingStar = (rating) =>{
+
+    let i = 0
+
+    for(i;i<rating;i++){
+      console.log(i)
+    }
     
-      for(let i=0;i>rating;i++){
-        <i class="fa-regular fa-star"></i>
-      }
     
   }
+
+  
 
 
 const reviews = [
