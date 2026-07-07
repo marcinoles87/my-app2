@@ -2,6 +2,15 @@ import React from 'react'
 
 function Opinie() {
 
+  const ratingStar = (rating) =>{
+    console.log(rating)
+    
+      for(let i=0;i>rating;i++){
+        <i class="fa-regular fa-star"></i>
+      }
+    
+  }
+
 
 const reviews = [
   {
@@ -58,7 +67,7 @@ const reviews = [
             return(
                 <div className='opinia' key={index}>
                     <h3>{item.name}</h3>
-                    <p>Ocena: {item.rating}</p>
+                    <p>Ocena: {ratingStar(item.rating)}</p>
                     <p>{item.title}</p>
                     <p>{item.content}</p>
 
