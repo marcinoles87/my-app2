@@ -4,14 +4,24 @@ function Opinie() {
 
   let ratingStar = (rating) =>{
 
-    let i = 0
+    console.log(rating)
 
-    for(i;i<rating;i++){
-      console.log(i)
+    const text = <i class="fa-regular fa-star"></i>
+
+
+    for(let i=0;i<rating;i++){
+
+      text += 
+
     }
+
+
     
     
   }
+
+      document.getElementById("rate").innerHTML = text;
+
 
   
 
@@ -72,6 +82,7 @@ const reviews = [
                 <div className='opinia' key={index}>
                     <h3>{item.name}</h3>
                     <p>Ocena: {ratingStar(item.rating)}</p>
+                    <p id='rate'></p>
                     <p>{item.title}</p>
                     <p>{item.content}</p>
 
