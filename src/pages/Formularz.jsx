@@ -48,7 +48,7 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk}) {
     }
 
     if(emailForm.value.length < 1){
-      alert('za krotkie imie i nazwisko')
+      alert('za krotki adres email')
       setImie('')
       emailForm.style.borderColor = 'red'
     }else{
