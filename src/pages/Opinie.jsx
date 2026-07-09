@@ -6,14 +6,13 @@ function Opinie() {
 
     console.log(rating)
 
-    const tbl = [<i class="fa-regular fa-star"></i>,<i class="fa-regular fa-star">,<i class="fa-regular fa-star">,<i class="fa-regular fa-star">,<i class="fa-regular fa-star">,<i class="fa-regular fa-star"></i></i></i></i></i>]
+    const tbl = [<i className="fa-regular fa-star"></i>,<i className="fa-regular fa-star"></i>,<i className="fa-regular fa-star"></i>,<i className="fa-regular fa-star"></i>,<i className="fa-regular fa-star"></i>,<i className="fa-regular fa-star"></i>,]
     
 
     let text = tbl.slice(0,rating)
 
    
-    const txt =  document.querySelector("#rate").innerHTML = text
-      console.log(txt)
+    return text
 
     
     
@@ -83,7 +82,6 @@ const reviews = [
                 <div className='opinia' key={index}>
                     <h3>{item.name}</h3>
                     <p>Ocena: {ratingStar(item.rating)}</p>
-                    <p id="rate">ddd</p>
                     <p>{item.title}</p>
                     <p>{item.content}</p>
 
