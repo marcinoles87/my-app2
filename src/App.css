@@ -704,6 +704,27 @@ i{
     flex-direction: column;
     margin: 5px 5px;
   }
+
+  .database-element{
+    width: 100%;
+    margin: auto;
+    font-size: medium;
+
+  }
+
+  .main-container{
+    flex-direction: column;
+  }
+
+  .main-element-one{
+    width: 100%;
+  }
+  .main-element-two{
+    width: 100%;
+  }
+  .main-element-three{
+    width: 100%;
+  }
   
 }
 
