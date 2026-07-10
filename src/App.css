@@ -665,3 +665,45 @@ i{
 }
 
 
+@media (max-width:480px) {
+
+  .navbar-elements ul{
+    flex-direction: column;
+  }
+
+  .navbar-logo{
+    flex-direction: column;
+  }
+
+  .logo{
+    width: 100%;
+    justify-content: center;
+  }
+  
+
+  .logo input{
+    display: none;
+  }
+
+  .links{
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  .fa-2xl{
+    font-size: 1.3rem;
+  }
+
+  #slideshow{
+    object-fit: cover;
+    object-position: 43% 100%;
+  }
+
+  .filters{
+    flex-direction: column;
+  }
+  
+}
+
+
