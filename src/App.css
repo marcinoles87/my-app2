@@ -712,6 +712,10 @@ i{
 
   }
 
+  .database-element-img img{
+    width:100%;
+  }
+
   .main-container{
     flex-direction: column;
   }
@@ -744,7 +748,30 @@ i{
 
   .opinie-container{
     flex-direction: column;
-    width:auto;
+  }
+
+  .opinia{
+    width: auto;
+    padding: 20px;
+  }
+
+  .newsletter-container{
+    height: auto;
+  }
+
+  .newsletter-element{
+    font-size: x-large;
+  }
+
+  .newsletter-buttons{
+    flex-direction: column;
+  }
+
+  .footer-container{
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    gap: 0px;
   }
 
   
