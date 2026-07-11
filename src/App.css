@@ -716,6 +716,11 @@ i{
     flex-direction: column;
   }
 
+  .main-container h1{
+    font-size: x-large;
+    margin: auto;
+  }
+
   .main-element-one{
     width: 100%;
   }
@@ -725,6 +730,24 @@ i{
   .main-element-three{
     width: 100%;
   }
+
+  .mark-container img{
+    width:auto;    
+  }
+
+  .mark-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .opinie-container{
+    flex-direction: column;
+    width:auto;
+  }
+
+  
   
 }
 
