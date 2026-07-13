@@ -12,7 +12,7 @@ const handleSum = () =>{
 
         console.log(koszyk)
 
-       setallPrice( suma.reduce( (prev,current) => prev + Number(current.cena) ,0))
+       setallPrice( suma.reduce( (prev,current) => prev + Number(current.cena) ,0).toFixed(2))
 
        console.log(allPrice)
     

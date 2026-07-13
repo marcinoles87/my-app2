@@ -254,6 +254,25 @@ i{
   align-items: center;
 }
 
+.produkt-opis button{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #6060ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+
+}
+
+.produkt-opis button:hover{
+  background-color: #2727c4;
+}
+
 
 
 /*wysylka */
