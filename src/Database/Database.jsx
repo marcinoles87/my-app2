@@ -192,8 +192,8 @@ const database2 = [
                     <div className='database-element-info'>
                         <div className='database-element-info2'>
                             <p>{item.nazwa}</p>
-                            <h2 style={{color:'rgb(0,0,190'}}>{item.cena},00 zł</h2> 
-                            <p style={{padding:'10px 0px'}}>Cena regularna : <span style={{textDecoration:'line-through'}}>{item.cenaRegularna},00 zł</span></p>
+                            <h2 style={{color:'rgb(0,0,190'}}>{item.cena} zł</h2> 
+                            <p style={{padding:'10px 0px'}}>Cena regularna : <span style={{textDecoration:'line-through'}}>{item.cena}</span></p>
                         </div>
                         
                          <button onClick={() => handleAddProduct(item)}>Dodaj</button>

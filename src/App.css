@@ -798,6 +798,26 @@ i{
     right: 11%;
   }
 
+  .formularz-container{
+    flex-direction: column;
+  }
+
+  .zamowienie-container{
+    width: 100%;
+  }
+
+
+
+  .zamowienie-elements{
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .formularz-klient input{
+    width: auto;
+  }
+
   
   
 }
