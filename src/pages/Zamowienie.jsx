@@ -19,8 +19,10 @@ const handleSum = () =>{
 
 const handleDeleteItem = (item) =>{
     
+    console.log(item)
     
-    const tablica = suma.filter( (e) => e.nazwa !== item.nazwa )
+    
+    const tablica = suma.filter( (e) => e !== item )
     setKoszyk(tablica)
     
     

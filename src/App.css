@@ -694,6 +694,10 @@ i{
     flex-direction: column;
   }
 
+  .navbar-promo h1{
+    font-size: medium;
+  }
+
   .logo{
     width: 100%;
     justify-content: center;

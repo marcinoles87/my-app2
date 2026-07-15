@@ -15,12 +15,6 @@ function Nav() {
                 <img src={logo} alt="xxxxxxxx" />
                 <input placeholder='Szukaj to czego chcesz....'></input>
             </div>
-
-            <div className='links'>
-                <i className="fa-regular fa-envelope fa-2xl"><Link to={'kontakt'}></Link></i>
-                <i className="fa-regular fa-circle-user fa-2xl"></i>
-                
-            </div>
             
         </div>
 
@@ -32,6 +26,7 @@ function Nav() {
                 <li><Link to={'jadalnia'}>Jadalnia</Link></li>
                 <li><Link to={'łazienka'}>Łazienka</Link></li>
                 <li><Link to={'wysyłka'}>Wysyłka</Link></li>
+                <li><Link to={'kontakt'}>Kontakt</Link></li>
                 
             </ul>
         </div>
