@@ -91,6 +91,14 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
 
     }
 
+    const handleResize = () =>{
+
+      const element = document.querySelector('.filters')
+      console.log(element)
+
+      element.classList.toggle('resize')
+    }
+
 
 
 
@@ -105,11 +113,19 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
            
             </div>
 
+
+
              <div className='filters'>
+
+              <button onClick={handleResize}>F</button>
+
+
               <h1>Filters</h1>
               <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value.toUpperCase())}></input>
               <input type='number' placeholder='cena - od' onChange={ (e) =>setFileredPriceOd(e.target.value)}></input>
               <input type='number' placeholder='cena - do' onChange={ (e) =>setFileredPriceDo(e.target.value)}></input>
+
+
               
               {/* <input placeholder='category' onChange={ (e) =>setCategory(e.target.value)}></input> */}
               <select name="select" id="" onChange={ (e) =>setCategory(e.target.value)}>

@@ -4,26 +4,13 @@ function Opinie() {
 
   let ratingStar = (rating) =>{
 
-    console.log(rating)
 
     const tbl = [<i className="fa-regular fa-star"></i>,<i className="fa-regular fa-star"></i>,<i className="fa-regular fa-star"></i>,<i className="fa-regular fa-star"></i>,<i className="fa-regular fa-star"></i>,<i className="fa-regular fa-star"></i>,]
-    
-
     let text = tbl.slice(0,rating)
 
-   
     return text
 
-    
-    
-    
   }
-
-  
-
-
-
-  
 
 
 const reviews = [

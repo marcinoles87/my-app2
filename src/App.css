@@ -683,6 +683,17 @@ i{
   color:var(--font-second-color);
 }
 
+/*resize*/
+
+.resize{
+  width: 10%;
+  overflow: hidden;
+}
+
+.resize button{
+  width: 10%;
+}
+
 
 @media (max-width:480px) {
 
@@ -726,6 +737,7 @@ i{
   .filters{
     flex-direction: column;
     margin: 5px 5px;
+
   }
 
   .database-element{
@@ -799,7 +811,7 @@ i{
 
   .koszyk-container{
     top:13%;
-    right: 11%;
+    right: 5%;
   }
 
   .formularz-container{
