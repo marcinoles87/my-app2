@@ -686,13 +686,16 @@ i{
 /*resize*/
 
 .resize{
-  width: 10%;
+  width:40px;
   overflow: hidden;
 }
 
-.resize button{
-  width: 10%;
+#resize-button{
+  width: 30px !important;
+  text-align: center;
 }
+
+
 
 
 @media (max-width:480px) {

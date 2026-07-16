@@ -94,7 +94,7 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
     const handleResize = () =>{
 
       const element = document.querySelector('.filters')
-      console.log(element)
+      const button = document.querySelector('resize-button')
 
       element.classList.toggle('resize')
     }
@@ -117,7 +117,8 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
 
              <div className='filters'>
 
-              <button onClick={handleResize}>F</button>
+              {/* <button >F</button> */}
+              <i class="fa-solid fa-square-plus" id='resize-button' onClick={handleResize}></i>
 
 
               <h1>Filters</h1>
