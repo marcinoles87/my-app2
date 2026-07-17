@@ -121,6 +121,10 @@
   background-color: blueviolet;
 }
 
+.fa-solid{
+  margin: 10px;
+}
+
 .database-product{
   display: flex;
   flex-direction: row;
@@ -138,6 +142,13 @@
   letter-spacing: 5px;
   font-weight: 450;
 }
+
+.filters-header{
+  display: flex;
+  flex-direction: row;
+
+}
+
 
 .database-element{
   width: 20%;
@@ -686,14 +697,11 @@ i{
 /*resize*/
 
 .resize{
-  width:40px;
-  overflow: hidden;
+  display: none;
 }
 
-#resize-button{
-  width: 30px !important;
-  text-align: center;
-}
+
+
 
 
 

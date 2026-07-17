@@ -94,9 +94,10 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
     const handleResize = () =>{
 
       const element = document.querySelector('.filters')
-      const button = document.querySelector('resize-button')
-
       element.classList.toggle('resize')
+
+      const bar = document.querySelector('.fa-bars')
+      bar.style.display = 'inherit'
     }
 
 
@@ -112,16 +113,20 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
 
            
             </div>
+            
 
+            <div className='filters-header'>
+
+            </div>
+             <i class="fa-solid fa-2xl fa-bars" id='resize-button'  onClick={handleResize}></i>
+
+
+             
 
 
              <div className='filters'>
 
-              {/* <button >F</button> */}
-              <i class="fa-solid fa-square-plus" id='resize-button' onClick={handleResize}></i>
-
-
-              <h1>Filters</h1>
+               <h1>Filters</h1>
               <input placeholder='name' onChange={ (e) => setFiltereddata(e.target.value.toUpperCase())}></input>
               <input type='number' placeholder='cena - od' onChange={ (e) =>setFileredPriceOd(e.target.value)}></input>
               <input type='number' placeholder='cena - do' onChange={ (e) =>setFileredPriceDo(e.target.value)}></input>
