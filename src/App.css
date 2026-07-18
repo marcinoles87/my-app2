@@ -12,6 +12,9 @@
   --background-site-color:rgb(236, 236, 236);
 }
 
+.fa-bars{
+  display: none;
+}
 
 /*navbar*/
 
@@ -121,9 +124,7 @@
   background-color: blueviolet;
 }
 
-.fa-solid{
-  margin: 10px;
-}
+
 
 .database-product{
   display: flex;
@@ -148,7 +149,6 @@
   flex-direction: row;
 
 }
-
 
 .database-element{
   width: 20%;
@@ -199,10 +199,8 @@ i{
 }
 
 .database-element-info button:hover{
-  background-color: #0000ae;
-  
+  background-color: #0000ae; 
 }
-
 
 .filters{
   display:flex;
@@ -708,6 +706,12 @@ i{
 
 @media (max-width:480px) {
 
+  .fa-bars{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+  }
+
   .navbar-elements ul{
     flex-direction: column;
   }
@@ -746,9 +750,14 @@ i{
   }
 
   .filters{
+    display: none;
     flex-direction: column;
     margin: 5px 5px;
 
+  }
+
+  .resize{
+    display: flex;
   }
 
   .database-element{
@@ -760,6 +769,7 @@ i{
 
   .database-element-img img{
     width:100%;
+    object-fit: scale-down;
   }
 
   .main-container{

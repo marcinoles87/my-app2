@@ -96,8 +96,6 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
       const element = document.querySelector('.filters')
       element.classList.toggle('resize')
 
-      const bar = document.querySelector('.fa-bars')
-      bar.style.display = 'inherit'
     }
 
 
@@ -114,15 +112,7 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
            
             </div>
             
-
-            <div className='filters-header'>
-
-            </div>
-             <i class="fa-solid fa-2xl fa-bars" id='resize-button'  onClick={handleResize}></i>
-
-
-             
-
+             <i className="fa-solid fa-2xl fa-bars" id='resize-button'  onClick={handleResize}></i>
 
              <div className='filters'>
 
@@ -133,7 +123,6 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
 
 
               
-              {/* <input placeholder='category' onChange={ (e) =>setCategory(e.target.value)}></input> */}
               <select name="select" id="" onChange={ (e) =>setCategory(e.target.value)}>
                 <option value="0" >Select category</option>
                 <option value="Patelnie">Patelnie</option>
