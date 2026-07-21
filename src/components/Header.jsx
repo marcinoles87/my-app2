@@ -22,7 +22,6 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
   const handleLoopLeft = () =>{
 
       const imagesLoop =  [kai,wl,ifg]
-      console.log(indexLoop)
       setIndexLoop(indexLoop-1)
       if(indexLoop===0){
         setIndexLoop(2)

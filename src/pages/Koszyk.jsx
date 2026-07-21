@@ -3,6 +3,11 @@ import {Link} from 'react-router'
 
 function Koszyk({koszyk}) {
 
+  if(koszyk.length>0){
+   const element = document.querySelector('.koszyk-container')
+   element.classList.toggle('.show')
+  }
+
   return (
     <div className='koszyk-container'>
 
