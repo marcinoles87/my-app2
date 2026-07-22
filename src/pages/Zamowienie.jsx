@@ -13,8 +13,6 @@ const handleSum = () =>{
 
        setallPrice( suma.reduce( (prev,current) => prev + Number(current.cena) ,0).toFixed(2))
 
-    
-
 }
 
 const handleDeleteItem = (item) =>{
@@ -39,7 +37,7 @@ const handleDeleteItem = (item) =>{
                         <img src={item.img} alt={index} />
                         <p>{item.product}</p>
                         <p>{item.nazwa}</p>
-                        <p>{item.cena} pln</p>
+                        <p>{Math.floor(item.cena-(item.cena*20/100))} pln</p>
                         <button onClick={() => handleDeleteItem(item)}>Usuń</button>
 
 

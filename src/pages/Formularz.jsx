@@ -77,7 +77,7 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk}) {
                         <p>{item.product} |</p>
                         <p>{item.nazwa} |</p>
                         <p>sztuk 1 |</p>
-                        <p>Wartość : {item.cena} pln</p>
+                        <p>Wartość : {Math.floor(item.cena-(item.cena*20/100))} pln</p>
 
                     </div>
                 )
