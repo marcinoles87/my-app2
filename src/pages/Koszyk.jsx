@@ -5,7 +5,7 @@ function Koszyk({koszyk}) {
 
   if(koszyk.length>0){
    const element = document.querySelector('.koszyk-container')
-   element.classList.toggle('.show')
+   element.classList.add('show')
   }
 
   return (
