@@ -191,7 +191,7 @@ const database2 = [
                     <div className='database-element-info'>
                         <div className='database-element-info2'>
                             <p>{item.nazwa}</p>
-                            <h2 style={{color:'rgb(0,0,190'}}>{Math.floor(item.cena-(item.cena*20/100))} zł</h2> 
+                            <h2 style={{color:'rgb(0,0,190'}}>{item.cena-(item.cena*20/100)} zł</h2> 
                             <p style={{padding:'10px 0px'}}>Cena regularna : <span style={{textDecoration:'line-through'}}>{item.cena}</span></p>
                         </div>
                         
