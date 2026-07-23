@@ -13,7 +13,7 @@ import łopatka1 from '../media/łopatka1.jpg'
 import chlebak1 from '../media/chlebak1.jpg'
 
 import { Link } from 'react-router'
-function Database({koszyk,setKoszyk,setDatabase,setProduktOpis}) {
+function Database({koszyk,setKoszyk,setDatabase,setProduktOpis,porownaj,setPorownaj}) {
 
     
 
@@ -160,23 +160,22 @@ const database2 = [
     description: "Ceramiczny mechanizm mielenia z regulacją grubości."
   }
 ];
-
-
-
-
-   
-
-    
-
-    
+ 
 
     useEffect( () =>{
         setDatabase(database2)
+        
     },[])
 
     const handleAddProduct = (item) =>{
 
         setKoszyk( prev =>[...prev,item])
+
+    }
+
+    const handlePorownaj = (item) =>{
+      setPorownaj( prev =>[...prev,item])
+      console.log(porownaj)
 
     }
 
@@ -197,6 +196,7 @@ const database2 = [
                         </div>
                         
                          <button onClick={() => handleAddProduct(item)}>Dodaj</button>
+                         <button onClick={() => handlePorownaj(item)} style={{backgroundColor:'green'}}>Porównaj</button>
                     </div>
                 </div>
             )

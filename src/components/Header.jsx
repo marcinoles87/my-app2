@@ -8,7 +8,7 @@ import Newsletter from './Newsletter'
 import Footer from './Footer'
 import Opinie from '../pages/Opinie'
 
-function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
+function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,setPorownaj}) {
 
   const [indexLoop , setIndexLoop] = useState(0);
   const [filterData,setFiltereddata] = useState('')
@@ -167,7 +167,7 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis}) {
            
           
           : 
-          <Database koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database} setProduktOpis={setProduktOpis}></Database>
+          <Database koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database} setProduktOpis={setProduktOpis} porownaj={porownaj} setPorownaj={setPorownaj}></Database>
           }
 
            </div>

@@ -26,6 +26,7 @@ function App() {
   const [koszyk,setKoszyk] = useState([])
   const [allPrice,setallPrice] = useState('')
   const [produktOpis,setProduktOpis] = useState()
+  const [porownaj,setPorownaj] = useState([])
 
   return (
     <div className="App">
@@ -38,7 +39,7 @@ function App() {
       <Routes>
 
 
-            <Route path='/' element={<Header koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database} setProduktOpis={setProduktOpis}></Header>}/>
+            <Route path='/' element={<Header koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database} setProduktOpis={setProduktOpis} porownaj={porownaj} setPorownaj={setPorownaj}></Header>}/>
             <Route path='/produkty' element={<Produkty></Produkty>}/>
             <Route path='/kuchnia' element={<Kuchnia></Kuchnia>}/>
             <Route path='/jadalnia' element={<Jadalnia></Jadalnia>}/>
