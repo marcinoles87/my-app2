@@ -18,6 +18,7 @@ import Formularz from './pages/Formularz';
 import MainWydarzenie from './pages/MainWydarzenie';
 import Horeca from './pages/Horeca';
 import ProduktOpis from './pages/ProduktOpis';
+import Porownywarka from './pages/Porownywarka';
 
 function App() {
 
@@ -51,6 +52,8 @@ function App() {
             <Route path='/mainWydarzenie' element={<MainWydarzenie></MainWydarzenie>}/>
             <Route path='/horeca' element={<Horeca></Horeca>}></Route>
             <Route path='/produktOpis' element={<ProduktOpis produktOpis={produktOpis} setKoszyk={setKoszyk}></ProduktOpis>}></Route>
+            <Route path='/porownywarka' element={<Porownywarka></Porownywarka>}></Route>
+
 
 
       </Routes>
