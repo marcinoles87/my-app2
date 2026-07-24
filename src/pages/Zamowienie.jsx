@@ -37,7 +37,7 @@ const handleDeleteItem = (item) =>{
                         <img src={item.img} alt={index} />
                         <p>{item.product}</p>
                         <p>{item.nazwa}</p>
-                        <p>{item.cena-(item.cena*20/100)} pln</p>
+                        <p>{Math.round(item.cena-(item.cena*20/100))} pln</p>
                         <button onClick={() => handleDeleteItem(item)}>Usuń</button>
 
 
@@ -48,7 +48,7 @@ const handleDeleteItem = (item) =>{
     
     <div className='zamowienie-podsumowanie'>
         <p>Ilość produktów : {koszyk.length}</p>
-        <p className='zamowienie-wartosc'>Wartość zamówienia : {allPrice-(allPrice*20/100)} pln </p>
+        <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100))} pln </p>
         <button onClick={handleSum}>Podsumuj</button>
         <button><Link to={'/formularz'}>Zamawiam</Link></button>
 
