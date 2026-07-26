@@ -16,6 +16,25 @@
   display: none;
 }
 
+.porownywarka-container{
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top:15%;
+  right: 2%;
+  background-color: greenyellow;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  
+}
+
+.porownywarka-container a{
+  text-decoration: none;
+}
+
+
 /*navbar*/
 
 .navbar-container{

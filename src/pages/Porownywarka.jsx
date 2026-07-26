@@ -6,7 +6,7 @@ function Porownywarka({porownaj}) {
   return (
     <div className='porownywarka-container'>
 
-      <Link to='/porownaj'>Porownaj</Link>
+      <Link to='/porownaj'>P</Link>
 
     
 
