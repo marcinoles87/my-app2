@@ -196,7 +196,7 @@ const database2 = [
                         </div>
                         
                          <button onClick={() => handleAddProduct(item)}>Dodaj</button>
-                         <button onClick={() => handlePorownaj(item)} style={{backgroundColor:'green'}}>Porównaj</button>
+                         <button onClick={() => handlePorownaj(item)} style={{backgroundColor:'greenyellow'}}>Porównaj</button>
                     </div>
                 </div>
             )
