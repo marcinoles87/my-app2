@@ -6,9 +6,10 @@ function Porownaj({porownaj}) {
         {porownaj.map( (item,index) =>{
             return(
                 <div className='porownaj-elementy' key={index}>
-                {item.nazwa}
-                {item.cena}
-                <img src={item.img} alt="" />
+                  <img src={item.img} alt="" />
+                <p>{item.nazwa}</p>
+                <p>{item.cena}</p>
+                
                 </div>
             )
         })}
