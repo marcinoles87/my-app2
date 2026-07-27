@@ -174,8 +174,14 @@ const database2 = [
     }
 
     const handlePorownaj = (item) =>{
+
       setPorownaj( prev =>[...prev,item])
       console.log(porownaj)
+
+      if(porownaj.length > 4){
+        setPorownaj([])
+        alert('za dużo elementów do porównania max.ilość 5')
+      }
 
     }
 

@@ -9,6 +9,7 @@ function Porownaj({porownaj}) {
                   <img src={item.img} alt="" />
                 <p>{item.nazwa}</p>
                 <p>{item.cena}</p>
+                <p>{item.description}</p>
                 
                 </div>
             )
