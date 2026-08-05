@@ -26,6 +26,10 @@ const handleDeleteItem = (item) =>{
     
 }
 
+const handleKodRabatowy = () =>{
+    
+}
+
 
   return (
     <div className='zamowienie-container'>
@@ -47,6 +51,10 @@ const handleDeleteItem = (item) =>{
         </div>
     
     <div className='zamowienie-podsumowanie'>
+        <p>Wprowadz kod rabatowy : 
+            <input placeholder='kod rabatowy' onChange={handleKodRabatowy}></input>
+            <button>Potwierdz</button>
+            </p>
         <p>Ilość produktów : {koszyk.length}</p>
         <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100))} pln </p>
         <button onClick={handleSum}>Podsumuj</button>

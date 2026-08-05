@@ -29,6 +29,7 @@ function App() {
   const [allPrice,setallPrice] = useState('')
   const [produktOpis,setProduktOpis] = useState()
   const [porownaj,setPorownaj] = useState([])
+  const [kodRabatowy,setKodRabatowy] = useState()
 
   return (
     <div className="App">
@@ -49,7 +50,7 @@ function App() {
             <Route path='/łazienka' element={<Łazienka></Łazienka>}/>
             <Route path='kontakt' element={<Kontakt></Kontakt>}/>
             <Route path='wysyłka' element={<Wysyłka></Wysyłka>}/>
-            <Route path='zamowienie' element={<Zamowienie koszyk={koszyk} allPrice={allPrice} setallPrice={setallPrice} setKoszyk={setKoszyk}></Zamowienie>}/>
+            <Route path='zamowienie' element={<Zamowienie koszyk={koszyk} allPrice={allPrice} setallPrice={setallPrice} setKoszyk={setKoszyk} kodRabatowy={kodRabatowy} setKodRabatowy={setKodRabatowy}></Zamowienie>}/>
             <Route path='/formularz' element={<Formularz koszyk={koszyk} allPrice={allPrice} setallPrice={setallPrice} setKoszyk={setKoszyk}></Formularz>}/>
             <Route path='/mainWydarzenie' element={<MainWydarzenie></MainWydarzenie>}/>
             <Route path='/horeca' element={<Horeca></Horeca>}></Route>
