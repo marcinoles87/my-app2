@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link , Outlet } from 'react-router'
 
-function Zamowienie({koszyk,allPrice,setallPrice,setKoszyk}) {
+function Zamowienie({koszyk,allPrice,setallPrice,setKoszyk,kodRabatowy,setKodRabatowy}) {
 
 
 
@@ -27,7 +27,11 @@ const handleDeleteItem = (item) =>{
 }
 
 const handleKodRabatowy = () =>{
-    
+    console.log(kodRabatowy)
+    console.log(allPrice)
+  if(kodRabatowy === '7')
+    setallPrice(allPrice-100) 
+    console.log(allPrice)
 }
 
 
@@ -52,8 +56,8 @@ const handleKodRabatowy = () =>{
     
     <div className='zamowienie-podsumowanie'>
         <p>Wprowadz kod rabatowy : 
-            <input placeholder='kod rabatowy' onChange={handleKodRabatowy}></input>
-            <button>Potwierdz</button>
+            <input placeholder='kod rabatowy' onChange={ (e) => setKodRabatowy(e.target.value)}></input>
+            <button onClick={handleKodRabatowy}>Potwierdz</button>
             </p>
         <p>Ilość produktów : {koszyk.length}</p>
         <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100))} pln </p>
