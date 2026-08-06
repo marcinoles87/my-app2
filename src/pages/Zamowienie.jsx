@@ -27,7 +27,9 @@ const handleDeleteItem = (item) =>{
 }
 
 const handleKodRabatowy = () =>{
-    setallPrice(allPrice-(allPrice*`${kodRabatowy*allPrice}`)) 
+    console.log(kodRabatowy)
+    console.log(allPrice)
+    setallPrice(Math.round(allPrice-Number(allPrice*kodRabatowy/100))) 
     console.log(allPrice)
 }
 
@@ -52,14 +54,9 @@ const handleKodRabatowy = () =>{
         </div>
     
     <div className='zamowienie-podsumowanie'>
-        <p>Wprowadz kod rabatowy : 
+        <p>Wprowadz kod rabatowy
             <input placeholder='kod rabatowy' onChange={ (e) => setKodRabatowy(e.target.value)}></input>
             <button onClick={handleKodRabatowy}>Potwierdz</button>
-            <select name="" id="" onChange={(e) => setKodRabatowy(e.target.value)}>
-                <option value="5">5</option>
-                <option value="7">7</option>
-                <option value="10">10</option>
-            </select>
             </p>
         <p>Ilość produktów : {koszyk.length}</p>
         <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100))} pln </p>

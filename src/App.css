@@ -438,6 +438,13 @@ i{
   
 }
 
+.zamowienie-podsumowanie input{
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+}
+
 .zamowienie-podsumowanie button{
   width: 150px;
   margin: 10px 15px;
@@ -487,6 +494,7 @@ i{
   width: 30vw;
   padding: 10px;
   border-radius: 10px;
+  border: 2px solid black;
   transition: 0.8s ease;
 }
 
