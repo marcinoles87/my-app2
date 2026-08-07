@@ -32,7 +32,9 @@ const handleKodRabatowy = () =>{
     setallPrice(Math.round(allPrice-Number(allPrice*kodRabatowy/100))) 
     if(kodRabatowy){
       const element =  document.querySelector('#input-kodRabatowy')
+      const buttonZamawiam =  document.querySelector('#podsumuj')
       element.style.display = 'none'
+      buttonZamawiam.style.display = 'none'
       alert('kod rabatowy wykorzystany')
     }
 }
@@ -64,7 +66,7 @@ const handleKodRabatowy = () =>{
             </p>
         <p>Ilość produktów : {koszyk.length}</p>
         <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100))} pln </p>
-        <button onClick={handleSum}>Podsumuj</button>
+        <button id='podsumuj' onClick={handleSum}>Podsumuj</button>
         <button><Link to={'/formularz'}>Zamawiam</Link></button>
 
     </div>

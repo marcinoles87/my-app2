@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Formularz({koszyk,allPrice,setAllPrice,setKoszyk}) {
+function Formularz({koszyk,allPrice,setAllPrice,setKoszyk,kodRabatowy}) {
 
   const [imie,setImie] = useState('')
   const [adres,setAdres] = useState('')
@@ -92,6 +92,7 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk}) {
                         <h3>Ilość produktów : {koszyk.length} </h3>
                         <h3>Wartość zamowienia : <span style={{fontSize:'2rem',borderBottom:'2px solid blue'}}>{Math.round(allPrice-(allPrice*20/100))}</span> PLN</h3>
                         <h3>Rabat: <span style={{fontSize:'2rem',borderBottom:'2px solid blue'}}>{Math.round(allPrice-(allPrice-allPrice*20/100))}</span> PLN</h3>
+                        <h3>Kod rabatowy: <span style={{fontSize:'2rem',borderBottom:'2px solid blue'}}>{kodRabatowy}</span></h3>
                         <h1>Twoje dane do wysyłki</h1>
 
              <input id='imie' type='text' placeholder='imie i nazwisko' onChange={ (e) =>setImie(e.target.value)}></input>
