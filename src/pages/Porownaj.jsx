@@ -1,6 +1,8 @@
 import React from 'react'
 
 function Porownaj({porownaj}) {
+
+
   return (
     <div className='porownaj-container'>
         {porownaj.map( (item,index) =>{
