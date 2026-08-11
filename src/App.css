@@ -311,6 +311,21 @@ i{
 
 }
 
+.pagination ul{
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination ul li{
+  list-style: none;
+  margin: 10px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  
+}
+
 /*opis produktow*/
 
 .produkt-opis-container{

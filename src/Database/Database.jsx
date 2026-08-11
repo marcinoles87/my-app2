@@ -160,7 +160,7 @@ const database2 = [
     description: "Ceramiczny mechanizm mielenia z regulacją grubości."
   }
 ];
- 
+
 
     useEffect( () =>{
         setDatabase(database2)

@@ -111,6 +111,8 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
            
             </div>
             
+        
+            
              <i className="fa-solid fa-2xl fa-bars" id='resize-button'  onClick={handleResize}></i>
 
              <div className='filters'>
@@ -171,6 +173,16 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
           }
 
            </div>
+
+               <div className='pagination'>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+            </div>
           
           <Main></Main>
           <Opinie></Opinie>
