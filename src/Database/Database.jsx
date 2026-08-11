@@ -13,7 +13,7 @@ import łopatka1 from '../media/łopatka1.jpg'
 import chlebak1 from '../media/chlebak1.jpg'
 
 import { Link } from 'react-router'
-function Database({koszyk,setKoszyk,setDatabase,setProduktOpis,porownaj,setPorownaj}) {
+function Database({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,setPorownaj}) {
 
     
 
@@ -184,9 +184,34 @@ const database2 = [
 
     }
 
+    const paginationAdd = () =>{
+    
+        const databasePagination = database2
+          const p1 = databasePagination.slice(0,4)
+          const p2 = databasePagination.slice(4,8)
+          const p3 = databasePagination.slice(8,12)
+          const p4 = databasePagination.slice(12,17)
+
+          setDatabase(p1)
+
+        }
+
   return (
     <>
-        {database2.map( (item,index) => {
+
+      <div className='pagination'>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+              <button onClick={paginationAdd}>paginationTest</button>
+            </div>
+
+
+        {database.map( (item,index) => {
             return(
                 <div className='database-element' key={index}>
                     <div className='database-element-img'>

@@ -18,17 +18,8 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
   const [filterCategory , setCategory] = useState([])
   const [flag,setFlag] = useState(false)
 
-  const paginationAdd = () =>{
-
-    const databasePagination = database
-    console.log(databasePagination.length)
-    if(databasePagination.length>3){
-      const p1 = databasePagination.slice(0,3)
-      console.log(p1)
-      const p2 = databasePagination.slice(3,6)
-      console.log(p2)
-    }
-  }
+  
+  
 
   const handleLoopLeft = () =>{
 
@@ -106,9 +97,6 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
 
     }
 
-
-
-
   return (
     <div className='header-container'>
         <div className='header-elements'>
@@ -183,16 +171,7 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
 
            </div>
 
-               <div className='pagination'>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-              </ul>
-              <button onClick={paginationAdd}>paginationTest</button>
-            </div>
+             
           
           <Main></Main>
           <Opinie></Opinie>
