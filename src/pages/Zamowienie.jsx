@@ -65,7 +65,7 @@ const handleKodRabatowy = () =>{
             <button onClick={handleKodRabatowy}>Potwierdz</button>
             </p>
         <p>Ilość produktów : {koszyk.length}</p>
-        <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100))} pln </p>
+        <p className='zamowienie-wartosc'>Wartość zamówienia : {(allPrice-(allPrice*20/100))} pln </p>
         <button id='podsumuj' onClick={handleSum}>Podsumuj</button>
         <button><Link to={'/formularz'}>Zamawiam</Link></button>
 
