@@ -21,7 +21,13 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
   const paginationAdd = () =>{
 
     const databasePagination = database
-    console.log(databasePagination)
+    console.log(databasePagination.length)
+    if(databasePagination.length>3){
+      const p1 = databasePagination.slice(0,3)
+      console.log(p1)
+      const p2 = databasePagination.slice(3,6)
+      console.log(p2)
+    }
   }
 
   const handleLoopLeft = () =>{
