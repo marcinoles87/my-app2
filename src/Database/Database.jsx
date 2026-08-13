@@ -185,16 +185,33 @@ const database2 = [
     }
 
     const paginationAdd = () =>{
+
+      console.log('w srodku')
     
         const databasePagination = database2
+        let databaseLength = databasePagination.length
+
+        const newArrays = []
+
           const p1 = databasePagination.slice(0,4)
           const p2 = databasePagination.slice(4,8)
           const p3 = databasePagination.slice(8,12)
           const p4 = databasePagination.slice(12,17)
 
-          setDatabase(p1)
+          for( let i = 0; i>databaseLength; i++){
+            newArrays.push(p1)
+            
+          }
+
+          console.log(newArrays)
+
+          console.log(p1)
+
+
 
         }
+
+        console.log(newArrays)
 
   return (
     <>
