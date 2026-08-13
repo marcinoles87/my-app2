@@ -198,20 +198,25 @@ const database2 = [
           const p3 = databasePagination.slice(8,12)
           const p4 = databasePagination.slice(12,17)
 
-          for( let i = 0; i>databaseLength; i++){
-            newArrays.push(p1)
+          for( let i = 0; i<=databaseLength/4 ; i++){
+            const minArray = i*4
+            const maxArray = minArray+4
+            const e1 = databasePagination.slice(minArray,maxArray)
+
+            document.getElementById("demo").innerHTML = 'j';
+
+            console.log(e1)
             
+
+
           }
-
-          console.log(newArrays)
-
-          console.log(p1)
+          
+        
 
 
 
         }
 
-        console.log(newArrays)
 
   return (
     <>
@@ -225,6 +230,8 @@ const database2 = [
                 <li>5</li>
               </ul>
               <button onClick={paginationAdd}>paginationTest</button>
+
+              <p id='demo'></p>
             </div>
 
 
