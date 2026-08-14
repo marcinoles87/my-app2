@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router'
 
 // import logoHeader from '../media/logo_header.png'
 import wl1 from '../media/wl1.jpg'
@@ -12,11 +13,10 @@ import deska1 from '../media/deska1.webp'
 import łopatka1 from '../media/łopatka1.jpg'
 import chlebak1 from '../media/chlebak1.jpg'
 
-import { Link } from 'react-router'
 function Database({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,setPorownaj}) {
 
     
-
+const [pagination,setPagiantion] = useState([])
 
 const database2 = [
 
@@ -198,6 +198,12 @@ const database2 = [
           const p3 = databasePagination.slice(8,12)
           const p4 = databasePagination.slice(12,17)
 
+
+
+           const mapPag = []
+
+           setPagiantion(mapPag)
+
           for( let i = 0; i<=databaseLength/4 ; i++){
             const minArray = i*4
             const maxArray = minArray+4
@@ -205,18 +211,15 @@ const database2 = [
 
             let text = ''
             text += i
-            console.log(text)
+            mapPag.push(text)
 
-           const button = document.createElement('button')
-           button.textContent = text
-           console.log(button)
-          //  document.getElementById("demo").innerHTML = button;
-           document.getElementById('demo').appendChild(button);
+          //  const button = document.createElement('button')
+          //  button.textContent = <Link>{text}</Link>
+          //  document.getElementById('demo').appendChild(button);
 
 
             console.log(e1)
-            
-
+        
 
           }
           
@@ -232,11 +235,13 @@ const database2 = [
 
       <div className='pagination'>
               <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+                {pagination.map( (item) =>{
+                  return(
+                    <li>
+                      <Link>{item}</Link>
+                    </li>
+                  )
+                })}
               </ul>
               <button onClick={paginationAdd}>paginationTest</button>
 
