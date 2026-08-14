@@ -192,7 +192,7 @@ const database2 = [
         let databaseLength = databasePagination.length
 
         const newArrays = []
-
+          
           const p1 = databasePagination.slice(0,4)
           const p2 = databasePagination.slice(4,8)
           const p3 = databasePagination.slice(8,12)
@@ -203,7 +203,16 @@ const database2 = [
             const maxArray = minArray+4
             const e1 = databasePagination.slice(minArray,maxArray)
 
-            document.getElementById("demo").innerHTML = 'j';
+            let text = ''
+            text += i
+            console.log(text)
+
+           const button = document.createElement('button')
+           button.textContent = text
+           console.log(button)
+          //  document.getElementById("demo").innerHTML = button;
+           document.getElementById('demo').appendChild(button);
+
 
             console.log(e1)
             
