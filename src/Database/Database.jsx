@@ -235,9 +235,9 @@ const database2 = [
 
       <div className='pagination'>
               <ul>
-                {pagination.map( (item) =>{
+                {pagination.map( (item,index) =>{
                   return(
-                    <li>
+                    <li key={index}>
                       <Link>{item}</Link>
                     </li>
                   )
