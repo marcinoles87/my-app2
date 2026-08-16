@@ -211,11 +211,12 @@ const database2 = [
 
             let text = ''
             text += i
+            console.log(text)
             mapPag.push(text)
 
-          //  const button = document.createElement('button')
-          //  button.textContent = <Link>{text}</Link>
-          //  document.getElementById('demo').appendChild(button);
+           const button = document.createElement('button')
+           button.textContent = <Link onClick={ (e) => setDatabase(`p`+i)}>{text.length}</Link>
+           document.getElementById('demo').appendChild(button);
 
 
             console.log(e1)
