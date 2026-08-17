@@ -196,7 +196,6 @@ const database2 = [
                 const p3 = databasePagination.slice(8,12)
                 const p4 = databasePagination.slice(12,17)
 
-        const newArrays = []
           
            const mapPag = []
 
@@ -206,42 +205,9 @@ const database2 = [
             const minArray = i*4
             const maxArray = minArray+4
             const e1 = databasePagination.slice(minArray,maxArray)
-
-            let text = ''
-            text += i
-            mapPag.push( <button onClick={ (e) => setDatabase(p1)}>{i}</button>)
-            
-
-
-
-          //  const button = document.createElement('button')
-          //  button.textContent = <Link>{i}{text}</Link>
-          // //  button.addEventListener('click', setDatabase(`p${i}`))
-          //  document.getElementById('demo').appendChild(button);
-
-
-            console.log(e1)
-
-
-        
+            mapPag.push( <button onClick={ (e) => setDatabase(e1)}>{i}</button>)
 
           }
-
-          const setNewArray = () =>{
-                const databasePagination = database2
-                const p1 = databasePagination.slice(0,4)
-                const p2 = databasePagination.slice(4,8)
-                const p3 = databasePagination.slice(8,12)
-                const p4 = databasePagination.slice(12,17)
-
-
-
-            
-          }
-          
-        
-
-
 
         }
 

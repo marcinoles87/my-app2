@@ -29,7 +29,7 @@ function ProduktOpis({produktOpis,setKoszyk}) {
           
           <p>Marka : </p>
           <p>Kod produktu : {produktOpis.product}</p>
-          <h2 style={{color:'rgb(0,0,190'}}> {produktOpis.cena},00 PLN</h2> 
+          <h2 style={{color:'rgb(0,0,190'}}>Cena regularna : {produktOpis.cena} PLN</h2> 
           <p>Opis : {produktOpis.description}</p>
           <button onClick={() => handleAddProduct(produktOpis)}>Dodaj</button>
 
