@@ -883,6 +883,23 @@ i{
     object-fit: scale-down;
   }
 
+  .produkt-opis-container{
+    flex-direction: column;
+  }
+
+  .produkt-opis{
+    text-align: center;
+    font-size: small;
+  }
+
+  .produkt-opis button{
+    margin-bottom: 10px;
+  }
+
+  .database-element-img img{
+    padding: 20px;
+  }
+
   .main-container{
     flex-direction: column;
   }
