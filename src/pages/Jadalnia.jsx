@@ -1,9 +1,16 @@
 import React from 'react'
 
+import restauracja from '../media/restauracja.jpg'
+
 function Jadalnia() {
   return (
 
+    
     <section className="dining-section">
+
+      <div>
+        <img src={restauracja} alt="" />
+      </div>
       <h2>Sekcja Jadalnia</h2>
 
       <p>

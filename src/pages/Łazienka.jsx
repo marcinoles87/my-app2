@@ -1,8 +1,13 @@
 import React from 'react'
 
+import łazienka from '../media/łazienka.jpg'
+
 function Łazienka() {
   return (
         <section className="bathroom-section">
+          <div>
+            <img  src={łazienka} alt="" />
+          </div>
       <h2>Sekcja Łazienka</h2>
 
       <p>
