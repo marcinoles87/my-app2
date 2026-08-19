@@ -10,7 +10,7 @@ function Kuchnia() {
       </div>
       <div className='kuchania-opis'>
         <section className="kitchen-section">
-      <h2>Sekcja Kuchnia</h2>
+      <h2>Kuchnia</h2>
 
       <p>
         Twoja kuchnia zasługuje na akcesoria, które nie tylko świetnie wyglądają,

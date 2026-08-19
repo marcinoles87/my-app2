@@ -11,7 +11,7 @@ function Jadalnia() {
       <div>
         <img src={restauracja} alt="" />
       </div>
-      <h2>Sekcja Jadalnia</h2>
+      <h2>Jadalnia</h2>
 
       <p>
         Jadalnia to miejsce spotkań, rozmów i wspólnych chwil. Dlatego

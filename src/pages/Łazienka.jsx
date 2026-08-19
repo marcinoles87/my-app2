@@ -8,7 +8,7 @@ function Łazienka() {
           <div>
             <img  src={łazienka} alt="" />
           </div>
-      <h2>Sekcja Łazienka</h2>
+      <h2>Łazienka</h2>
 
       <p>
         Łazienka to przestrzeń, w której liczy się komfort, porządek i styl.
