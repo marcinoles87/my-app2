@@ -524,6 +524,246 @@ i{
 
 }
 
+/*łazienka*/
+
+.bathroom-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.bathroom-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1f1f1f;
+  text-align: center;
+}
+
+.bathroom-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.bathroom-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.bathroom-section ul li {
+  background: #f4f7fa;
+  border-left: 4px solid #4aa3df;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  transition: background 0.3s ease;
+}
+
+.bathroom-section ul li:hover {
+  background: #e8f3fc;
+}
+
+.bathroom-section strong {
+  color: #4aa3df;
+}
+
+.bathroom-section .cta-box {
+  margin-top: 40px;
+  padding: 25px;
+  background: #eef7ff;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #cfe6ff;
+}
+
+.bathroom-section .cta-box p {
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+.bathroom-section .cta-box a {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #4aa3df;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.bathroom-section .cta-box a:hover {
+  background: #3a8ac0;
+}
+
+/*jadalnia*/
+
+.dining-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.dining-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+.dining-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.dining-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.dining-section ul li {
+  background: #fdf8f3;
+  border-left: 4px solid #d88c3a;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  transition: background 0.3s ease;
+}
+
+.dining-section ul li:hover {
+  background: #fbeede;
+}
+
+.dining-section strong {
+  color: #d88c3a;
+}
+
+.dining-section .cta-box {
+  margin-top: 40px;
+  padding: 25px;
+  background: #fff4e6;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #ffd9b3;
+}
+
+.dining-section .cta-box p {
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+.dining-section .cta-box a {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #d88c3a;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.dining-section .cta-box a:hover {
+  background: #bf772f;
+}
+
+
+/*kuchnia*/
+
+.kuchnia-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.kitchen-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.kitchen-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.kitchen-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.kitchen-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.kitchen-section ul li {
+  background: #fafafa;
+  border-left: 4px solid #ff8c42;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  transition: background 0.3s ease;
+}
+
+.kitchen-section ul li:hover {
+  background: #fff3e6;
+}
+
+.kitchen-section strong {
+  color: #ff8c42;
+}
+
+.kitchen-section .cta-box {
+  margin-top: 40px;
+  padding: 25px;
+  background: #fff7f0;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #ffe0c2;
+}
+
+.kitchen-section .cta-box p {
+  font-size: 1.15rem;
+  margin-bottom: 15px;
+}
+
+.kitchen-section .cta-box a {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #ff8c42;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.kitchen-section .cta-box a:hover {
+  background: #e6762f;
+}
+
 
 
 
