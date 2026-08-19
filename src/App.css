@@ -871,6 +871,14 @@ i{
     margin:20px;
   }
 
+  .navbar-elements{
+    text-align: center;
+  }
+
+  .navbar-elements ul li{
+    letter-spacing: 5px;
+  }
+
   .database-element{
     width: 100%;
     margin: auto;
@@ -917,6 +925,23 @@ i{
   }
   .main-element-three{
     width: 100%;
+  }
+
+  .zamowienie-info{
+    margin-bottom: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+    
+    
+  }
+
+  .zamowienie-info p{
+    font-size: large;
+  }
+
+  .zamowienie-podsumowanie{
+    text-align: center;
+    align-items: center;
   }
 
   .mark-container img{
