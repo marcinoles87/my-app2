@@ -19,12 +19,22 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
   const [flag,setFlag] = useState(false)
 
   
+  useEffect( () =>{
+    const intervalMain = setInterval( () =>{
+      setIndexLoop(indexLoop => indexLoop - 1)
+    },1000)
+
+    return () => clearInterval(intervalMain)
+
+  },[])
+
+  
   
 
   const handleLoopLeft = () =>{
 
       const imagesLoop =  [kai,wl,ifg]
-      setIndexLoop(indexLoop-1)
+      setIndexLoop(indexLoop =>indexLoop-1)
       if(indexLoop===0){
         setIndexLoop(2)
       } 
