@@ -19,17 +19,6 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
   const [flag,setFlag] = useState(false)
 
   
-  useEffect( () =>{
-    const intervalMain = setInterval( () =>{
-      setIndexLoop(indexLoop => indexLoop - 1)
-    },1000)
-
-    return () => clearInterval(intervalMain)
-
-  },[])
-
-  
-  
 
   const handleLoopLeft = () =>{
 
@@ -106,6 +95,8 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
       element.classList.toggle('resize')
 
     }
+
+    
 
   return (
     <div className='header-container'>
