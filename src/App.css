@@ -208,7 +208,7 @@
 }
 
 .database-element{
-  width: 20%;
+  width: 25%;
   height: 100%;
   margin: 20px;
   color:var(--font-basic-color);
@@ -232,7 +232,7 @@ i{
 }
 
 .database-element-img img{
-  width: 250px;
+  width: 100%;
   height: 250px;
   object-fit: scale-down;
   display: block;
