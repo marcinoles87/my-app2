@@ -25,7 +25,7 @@
   align-items: center;
   top:15%;
   right: 2%;
-  background-color: greenyellow;
+  background-color: rgb(4, 91, 122);
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -245,17 +245,20 @@ i{
 }
 
 .database-element-info button{
-  width: 100%;
+  width: 90%;
+  margin: 5px 20px;
   padding: 10px;
   text-align: center;
   background-color: #6060ff;
+  border-radius: 5px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   color:white;
   border: none;
   cursor: pointer;
   transition: 0.7s ease;
 }
+
+
 
 .database-element-info button:hover{
   background-color: #0000ae; 

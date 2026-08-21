@@ -243,10 +243,11 @@ const database2 = [
                             <p>{item.nazwa}</p>
                             <h2 style={{color:'rgb(0,0,190'}}>{Math.round(item.cena-(item.cena*20/100))} zł</h2> 
                             <p style={{padding:'10px 0px'}}>Cena regularna : <span style={{textDecoration:'line-through'}}>{item.cena}</span></p>
+
                         </div>
                         
                          <button onClick={() => handleAddProduct(item)}>Dodaj</button>
-                         <button onClick={() => handlePorownaj(item)} style={{backgroundColor:'greenyellow'}}>Porównaj</button>
+                         <button onClick={() => handlePorownaj(item)} style={{backgroundColor:'rgb(29, 118, 151)'}}>Porównaj</button>
                     </div>
                 </div>
             )
