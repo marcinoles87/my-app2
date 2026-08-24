@@ -7,6 +7,8 @@ function Pagination(database ,setDatabase) {
     const [pagination,setPagiantion] = useState([])
     
 
+    console.log(database)
+    console.log(setDatabase)
     console.log(database.database)
 
 
