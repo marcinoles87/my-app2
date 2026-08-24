@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Pagination from '../Database/Pagination'
 import Database from '../Database/Database'
 import kai from '../media/kaiLoop.png'
 import wl from '../media/wlLoop.png'
@@ -170,10 +171,12 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
           <Database koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database} setProduktOpis={setProduktOpis} porownaj={porownaj} setPorownaj={setPorownaj}></Database>
           }
 
+
+
            </div>
 
              
-          
+          <Pagination database={database} setDatabase={setDatabase}></Pagination>
           <Main></Main>
           <Opinie></Opinie>
           <Newsletter></Newsletter>

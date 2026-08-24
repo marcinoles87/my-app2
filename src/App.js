@@ -36,8 +36,8 @@ function App() {
 
     <BrowserRouter>
       <Nav></Nav>
+
       <Koszyk koszyk={koszyk}></Koszyk>
-      <Porownywarka porownaj={porownaj}></Porownywarka>
       
       
       <Routes>
@@ -60,6 +60,10 @@ function App() {
 
 
       </Routes>
+
+            <Porownywarka porownaj={porownaj}></Porownywarka>
+
+
 
       </BrowserRouter>
       
