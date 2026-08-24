@@ -77,9 +77,9 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk,kodRabatowy}) {
                 return(
                     <div className='zamowienie-elements' key={index}>
                         <img src={item.img} alt={index} />
-                        <p>{item.product} |</p>
                         <p>{item.nazwa} |</p>
                         <p>sztuk 1 |</p>
+                        <p>Wartość : <span style={{textDecoration:'line-through'}}>{item.cena}</span> pln</p>
                         <p>Wartość : {Math.round(item.cena-(item.cena*20/100))} pln</p>
 
                     </div>
@@ -95,7 +95,7 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk,kodRabatowy}) {
                         <h3>Ilość produktów : {koszyk.length} </h3>
                         <h3>Wartość zamowienia : <span style={{fontSize:'2rem',borderBottom:'2px solid blue'}}>{Math.round(allPrice-(allPrice*20/100)).toFixed(2)}</span> PLN</h3>
                         <h3>Łączny Rabat: <span style={{fontSize:'2rem',borderBottom:'2px solid blue'}}>{(allPrice-(allPrice-allPrice*20/100)+(allPrice*kodRabatowy/100)).toFixed(2)}</span> PLN</h3>
-                        <h3>Kod rabatowy: <span style={{fontSize:'2rem',borderBottom:'2px solid blue'}}>{kodRabatowy ? kodRabatowy : 'brak kodu'} %</span></h3>
+                        <h3>Wykorzystano kod rabatowy: <span style={{fontSize:'2rem',borderBottom:'2px solid blue'}}>{kodRabatowy ? kodRabatowy : 'brak kodu'} %</span></h3>
                         <h1>Twoje dane do wysyłki</h1>
 
              <input id='imie' type='text' placeholder='imie i nazwisko' onChange={ (e) =>setImie(e.target.value)}></input>
