@@ -185,38 +185,38 @@ const database2 = [
 
     }
 
-    const paginationAdd = () =>{
+    // const paginationAdd = () =>{
 
-      console.log('w srodku')
+    //   console.log('w srodku')
     
-        const databasePagination = database2
-        let databaseLength = databasePagination.length
+    //     const databasePagination = database2
+    //     let databaseLength = databasePagination.length
 
-                const p1 = databasePagination.slice(0,4)
-                const p2 = databasePagination.slice(4,8)
-                const p3 = databasePagination.slice(8,12)
-                const p4 = databasePagination.slice(12,17)
+    //             const p1 = databasePagination.slice(0,4)
+    //             const p2 = databasePagination.slice(4,8)
+    //             const p3 = databasePagination.slice(8,12)
+    //             const p4 = databasePagination.slice(12,17)
 
           
-           const mapPag = []
+    //        const mapPag = []
 
-           setPagiantion(mapPag)
+    //        setPagiantion(mapPag)
 
-          for( let i = 0; i<=databaseLength/4 ; i++){
-            const minArray = i*4
-            const maxArray = minArray+4
-            const e1 = databasePagination.slice(minArray,maxArray)
-            mapPag.push( <button onClick={ (e) => setDatabase(e1)}>{i}</button>)
+    //       for( let i = 0; i<=databaseLength/4 ; i++){
+    //         const minArray = i*4
+    //         const maxArray = minArray+4
+    //         const e1 = databasePagination.slice(minArray,maxArray)
+    //         mapPag.push( <button onClick={ (e) => setDatabase(e1)}>{i}</button>)
 
-          }
+    //       }
 
-        }
+    //     }
 
 
   return (
     <>
 
-      <div className='pagination'>
+      {/* <div className='pagination'>
               <ul>
                 {pagination.map( (item,index) =>{
                   return(
@@ -229,7 +229,7 @@ const database2 = [
               <button onClick={paginationAdd}>paginationTest</button>
 
               <p id='demo'></p>
-            </div>
+            </div> */}
 
 
         {database.map( (item,index) => {

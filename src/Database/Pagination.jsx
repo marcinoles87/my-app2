@@ -38,6 +38,10 @@ function Pagination({database ,setDatabase}) {
             mapPag.push( <button onClick={ () => setDatabase(e1)}>{i}</button>)
             console.log(mapPag)
 
+            if(i ===0){
+              setDatabase(database)
+            }
+
           }
 
         }
