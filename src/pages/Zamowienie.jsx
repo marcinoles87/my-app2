@@ -33,8 +33,10 @@ const handleKodRabatowy = () =>{
     if(kodRabatowy){
       const element =  document.querySelector('#input-kodRabatowy')
       const buttonZamawiam =  document.querySelector('#podsumuj')
+      const buttonPotwierdz =  document.querySelector('#potwierdzRabat')
       element.style.display = 'none'
       buttonZamawiam.style.display = 'none'
+      buttonPotwierdz.style.display = 'none'
       alert('kod rabatowy wykorzystany')
     }
 }
@@ -62,7 +64,7 @@ const handleKodRabatowy = () =>{
     <div className='zamowienie-podsumowanie'>
         <p>Wprowadz kod rabatowy
             <input id='input-kodRabatowy' placeholder='kod rabatowy' onChange={ (e) => setKodRabatowy(e.target.value)}></input>
-            <button onClick={handleKodRabatowy}>Potwierdz</button>
+            <button id='potwierdzRabat' onClick={handleKodRabatowy}>Potwierdz</button>
             </p>
         <p>Ilość produktów : {koszyk.length}</p>
         <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100)).toFixed(2)} pln </p>
