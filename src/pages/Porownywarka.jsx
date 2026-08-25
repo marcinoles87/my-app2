@@ -11,7 +11,7 @@ function Porownywarka({porownaj}) {
   return (
     <div className='porownywarka-container'>
 
-      <Link to='/porownaj'>{porownaj.length}</Link>
+      <Link to='/porownaj' style={{color:'white'}}>{porownaj.length}</Link>
 
     
 
