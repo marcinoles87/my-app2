@@ -3,7 +3,19 @@ import { Link  } from 'react-router'
 
 function Zamowienie({koszyk,allPrice,setallPrice,setKoszyk,kodRabatowy,setKodRabatowy}) {
 
+const [wartoscZamowienia , setWartoscZamowienia] = useState('')
 
+    let wartosc = Math.round(allPrice-(allPrice*20/100)).toFixed(2)
+
+    console.log(allPrice)
+
+    console.log(wartosc)
+
+    useEffect( () =>{
+
+        setWartoscZamowienia(wartosc)
+
+    },[])
 
 let suma = [...koszyk]
 
@@ -17,18 +29,13 @@ const handleSum = () =>{
 
 const handleDeleteItem = (item) =>{
     
-    console.log(item)
-    
-    
     const tablica = suma.filter( (e) => e !== item )
     setKoszyk(tablica)
-    
     
 }
 
 const handleKodRabatowy = () =>{
-    console.log(kodRabatowy)
-    console.log(allPrice)
+    
     setallPrice(Math.round(allPrice-Number(allPrice*kodRabatowy/100))) 
     if(kodRabatowy){
       const element =  document.querySelector('#input-kodRabatowy')
@@ -67,7 +74,7 @@ const handleKodRabatowy = () =>{
             <button id='potwierdzRabat' onClick={handleKodRabatowy}>Potwierdz</button>
             </p>
         <p>Ilość produktów : {koszyk.length}</p>
-        <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100)).toFixed(2)} pln </p>
+        <p className='zamowienie-wartosc'>Wartość zamówienia : {wartoscZamowienia} pln </p>
         <button id='podsumuj' onClick={handleSum}>Podsumuj</button>
         <button><Link to={'/formularz'}>Zamawiam</Link></button>
 

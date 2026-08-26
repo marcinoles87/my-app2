@@ -5,9 +5,7 @@ import { Link } from 'react-router'
 function Pagination({database ,setDatabase}) {
 
     const [pagination,setPagiantion] = useState([])
-    
-    console.log(database)
-    console.log(setDatabase)
+   
 
 
 
@@ -16,7 +14,6 @@ function Pagination({database ,setDatabase}) {
       
         const databasePagination = database
         let databaseLength = databasePagination.length
-        console.log(databasePagination)
 
                 const p1 = databasePagination.slice(0,4)
                 const p2 = databasePagination.slice(4,8)
@@ -34,9 +31,7 @@ function Pagination({database ,setDatabase}) {
             const minArray = i*4
             const maxArray = minArray+4
             const e1 = databasePagination.slice(minArray,maxArray)
-            console.log(e1)
             mapPag.push( <button onClick={ () => setDatabase(e1)}>{i}</button>)
-            console.log(mapPag)
 
             if(i ===0){
               setDatabase(database)
