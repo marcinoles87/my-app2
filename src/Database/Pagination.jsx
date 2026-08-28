@@ -6,6 +6,19 @@ function Pagination({database ,setDatabase}) {
 
     const [pagination,setPagiantion] = useState([])
 
+    const pages = []
+
+   
+
+    for(let i = 0;i<=database.length/4;i++){
+       const databasePagination = database
+
+        const minArray = i*4
+            const maxArray = minArray+4
+            const e1 = databasePagination.slice(minArray,maxArray)
+      pages.push(<button onClick={ () => setDatabase(e1)}>{i}</button>)
+    }
+
     const paginationAdd = () =>{
 
       
@@ -34,7 +47,7 @@ function Pagination({database ,setDatabase}) {
     <div className='pagination-container'>
          <div className='pagination'>
               <ul>
-                {pagination.map( (item,index) =>{
+                {pages.map( (item,index) =>{
                   return(
                     <li key={index}>
                       <Link>{item}</Link>
