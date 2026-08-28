@@ -11,11 +11,9 @@ const [wartoscZamowienia , setWartoscZamowienia] = useState('')
 
     console.log(wartosc)
 
-    useEffect( () =>{
 
-        setWartoscZamowienia(wartosc)
+        // setWartoscZamowienia(wartosc)
 
-    },[])
 
 let suma = [...koszyk]
 
@@ -74,7 +72,7 @@ const handleKodRabatowy = () =>{
             <button id='potwierdzRabat' onClick={handleKodRabatowy}>Potwierdz</button>
             </p>
         <p>Ilość produktów : {koszyk.length}</p>
-        <p className='zamowienie-wartosc'>Wartość zamówienia : {wartoscZamowienia} pln </p>
+        <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100)).toFixed(2)} pln </p>
         <button id='podsumuj' onClick={handleSum}>Podsumuj</button>
         <button><Link to={'/formularz'}>Zamawiam</Link></button>
 
