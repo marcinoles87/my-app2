@@ -1,13 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router'
 
 function Pagination({database ,setDatabase}) {
 
     const [pagination,setPagiantion] = useState([])
-   
-
-
 
     const paginationAdd = () =>{
 
@@ -15,13 +12,6 @@ function Pagination({database ,setDatabase}) {
         const databasePagination = database
         let databaseLength = databasePagination.length
 
-                const p1 = databasePagination.slice(0,4)
-                const p2 = databasePagination.slice(4,8)
-                const p3 = databasePagination.slice(8,12)
-                const p4 = databasePagination.slice(12,17)
-
-
-          
            const mapPag = []
 
 

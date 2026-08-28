@@ -7,12 +7,6 @@ const [wartoscZamowienia , setWartoscZamowienia] = useState('')
 
     let wartosc = Math.round(allPrice-(allPrice*20/100)).toFixed(2)
 
-    console.log(allPrice)
-
-    console.log(wartosc)
-
-
-        // setWartoscZamowienia(wartosc)
 
 
 let suma = [...koszyk]
