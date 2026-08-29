@@ -6,18 +6,25 @@ function Pagination({database ,setDatabase}) {
 
     const [pagination,setPagiantion] = useState([])
 
-    const pages = []
-
+    
    
+    useEffect( () =>{
 
-    for(let i = 0;i<=database.length/4;i++){
-       const databasePagination = database
+      let pages = []
 
-        const minArray = i*4
-            const maxArray = minArray+4
-            const e1 = databasePagination.slice(minArray,maxArray)
-      pages.push(<button onClick={ () => setDatabase(e1)}>{i}</button>)
-    }
+        for(let i = 0;i<=database.length/4;i++){
+
+                const databasePagination = database
+                const minArray = i*4
+                const maxArray = minArray+4
+                const e1 = databasePagination.slice(minArray,maxArray)
+
+                pagination.push(<button onClick={ () => setDatabase(e1)}>{i}</button>)
+
+            }
+    },[])
+
+    
 
     const paginationAdd = () =>{
 
@@ -40,6 +47,8 @@ function Pagination({database ,setDatabase}) {
               setDatabase(database)
             }
 
+            document.querySelector('.header-product').scrollIntoView()
+
           }
 
         }
@@ -47,7 +56,7 @@ function Pagination({database ,setDatabase}) {
     <div className='pagination-container'>
          <div className='pagination'>
               <ul>
-                {pages.map( (item,index) =>{
+                {pagination.map( (item,index) =>{
                   return(
                     <li key={index}>
                       <Link>{item}</Link>
