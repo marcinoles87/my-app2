@@ -11,29 +11,36 @@ function Pagination({database ,setDatabase}) {
   const pages = []
 
     const paginationFun = (item) =>{
-      console.log(item)
       setDatabase(item)
-      setDatabase(database)
-
-      for(let i = 0;i<=database.length/4;i++){
-       const databasePagination = database
-        const minArray = (i)*4
-        const maxArray = minArray+4
-        const e1 = databasePagination.slice(minArray,maxArray)
-       pages.push(<button onClick={ () => paginationFun(e1)}>{i+1}</button>)
-
     }
+      
+      
+      
+
+       const databasePagination = database
+        const e1 = databasePagination.slice(0,4)
+        const e2 = databasePagination.slice(5,8)
+        const e3 = databasePagination.slice(9,12)
+        const e4 = databasePagination.slice(13,16)
+        const e5 = databasePagination.slice(17,18)
+       pages.push(<button onClick={ () => paginationFun(e1)}>{1}</button>)
+       pages.push(<button onClick={ () => paginationFun(e2)}>{2}</button>)
+       pages.push(<button onClick={ () => paginationFun(e3)}>{3}</button>)
+       pages.push(<button onClick={ () => paginationFun(e4)}>{4}</button>)
+       pages.push(<button onClick={ () => paginationFun(e5)}>{5}</button>)
+
     
-    }
+    
+    
    
-      for(let i = 0;i<=database.length/4;i++){
-       const databasePagination = database
-        const minArray = (i)*4
-        const maxArray = minArray+4
-        const e1 = databasePagination.slice(minArray,maxArray)
-       pages.push(<button onClick={ () => paginationFun(e1)}>{i+1}</button>)
+    //   for(let i = 0;i<=database.length/4;i++){
+    //    const databasePagination = database
+    //     const minArray = (i)*4
+    //     const maxArray = minArray+4
+    //     const e1 = databasePagination.slice(minArray,maxArray)
+    //    pages.push(<button onClick={ () => paginationFun(e1)}>{i+1}</button>)
 
-    }
+    // }
     
     
 
