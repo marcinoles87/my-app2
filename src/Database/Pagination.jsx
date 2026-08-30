@@ -11,10 +11,19 @@ function Pagination({database ,setDatabase}) {
   const pages = []
 
     const paginationFun = (item) =>{
+      console.log(item)
       setDatabase(item)
-      
+      setDatabase(database)
 
+      for(let i = 0;i<=database.length/4;i++){
+       const databasePagination = database
+        const minArray = (i)*4
+        const maxArray = minArray+4
+        const e1 = databasePagination.slice(minArray,maxArray)
+       pages.push(<button onClick={ () => paginationFun(e1)}>{i+1}</button>)
 
+    }
+    
     }
    
       for(let i = 0;i<=database.length/4;i++){
@@ -23,7 +32,7 @@ function Pagination({database ,setDatabase}) {
         const maxArray = minArray+4
         const e1 = databasePagination.slice(minArray,maxArray)
        pages.push(<button onClick={ () => paginationFun(e1)}>{i+1}</button>)
-       console.log(pages)
+
     }
     
     
