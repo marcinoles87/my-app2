@@ -5,32 +5,22 @@ import { Link } from 'react-router'
 function Pagination({database ,setDatabase}) {
 
     const [pagination,setPagiantion] = useState([])
+    const [pages,setPages] = useState([])
+    const [flag,setFlag] = useState(true)
 
-    const [currentPage,setCurrentPage] = useState(1)
-    const [itemsPerPages,setItemsPerPage] = useState(4)
+   
 
-    const pages = []
 
     const paginationFun = (item) =>{
       console.log(item)
       setDatabase(item)
+      setPages([])
+
 
     }
-
-    function renderData(){
-      const data = database
-      const startIndex = (currentPage-1) *itemsPerPages
-      const endIndex = startIndex*itemsPerPages
-      const currentItems = data.slice(startIndex,endIndex)
-      console.log(currentItems)
-
-    }
-
-    console.log(renderData())
-
    
-
-    for(let i = 0;i<=database.length/4;i++){
+    if(flag){
+      for(let i = 0;i<=database.length/4;i++){
        const databasePagination = database
         const minArray = i*4
         const maxArray = minArray+4
@@ -40,6 +30,10 @@ function Pagination({database ,setDatabase}) {
         console.log(e1)
        pages.push(<button onClick={ () => paginationFun(e1)}>{i}</button>)
     }
+    }else{
+      return ''
+    }
+    
 
     const paginationAdd = () =>{
 
