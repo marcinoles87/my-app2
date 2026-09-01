@@ -216,20 +216,6 @@ const database2 = [
   return (
     <>
 
-      {/* <div className='pagination'>
-              <ul>
-                {pagination.map( (item,index) =>{
-                  return(
-                    <li key={index}>
-                      <Link>{item}</Link>
-                    </li>
-                  )
-                })}
-              </ul>
-              <button onClick={paginationAdd}>paginationTest</button>
-
-              <p id='demo'></p>
-            </div> */}
 
 
         {database.map( (item,index) => {
@@ -253,6 +239,8 @@ const database2 = [
                 </div>
             )
         })}
+
+        <button>Next Page</button>
 
         </>
 

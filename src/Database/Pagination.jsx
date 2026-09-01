@@ -14,23 +14,20 @@ function Pagination({database ,setDatabase}) {
   const pages = []
 
     const paginationFun = (item) =>{
-      console.log(item)
+      setDatabase(item)
+      if(item.length<1){
+        setDatabase(database)
+      }
 
-     
-        
       }
       
     
-      
-      
-      
-
-       const databasePagination = [...database]
-        const e1 = databasePagination.slice(0,4)
-        const e2 = databasePagination.slice(5,8)
-        const e3 = databasePagination.slice(9,12)
-        const e4 = databasePagination.slice(13,16)
-        const e5 = databasePagination.slice(17,19)
+        const databasePagination = [...database]
+        const e1 = databasePagination.toSpliced(0,4)
+        const e2 = databasePagination.toSpliced(5,8)
+        const e3 = databasePagination.toSpliced(9,12)
+        const e4 = databasePagination.toSpliced(13,16)
+        const e5 = databasePagination.toSpliced(17,19)
        pages.push(<button onClick={ () => paginationFun(e1)}>{1}</button>)
        pages.push(<button onClick={ () => paginationFun(e2)}>{2}</button>)
        pages.push(<button onClick={ () => paginationFun(e3)}>{3}</button>)
