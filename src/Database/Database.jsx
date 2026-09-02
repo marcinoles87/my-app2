@@ -188,15 +188,7 @@ const database2 = [
 
     }
 
-    const paginationAdd = () =>{
-
-      console.log('w srodku')
-        
- 
-        }
-
-
-        
+       
     for(let i = 0 ; i<database.length/4;i++){
 
       const databasePagination = [...database2]
@@ -240,12 +232,11 @@ const database2 = [
             )
         })}
 
-        <button onClick={ () =>paginationAdd()}>Next Page</button>
         {pagination.map( (item,index) =>{
           return(
-            <>
+            <div className='pagination'>
             {item}
-            </>
+            </div>
           )
         })}
 
