@@ -189,21 +189,31 @@ const database2 = [
 
       console.log('w srodku')
     
-        const databasePagination = database2
+
+        const databasePagination = [...database2]
         let databaseLength = databasePagination.length
 
         const e1 = databasePagination.slice(0,10)
-        const e2 = databasePagination.toSpliced(11,18)
+        const e2 = databasePagination.slice(11,18)
         
 
-        setDatabase(e1)
+        setDatabase(e2)
         if(databaseLength<4){
           setDatabase(database2)
-        }
-
-       
+        } 
  
         }
+
+        for(let i=0;i>4;i++){
+          const button = document.createElement('li')
+          const text = document.createTextNode(`1`)
+        
+          return <button>{i}</button>
+
+          
+         }
+
+         
 
 
   return (
@@ -234,6 +244,7 @@ const database2 = [
         })}
 
         <button onClick={ () =>paginationAdd()}>Next Page</button>
+        <p id='pag'></p>
 
         </>
 
