@@ -200,14 +200,11 @@ const database2 = [
     for(let i = 0 ; i<database.length/4;i++){
 
       const databasePagination = [...database2]
-      let databaseLength = databasePagination.length
+      const min = i*4
+      const max = min + 4
+      const e1 = databasePagination.slice(min,max)
 
-        const e1 = databasePagination.slice(0,10)
-        const e2 = databasePagination.slice(11,18)
-     
-
-
-      pagination.push( <button >{i}</button>)
+        pagination.push( <button onClick={ () =>setDatabase(e1)}>{i}</button>)
     }
 
       
