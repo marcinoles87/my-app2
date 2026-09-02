@@ -168,6 +168,9 @@ const database2 = [
         
     },[])
 
+
+
+
     const handleAddProduct = (item) =>{
 
         setKoszyk( prev =>[...prev,item])
@@ -188,30 +191,27 @@ const database2 = [
     const paginationAdd = () =>{
 
       console.log('w srodku')
-    
-
-        const databasePagination = [...database2]
-        let databaseLength = databasePagination.length
-
-        const e1 = databasePagination.slice(0,10)
-        const e2 = databasePagination.slice(11,18)
         
-
-        setDatabase(e2)
-        if(databaseLength<4){
-          setDatabase(database2)
-        } 
  
         }
 
-        for(let i=0;i>4;i++){
-          const button = document.createElement('li')
-          const text = document.createTextNode(`1`)
-        
-          return <button>{i}</button>
 
-          
-         }
+        
+    for(let i = 0 ; i<database.length/4;i++){
+
+      const databasePagination = [...database2]
+      let databaseLength = databasePagination.length
+
+        const e1 = databasePagination.slice(0,10)
+        const e2 = databasePagination.slice(11,18)
+     
+
+
+      pagination.push( <button >{i}</button>)
+    }
+
+      
+         
 
          
 
@@ -244,7 +244,13 @@ const database2 = [
         })}
 
         <button onClick={ () =>paginationAdd()}>Next Page</button>
-        <p id='pag'></p>
+        {pagination.map( (item,index) =>{
+          return(
+            <>
+            {item}
+            </>
+          )
+        })}
 
         </>
 
