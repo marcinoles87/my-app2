@@ -188,22 +188,28 @@ const database2 = [
 
     }
 
-       
-    for(let i = 0 ; i<database.length/4;i++){
+    const handlePagination = () =>{
+
+       for(let i = 0 ; i<database.length/4;i++){
 
       const databasePagination = [...database2]
       const min = i*4
       const max = min + 4
       const e1 = databasePagination.slice(min,max)
 
-        pagination.push( <button onClick={ () =>setDatabase(e1)}>{i}</button>)
+        // pagination.push( <button onClick={ () =>setDatabase(e1)}>{i}</button>)
+
+       let elementPag =  document.createElement('button')
+       elementPag.textContent = i
+       document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(e1) )
     }
 
+
+    }
+
+       
+   
       
-         
-
-         
-
 
   return (
     <>
@@ -232,6 +238,8 @@ const database2 = [
             )
         })}
 
+        <button onClick={handlePagination}>Zobacz wiecej stron</button>
+
         {pagination.map( (item,index) =>{
           return(
             <div className='pagination'>
@@ -239,6 +247,8 @@ const database2 = [
             </div>
           )
         })}
+
+        <p id='pag'></p>
 
         </>
 
