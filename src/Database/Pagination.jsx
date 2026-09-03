@@ -1,15 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router'
 
 function Pagination({database ,setDatabase}) {
 
     const [pagination,setPagiantion] = useState([])
-    const [flag,setFlag] = useState(true)
-    const [old,setOld] = useState([])
 
     
-  const newArray = database
    
   const pages = []
 

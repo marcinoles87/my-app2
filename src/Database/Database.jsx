@@ -7,7 +7,6 @@ import vi1 from '../media/vi1.jpg'
 import gw1 from '../media/gw1.jpg'
 import skk1 from '../media/skk1.jpg'
 import ht1 from '../media/ht1.jpg'
-import logoHeader from '../media/logoHeader.png'
 import kai from '../media/kai1.jpg'
 import deska1 from '../media/deska1.webp'
 import łopatka1 from '../media/łopatka1.jpg'
@@ -192,25 +191,19 @@ const database2 = [
 
        for(let i = 0 ; i<database.length/4;i++){
 
-      const databasePagination = [...database2]
-      const min = i*4
-      const max = min + 4
-      const e1 = databasePagination.slice(min,max)
-
-        // pagination.push( <button onClick={ () =>setDatabase(e1)}>{i}</button>)
-
-       let elementPag =  document.createElement('button')
-       elementPag.textContent = i
-       document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(e1) )
+          const databasePagination = [...database2]
+          const min = i*4
+          const max = min + 4
+          const e1 = databasePagination.slice(min,max)
+          let elementPag =  document.createElement('button')
+          elementPag.textContent = i
+          document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(e1) )
     }
 
 
     }
 
        
-   
-      
-
   return (
     <>
 
@@ -231,8 +224,8 @@ const database2 = [
 
                         </div>
                         
-                         <button onClick={() => handleAddProduct(item)}>Dodaj</button>
-                         <button onClick={() => handlePorownaj(item)} style={{backgroundColor:'rgb(29, 118, 151)'}}>Porównaj</button>
+                            <button onClick={() => handleAddProduct(item)}>Dodaj</button>
+                            <button onClick={() => handlePorownaj(item)} style={{backgroundColor:'rgb(29, 118, 151)'}}>Porównaj</button>
                     </div>
                 </div>
             )
@@ -242,7 +235,7 @@ const database2 = [
 
         {pagination.map( (item,index) =>{
           return(
-            <div className='pagination'>
+            <div className='pagination' key={index}>
             {item}
             </div>
           )
