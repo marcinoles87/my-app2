@@ -187,21 +187,6 @@ const database2 = [
 
     }
 
-    const handlePagination = () =>{
-
-       for(let i = 0 ; i<database.length/4;i++){
-
-          const databasePagination = [...database2]
-          const min = i*4
-          const max = min + 4
-          const e1 = databasePagination.slice(min,max)
-          let elementPag =  document.createElement('button')
-          elementPag.textContent = i
-          document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(e1) )
-    }
-
-
-    }
 
        
   return (
@@ -231,17 +216,7 @@ const database2 = [
             )
         })}
 
-        <button onClick={handlePagination}>Zobacz wiecej stron</button>
-
-        {pagination.map( (item,index) =>{
-          return(
-            <div className='pagination' key={index}>
-            {item}
-            </div>
-          )
-        })}
-
-        <p id='pag'></p>
+       
 
         </>
 

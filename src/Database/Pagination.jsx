@@ -7,72 +7,55 @@ function Pagination({database ,setDatabase}) {
     const [pagination,setPagiantion] = useState([])
 
     
+
+    const paginationFun = () =>{
+      for(let i = 0 ; i<database.length/4;i++){
+
+          const databasePagination = [...database]
+          const min = i*4
+          const max = min + 4
+          const e1 = databasePagination.slice(min,max)
+          let elementPag =  document.createElement('button')
+          elementPag.textContent = i
+          document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(e1) )
+    }
+    }
+      
+      
    
-  const pages = []
 
-    const paginationFun = (item) =>{
-      setDatabase(item)
-      if(item.length<1){
-        setDatabase(database)
-      }
-
-      }
-      
-    
-        const databasePagination = [...database]
-        const e1 = databasePagination.toSpliced(0,4)
-        const e2 = databasePagination.toSpliced(5,8)
-        const e3 = databasePagination.toSpliced(9,12)
-        const e4 = databasePagination.toSpliced(13,16)
-        const e5 = databasePagination.toSpliced(17,19)
-       pages.push(<button onClick={ () => paginationFun(e1)}>{1}</button>)
-       pages.push(<button onClick={ () => paginationFun(e2)}>{2}</button>)
-       pages.push(<button onClick={ () => paginationFun(e3)}>{3}</button>)
-       pages.push(<button onClick={ () => paginationFun(e4)}>{4}</button>)
-       pages.push(<button onClick={ () => paginationFun(e5)}>{5}</button>)
-
-    
-    
-
-    const paginationAdd = () =>{
+    // const paginationAdd = () =>{
 
       
-        const databasePagination = database
-        let databaseLength = databasePagination.length
+    //     const databasePagination = database
+    //     let databaseLength = databasePagination.length
 
-           const mapPag = []
+    //        const mapPag = []
 
 
-           setPagiantion(mapPag)
+    //        setPagiantion(mapPag)
 
-          for( let i = 0; i<=databaseLength/4 ; i++){
-            const minArray = i*4
-            const maxArray = minArray+4
-            const e1 = databasePagination.slice(minArray,maxArray)
-            mapPag.push( <button onClick={ () => setDatabase(e1)}>{i}</button>)
+    //       for( let i = 0; i<=databaseLength/4 ; i++){
+    //         const minArray = i*4
+    //         const maxArray = minArray+4
+    //         const e1 = databasePagination.slice(minArray,maxArray)
+    //         mapPag.push( <button onClick={ () => setDatabase(e1)}>{i}</button>)
 
-            if(i ===0){
-              setDatabase(database)
-            }
+    //         if(i ===0){
+    //           setDatabase(database)
+    //         }
 
-          }
+    //       }
 
-        }
+    //     }
   return (
     <div className='pagination-container'>
          <div className='pagination'>
-              <ul>
-                {pages.map( (item,index) =>{
-                  return(
-                    <li key={index}>
-                      <Link>{item}</Link>
-                    </li>
-                  )
-                })}
-              </ul>
-              <button onClick={paginationAdd}>paginationTest</button>
+              
+              <button onClick={paginationFun}>paginationTest</button>
 
-              <p id='demo'></p>
+                      <p id='pag'></p>
+
             </div>
 
     </div>

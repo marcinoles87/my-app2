@@ -176,7 +176,7 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
            </div>
 
              
-          {/* <Pagination database={database} setDatabase={setDatabase}></Pagination> */}
+          <Pagination database={database} setDatabase={setDatabase}></Pagination>
           <Main></Main>
           <Opinie></Opinie>
           <Newsletter></Newsletter>
