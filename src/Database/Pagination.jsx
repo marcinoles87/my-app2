@@ -8,6 +8,7 @@ function Pagination({database ,setDatabase}) {
 
     
 
+
     const paginationFun = () =>{
       for(let i = 0 ; i<database.length/4;i++){
 
@@ -22,7 +23,6 @@ function Pagination({database ,setDatabase}) {
     }
       
       
-   
 
     // const paginationAdd = () =>{
 
@@ -54,7 +54,7 @@ function Pagination({database ,setDatabase}) {
               
               <button onClick={paginationFun}>paginationTest</button>
 
-                      <p id='pag'></p>
+                      <div id='pag'></div>
 
             </div>
 
