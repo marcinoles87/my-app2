@@ -10,6 +10,8 @@ function Pagination({database ,setDatabase}) {
 
 
     const paginationFun = () =>{
+
+
       for(let i = 0 ; i<database.length/4;i++){
 
           const databasePagination = [...database]
@@ -19,6 +21,14 @@ function Pagination({database ,setDatabase}) {
           let elementPag =  document.createElement('button')
           elementPag.textContent = i
           document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(e1) )
+          if(i===4){
+            console.log('ostatni')
+            let elementPag =  document.createElement('button')
+          elementPag.textContent = 'all'
+          document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(database) )
+          const buttonPag = document.querySelector('#pag-button')
+          buttonPag.style.visibility = 'hidden'
+          }
     }
     }
       
@@ -52,7 +62,7 @@ function Pagination({database ,setDatabase}) {
     <div className='pagination-container'>
          <div className='pagination'>
               
-              <button onClick={paginationFun}>paginationTest</button>
+              <button id='pag-button' onClick={paginationFun}>paginationTest</button>
 
                       <div id='pag'></div>
 
