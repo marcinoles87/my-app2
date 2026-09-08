@@ -332,10 +332,37 @@ i{
 
 }
 
+.pagination-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 #pag{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+#pag-button{
+  width: 150px;
+  padding: 10px;
+  background-color: #01c778;
+  color:white;
+  border:1px solid black;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: 0.6s ease;
+
+}
+
+#pag-button:hover{
+  letter-spacing: 10px;
 }
 
 #pag button{

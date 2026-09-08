@@ -62,7 +62,7 @@ function Pagination({database ,setDatabase}) {
     <div className='pagination-container'>
          <div className='pagination'>
               
-              <button id='pag-button' onClick={paginationFun}>paginationTest</button>
+              <button id='pag-button' onClick={paginationFun}>More</button>
 
                       <div id='pag'></div>
 
