@@ -9,7 +9,7 @@ function Pagination({database ,setDatabase}) {
     
 
 
-    const paginationFun = () =>{
+    const paginationStart = () =>{
 
 
       for(let i = 0 ; i<database.length/4;i++){
@@ -19,16 +19,17 @@ function Pagination({database ,setDatabase}) {
           const max = min + 4
           const e1 = databasePagination.slice(min,max)
           let elementPag =  document.createElement('button')
-          elementPag.textContent = i
+          elementPag.textContent = i+1
           document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(e1) )
           if(i===4){
-            console.log('ostatni')
-            let elementPag =  document.createElement('button')
+          let elementPag =  document.createElement('button')
           elementPag.textContent = 'all'
           document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(database) )
           const buttonPag = document.querySelector('#pag-button')
           buttonPag.style.visibility = 'hidden'
           }
+
+          window.scrollTo(100,100)
     }
     }
       
@@ -62,7 +63,7 @@ function Pagination({database ,setDatabase}) {
     <div className='pagination-container'>
          <div className='pagination'>
               
-              <button id='pag-button' onClick={paginationFun}>More</button>
+              <button id='pag-button' onClick={paginationStart}>More</button>
 
                       <div id='pag'></div>
 
