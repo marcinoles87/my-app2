@@ -6,7 +6,9 @@ function Pagination({database ,setDatabase}) {
 
     const [pagination,setPagiantion] = useState([])
 
-    
+function startPagin (item){
+  console.log(item)
+}
 
 
     const paginationStart = () =>{
@@ -20,7 +22,7 @@ function Pagination({database ,setDatabase}) {
           const e1 = databasePagination.slice(min,max)
           let elementPag =  document.createElement('button')
           elementPag.textContent = i+1
-          document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(e1) )
+          document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , startPagin(e1) )
           if(i===4){
           let elementPag =  document.createElement('button')
           elementPag.textContent = 'all'

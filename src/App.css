@@ -347,6 +347,9 @@ i{
   justify-content: center;
 }
 
+
+
+
 #pag-button{
   width: 150px;
   padding: 10px;
@@ -358,6 +361,10 @@ i{
   letter-spacing: 5px;
   cursor: pointer;
   transition: 0.6s ease;
+   background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #01c778;;
 
 }
 
