@@ -7,7 +7,12 @@ function Pagination({database ,setDatabase}) {
     const [pagination,setPagiantion] = useState([])
 
 function startPagin (item){
-  console.log(item)
+  setDatabase(item)
+  document.querySelector('.database-product').scrollIntoView(
+    {
+      behavior:'smooth'
+    }
+  )
 }
 
 
@@ -22,7 +27,7 @@ function startPagin (item){
           const e1 = databasePagination.slice(min,max)
           let elementPag =  document.createElement('button')
           elementPag.textContent = i+1
-          document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , startPagin(e1) )
+          document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => startPagin(e1) )
           if(i===4){
           let elementPag =  document.createElement('button')
           elementPag.textContent = 'all'
