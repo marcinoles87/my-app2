@@ -8,7 +8,7 @@ function Pagination({database ,setDatabase}) {
 
 function startPagin (item){
   setDatabase(item)
-  document.querySelector('.database-product').scrollIntoView(
+  document.querySelector('.header-product').scrollIntoView(
     {
       behavior:'smooth'
     }
@@ -31,12 +31,11 @@ function startPagin (item){
           if(i===4){
           let elementPag =  document.createElement('button')
           elementPag.textContent = 'all'
-          document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => setDatabase(database) )
+          document.querySelector('#pag').appendChild(elementPag).addEventListener('click' , () => startPagin(database) )
           const buttonPag = document.querySelector('#pag-button')
           buttonPag.style.visibility = 'hidden'
           }
 
-          window.scrollTo(100,100)
     }
     }
       

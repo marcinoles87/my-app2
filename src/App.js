@@ -44,7 +44,7 @@ function App() {
 
 
             <Route path='/' element={<Header koszyk={koszyk} setKoszyk={setKoszyk} setDatabase={setDatabase} database={database} setProduktOpis={setProduktOpis} porownaj={porownaj} setPorownaj={setPorownaj}></Header>}/>
-            <Route path='/produkty' element={<Produkty></Produkty>}/>
+            <Route path='/produkty' element={<Produkty setDatabase={setDatabase} database={database}></Produkty>}/>
             <Route path='/kuchnia' element={<Kuchnia></Kuchnia>}/>
             <Route path='/jadalnia' element={<Jadalnia></Jadalnia>}/>
             <Route path='/łazienka' element={<Łazienka></Łazienka>}/>

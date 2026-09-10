@@ -1282,6 +1282,14 @@ i{
     padding: 20px;
   }
 
+  #pag-button{
+    margin-bottom: 20px;
+  }
+
+  #pag{
+    margin-bottom: 20px;
+  }
+
   .newsletter-container{
     height: auto;
   }

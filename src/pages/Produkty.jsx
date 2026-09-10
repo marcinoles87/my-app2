@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Produkty() {
+function Produkty({setDatabase,database}) {
+  console.log(database)
   return (
-    <div>Produkty</div>
+    <div className='produkty-container'>
+      Produkty</div>
   )
 }
 
