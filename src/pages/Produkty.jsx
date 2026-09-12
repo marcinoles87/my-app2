@@ -21,7 +21,7 @@ function Produkty({setDatabase,database}) {
                     </div>
                     <div className='database-element-info'>
                         <div className='database-element-info2'>
-                            <h3>{item.nazwa}</h3>
+                            <h3>{item.nazwa.slice(0,17)+` ...`}</h3>
                             <h2 style={{color:'rgb(0,0,190'}}>{Math.round(item.cena-(item.cena*20/100))} zł</h2> 
                             <p style={{padding:'10px 0px'}}>Cena regularna : <span style={{textDecoration:'line-through'}}>{item.cena}</span></p>
 
