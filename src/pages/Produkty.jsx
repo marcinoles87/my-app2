@@ -5,12 +5,13 @@ function Produkty({setDatabase,database}) {
   console.log(database)
 
   const handleAddProduct = (item) =>{
+  }
 
 
-    }
+    
   return (
-    <div className='produkty-container'>
-      <div className='produkty'>
+
+    <div className='database-product'>
          {database.map( (item,index) => {
             return(
                 <div className='database-element' key={index}>
@@ -32,8 +33,8 @@ function Produkty({setDatabase,database}) {
                 </div>
             )
         })}
-      </div>
-      </div>
+    </div>
+
   )
 }
 

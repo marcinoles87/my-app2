@@ -1139,6 +1139,10 @@ i{
     margin-top: 50px;
   }
 
+  .navbar-container{
+    border-bottom: 2px solid black;
+  }
+
   .navbar-elements ul{
     flex-direction: column;
   }
