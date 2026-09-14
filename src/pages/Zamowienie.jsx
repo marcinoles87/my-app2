@@ -4,6 +4,7 @@ import { Link  } from 'react-router'
 function Zamowienie({koszyk,allPrice,setallPrice,setKoszyk,kodRabatowy,setKodRabatowy}) {
 
 const [wartoscZamowienia , setWartoscZamowienia] = useState('')
+const [zamawiamFlag , setZamawiamFlag] = useState(false)
 
     let wartosc = Math.round(allPrice-(allPrice*20/100)).toFixed(2)
 
@@ -16,6 +17,7 @@ const handleSum = () =>{
 
 
        setallPrice( suma.reduce( (prev,current) => prev + Number(current.cena) ,0).toFixed(2))
+       setZamawiamFlag(true)
 
 }
 
@@ -68,7 +70,8 @@ const handleKodRabatowy = () =>{
         <p>Ilość produktów : {koszyk.length}</p>
         <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100)).toFixed(2)} pln </p>
         <button id='podsumuj' onClick={handleSum}>Podsumuj</button>
-        <button><Link to={'/formularz'}>Zamawiam</Link></button>
+        {zamawiamFlag ? <button><Link to={'/formularz'}>Zamawiam</Link></button> : ''}
+        
 
     </div>
         
