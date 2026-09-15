@@ -42,6 +42,10 @@ const handleKodRabatowy = () =>{
     }
 }
 
+const handleZamawiam = () =>{
+    setZamawiamFlag(false)
+}
+
 
   return (
     <div className='zamowienie-container'>
@@ -69,8 +73,8 @@ const handleKodRabatowy = () =>{
             </p>
         <p>Ilość produktów : {koszyk.length}</p>
         <p className='zamowienie-wartosc'>Wartość zamówienia : {Math.round(allPrice-(allPrice*20/100)).toFixed(2)} pln </p>
-        <button id='podsumuj' onClick={handleSum}>Podsumuj</button>
-        {zamawiamFlag ? <button><Link to={'/formularz'}>Zamawiam</Link></button> : ''}
+         {zamawiamFlag ?  '':<button id='podsumuj' onClick={handleSum}>Podsumuj</button>  }
+        {zamawiamFlag ? <button onClick={handleZamawiam}><Link to={'/formularz'}>Zamawiam</Link></button> : ''}
         
 
     </div>

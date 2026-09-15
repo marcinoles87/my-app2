@@ -1,10 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-function Produkty({setDatabase,database}) {
+function Produkty({setDatabase,database,setKoszyk}) {
   console.log(database)
 
   const handleAddProduct = (item) =>{
+            setKoszyk( prev =>[...prev,item])
+
   }
 
 
