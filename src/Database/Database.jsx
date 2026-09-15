@@ -168,8 +168,6 @@ const database2 = [
     },[])
 
 
-
-
     const handleAddProduct = (item) =>{
 
         setKoszyk( prev =>[...prev,item])

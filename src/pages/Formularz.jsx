@@ -80,7 +80,7 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk,kodRabatowy}) {
                         <p>{item.nazwa} |</p>
                         <p>sztuk 1 |</p>
                         <p>Wartość : <span style={{textDecoration:'line-through'}}>{item.cena}</span> pln</p>
-                        <p>Wartość : <span style={{color:'blue' , fontSize:'30px'}}>{Math.round(item.cena-(item.cena*20/100))}</span> pln</p>
+                        <p style={{display:'flex' , alignItems:'center'}}>Wartość : <span style={{color:'blue' , fontSize:'30px' , margin:'5px'}}>{Math.round(item.cena-(item.cena*20/100))}</span> pln</p>
 
                     </div>
                 )
