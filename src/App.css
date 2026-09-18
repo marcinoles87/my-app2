@@ -86,9 +86,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.659);
+  background-color: rgba(255, 255, 255, 0.875);
+  transition: 0.6s ease;
 
 }
+
 
 .navbar-promo{
   width: 100vw;
@@ -103,6 +105,12 @@
   flex-direction: row;
   width: 100%;
   
+}
+
+.nav-fixed{
+  position: fixed;
+  border-bottom: 1px solid black;
+  z-index: 10;
 }
 
 .logo{
@@ -459,7 +467,7 @@ i{
   color: white;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 100;
   transition: 0.6s ease;
   visibility: hidden;
 

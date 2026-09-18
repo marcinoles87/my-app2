@@ -3,6 +3,21 @@ import logo from '../media/logo_header.png'
 import { Link } from 'react-router'
 
 function Nav() {
+
+  
+
+    window.addEventListener( "scroll" , () =>{
+        let elementNavFixed = document.querySelector('.navbar-container')
+    if(window.scrollY>30){
+        
+        elementNavFixed.classList.add('nav-fixed')
+    }else{
+        elementNavFixed.classList.remove('nav-fixed')
+    }
+    
+
+    })
+
   return (
     <div className='navbar-container'>
 
@@ -10,13 +25,13 @@ function Nav() {
                 <h1>Promocja -20% od ceny podstawowej ....</h1>
         </div>
 
-        <div className='navbar-logo'>
+        {/* <div className='navbar-logo'>
             <div className='logo'>
                 <img src={logo} alt="xxxxxxxx" />
                 <input placeholder='Szukaj to czego chcesz....'></input>
             </div>
             
-        </div>
+        </div> */}
 
         <div className='navbar-elements'>
             <ul>
