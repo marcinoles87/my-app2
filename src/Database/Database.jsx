@@ -87,7 +87,7 @@ const database2 = [
     img: vi1,
     product: "K008",
     nazwa: "Scyzoryk Huntsman",
-    cena: 34.99,
+    cena: 340.99,
     category: "Scyzoryki",
     description: "Solidna chochla wykonana ze stali nierdzewnej."
   },
@@ -119,7 +119,7 @@ const database2 = [
     img: vi1,
     product: "K012",
     nazwa: "Obieraczka do warzyw",
-    cena: 18.99,
+    cena: 180.99,
     category: "Scyzoryki",
     description: "Ostra obieraczka z ergonomicznym uchwytem."
   },
