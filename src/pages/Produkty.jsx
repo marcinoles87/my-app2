@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from 'react-router'
 
 function Produkty({setDatabase,database,setKoszyk}) {
-  console.log(database)
 
   const handleAddProduct = (item) =>{
             setKoszyk( prev =>[...prev,item])
@@ -30,7 +29,6 @@ function Produkty({setDatabase,database,setKoszyk}) {
                         </div>
                         
                             <button onClick={() => handleAddProduct(item)}>Dodaj</button>
-                            {/* <button onClick={() => handlePorownaj(item)} style={{backgroundColor:'rgb(29, 118, 151)'}}>Porównaj</button> */}
                     </div>
                 </div>
             )
