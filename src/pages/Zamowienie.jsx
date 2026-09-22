@@ -29,7 +29,7 @@ const handleAddItem = (item) =>{
 const handleDeleteItem = (item,index) =>{ 
     let deleteElement =koszyk.splice(index,1)
     console.log(deleteElement)
-    const tablica = suma.filter( (e) => e !== deleteElement )
+    const tablica = koszyk.filter( (e) => e !== deleteElement )
     console.log(index)
     console.log(tablica)
     setKoszyk(tablica)

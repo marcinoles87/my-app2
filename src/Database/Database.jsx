@@ -22,7 +22,7 @@ const database2 = [
    {
     img: chlebak1,
     product: "K001",
-    nazwa: "Deska bambusowa",
+    nazwa: "Chlebak Brabantia",
     cena: 49.99,
     category: "Chlebak",
     description: "Wytrzymała deska bambusowa odporna na wilgoć i zarysowania."
