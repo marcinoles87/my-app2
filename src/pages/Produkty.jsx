@@ -12,7 +12,7 @@ function Produkty({setDatabase,database,setKoszyk}) {
     
   return (
 
-    <div className='database-product'>
+    <>
          {database.map( (item,index) => {
             return(
                 <div className='database-element' key={index}>
@@ -33,7 +33,7 @@ function Produkty({setDatabase,database,setKoszyk}) {
                 </div>
             )
         })}
-    </div>
+</>
 
   )
 }
