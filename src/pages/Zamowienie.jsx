@@ -10,7 +10,8 @@ const [zamawiamFlag , setZamawiamFlag] = useState(false)
 
 
 
-let suma = [...koszyk]
+    let suma = [...koszyk]
+
 
 
 const handleSum = () =>{
@@ -25,9 +26,12 @@ const handleAddItem = (item) =>{
     setKoszyk([...koszyk,item])
 }
 
-const handleDeleteItem = (item) =>{
-    
-    const tablica = suma.filter( (e) => e !== item )
+const handleDeleteItem = (item,index) =>{ 
+    let deleteElement =koszyk.splice(index,1)
+    console.log(deleteElement)
+    const tablica = suma.filter( (e) => e !== deleteElement )
+    console.log(index)
+    console.log(tablica)
     setKoszyk(tablica)
     
 }
@@ -62,7 +66,7 @@ const handleZamawiam = () =>{
                         {/* <p>{item.product}</p> */}
                         <p>{item.nazwa}</p>
                         <p>{Math.round(item.cena-(item.cena*20/100))} pln</p>
-                        <button onClick={() => handleDeleteItem(item)}>-</button>
+                        <button onClick={() => handleDeleteItem(item,index)}>-</button>
                         <button onClick={() => handleAddItem(item)}>+</button>
 
 
