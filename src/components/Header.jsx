@@ -49,6 +49,9 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
 
   const handleFilterName = (e) =>{
 
+    const elementHidden = document.querySelector('#pag-button')
+    elementHidden.style.display = 'none'
+
     const newDatabase = [...database]
     const filtered = newDatabase.filter(item => item.nazwa.toUpperCase().includes(filterData) && item.category.includes(filterCategory) )
 
@@ -87,6 +90,8 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
       secondElement.value = ''
       const firstInput = document.querySelector('input:nth-of-type(1)')
       firstInput.value = ''
+      const elementHidden = document.querySelector('#pag-button')
+      elementHidden.style.display = 'block'
 
     }
 
