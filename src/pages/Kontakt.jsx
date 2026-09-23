@@ -1,6 +1,22 @@
 import React from 'react'
 
 function Kontakt() {
+
+  const handleSendEmail = (e) =>{
+    e.preventDefault()
+
+    const temat = document.querySelector('#temat')
+    const email = document.querySelector('#email')
+    const wiadomosc = document.querySelector('#wiadomosc')
+
+    if(temat.value.length>3){
+      temat.style.backgroundColor = 'red'
+    }
+
+
+
+
+  }
   return (
     <div className='kontakt-container'>
       <div className='kontakt-szybki'>
@@ -16,18 +32,18 @@ function Kontakt() {
           <h1>Kontakt z Nami</h1>
           <div className='form-group'>
               <label style={{color:'#212529'}}>Temat</label>
-              <input type="text" />
+              <input id='temat' type="text" />
           </div>
           <div className='form-group'>
-              <label style={{color:'#212529'}}>Adres</label>
-              <input type="email" />
+              <label style={{color:'#212529'}}>Email</label>
+              <input id='email' type="email" />
           </div>
           <div className='form-group'>
               <label style={{color:'#212529'}}>Wiadomość</label>
-              <input type="text" />
+              <input id='wiadomosc' type="text" />
           </div>
 
-          <button>Wyślij</button>
+          <button onClick={handleSendEmail}>Wyślij</button>
 
         </form>
       </div>

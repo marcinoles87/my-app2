@@ -166,8 +166,7 @@ function Header({koszyk,setKoszyk,setDatabase,database,setProduktOpis,porownaj,s
                             <h2 style={{color:'rgb(0,0,190'}}>Nasza cena : {Math.round(item.cena-(item.cena*20/100))} PLN</h2> 
 
                         </div>
-                        
-                         <button onClick={() => handleAddProduct(item)}>Dodaj</button>
+                          <button onClick={() => handleAddProduct(item)}>Dodaj</button>
                     </div>
                     </div>
             )})
