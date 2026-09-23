@@ -9,10 +9,31 @@ function Kontakt() {
     const email = document.querySelector('#email')
     const wiadomosc = document.querySelector('#wiadomosc')
 
-    if(temat.value.length>3){
-      temat.style.backgroundColor = 'red'
+
+    if(temat.value.length<3){
+      temat.style.borderColor = 'red'
+      temat.placeholder= 'Podaj imie'
+    }else{
+      temat.style.borderColor = 'black'
     }
 
+    if(email.value.length<2){
+      email.style.borderColor = 'red'
+      email.placeholder = 'Podaj prawidłowy adres email'
+    }else{
+      email.style.borderColor = 'black'
+    }
+
+    if(wiadomosc.value.length<2){
+      wiadomosc.style.borderColor = 'red'
+      wiadomosc.placeholder = 'Wiadomosc musi zawierec conajmniej 3 znaki'
+    }else{
+      wiadomosc.style.borderColor = 'black'
+    }
+
+    if(temat.value.length >3 && email.value.length > 3 && wiadomosc.value.length > 3){
+      alert('Wszystkie dane poprawne , dziękujemy za złożenie zamówienie . Wkrótce wyślemy potwierdzenie na email !')
+    }
 
 
 
