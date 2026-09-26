@@ -3,10 +3,12 @@ import Potwierdzenie from './Potwierdzenie'
 
 function Kontakt() {
 
-  const [potwierdzenie,setPotwierdzenie] = useState(false)
+  const [potwierdzenie,setPotwierdzenie] = useState(true)
 
   const handleSendEmail = (e) =>{
     e.preventDefault()
+
+    console.log(potwierdzenie)
 
     const temat = document.querySelector('#temat')
     const email = document.querySelector('#email')
@@ -36,7 +38,7 @@ function Kontakt() {
 
     if(temat.value.length >3 && email.value.length > 3 && wiadomosc.value.length > 3){
       alert('Wszystkie dane poprawne , dziękujemy za złożenie zamówienie . Wkrótce wyślemy potwierdzenie na email !')
-      setPotwierdzenie(true)
+      setPotwierdzenie(false)
     }
 
 
