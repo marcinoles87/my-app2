@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Potwierdzenie from './Potwierdzenie'
 
 function Kontakt() {
+
+  const [potwierdzenie,setPotwierdzenie] = useState(false)
 
   const handleSendEmail = (e) =>{
     e.preventDefault()
@@ -33,6 +36,7 @@ function Kontakt() {
 
     if(temat.value.length >3 && email.value.length > 3 && wiadomosc.value.length > 3){
       alert('Wszystkie dane poprawne , dziękujemy za złożenie zamówienie . Wkrótce wyślemy potwierdzenie na email !')
+      setPotwierdzenie(true)
     }
 
 
@@ -40,6 +44,9 @@ function Kontakt() {
   }
   return (
     <div className='kontakt-container'>
+
+    {potwierdzenie ?
+    <>
       <div className='kontakt-szybki'>
         <h1 style={{fontWeight:'lighter',color:'black'}}>Szybki kontakt</h1>
         <p>whatsup : 22342455</p>
@@ -68,6 +75,9 @@ function Kontakt() {
 
         </form>
       </div>
+      </>
+
+      : <Potwierdzenie></Potwierdzenie>}
     </div>
   )
 }
