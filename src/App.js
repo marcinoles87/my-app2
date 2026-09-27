@@ -1,10 +1,7 @@
-import { BrowserRouter, Link, Route,Routes } from 'react-router';
+import { BrowserRouter, Route,Routes } from 'react-router';
 import './App.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
-import Main from './components/Main';
-
-
 import Produkty from './pages/Produkty';
 import Kuchnia from './pages/Kuchnia'
 import Jadalnia from './pages/Jadalnia'
@@ -30,6 +27,8 @@ function App() {
   const [produktOpis,setProduktOpis] = useState()
   const [porownaj,setPorownaj] = useState([])
   const [kodRabatowy,setKodRabatowy] = useState()
+
+ 
 
   return (
     <div className="App">
