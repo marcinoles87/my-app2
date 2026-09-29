@@ -107,11 +107,7 @@
   
 }
 
-.nav-fixed{
-  position: fixed;
-  border-bottom: 1px solid black;
-  z-index: 10;
-}
+
 
 .logo{
   display: flex;
@@ -1165,9 +1161,8 @@ i{
     font-size: medium;
   }
 
-  .nav-fixed{
-    position: relative;
-  }
+
+
 
   .logo{
     width: 100%;

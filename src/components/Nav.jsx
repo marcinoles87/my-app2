@@ -6,17 +6,17 @@ function Nav() {
 
   
 
-    window.addEventListener( "scroll" , () =>{
-        let elementNavFixed = document.querySelector('.navbar-container')
-    if(window.scrollY>30){
+    // window.addEventListener( "scroll" , () =>{
+    //     let elementNavFixed = document.querySelector('.navbar-container')
+    // if(window.scrollY>30){
         
-        elementNavFixed.classList.add('nav-fixed')
-    }else{
-        elementNavFixed.classList.remove('nav-fixed')
-    }
+    //     elementNavFixed.classList.add('nav-fixed')
+    // }else{
+    //     elementNavFixed.classList.remove('nav-fixed')
+    // }
     
 
-    })
+    // })
 
   return (
     <div className='navbar-container'>
