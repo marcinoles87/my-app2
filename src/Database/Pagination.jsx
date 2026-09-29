@@ -1,10 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
-import { Link } from 'react-router'
 
 function Pagination({database ,setDatabase}) {
 
-    const [pagination,setPagiantion] = useState([])
 
 function startPagin (item){
   setDatabase(item)

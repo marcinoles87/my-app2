@@ -6,10 +6,8 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk,kodRabatowy}) {
   const [adres,setAdres] = useState('')
   const [telefon,setTelefon] = useState('')
   const [email,setEmail] = useState('')
-  const [flag,setFlag] = useState(true)
 
 
-  let suma = [...koszyk]
 
  
 
@@ -57,6 +55,10 @@ function Formularz({koszyk,allPrice,setAllPrice,setKoszyk,kodRabatowy}) {
     }else{
       emailForm.style.borderColor = 'black'
 
+    }
+
+    if(imie||adres||telefon||email){
+      alert("wysłano zamowienie ! oczekuje maila od nas")
     }
 
   }

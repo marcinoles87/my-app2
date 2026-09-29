@@ -3,12 +3,10 @@ import { Link  } from 'react-router'
 
 function Zamowienie({koszyk,allPrice,setallPrice,setKoszyk,kodRabatowy,setKodRabatowy}) {
 
-const [wartoscZamowienia , setWartoscZamowienia] = useState('')
 const [zamawiamFlag , setZamawiamFlag] = useState(false)
 
 useEffect( () =>{
-        let wartosc = Math.round(allPrice-(allPrice*20/100)).toFixed(2)
-               setallPrice( suma.reduce( (prev,current) => prev + Number(current.cena) ,0).toFixed(2))
+        setallPrice( suma.reduce( (prev,current) => prev + Number(current.cena) ,0).toFixed(2))
 
 
 
