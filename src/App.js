@@ -17,6 +17,7 @@ import Horeca from './pages/Horeca';
 import ProduktOpis from './pages/ProduktOpis';
 import Porownywarka from './pages/Porownywarka';
 import Porownaj from './pages/Porownaj';
+import Login from './components/Login';
 
 function App() {
 
@@ -61,6 +62,7 @@ function App() {
       </Routes>
 
             <Porownywarka porownaj={porownaj}></Porownywarka>
+            <Login></Login>
 
 
 
