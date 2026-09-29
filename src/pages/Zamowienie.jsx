@@ -6,7 +6,14 @@ function Zamowienie({koszyk,allPrice,setallPrice,setKoszyk,kodRabatowy,setKodRab
 const [wartoscZamowienia , setWartoscZamowienia] = useState('')
 const [zamawiamFlag , setZamawiamFlag] = useState(false)
 
-    let wartosc = Math.round(allPrice-(allPrice*20/100)).toFixed(2)
+useEffect( () =>{
+        let wartosc = Math.round(allPrice-(allPrice*20/100)).toFixed(2)
+               setallPrice( suma.reduce( (prev,current) => prev + Number(current.cena) ,0).toFixed(2))
+
+
+
+},[])
+
 
 
 
@@ -24,6 +31,8 @@ const handleSum = () =>{
 
 const handleAddItem = (item) =>{
     setKoszyk([...koszyk,item])
+           setallPrice( suma.reduce( (prev,current) => prev + Number(current.cena) ,0).toFixed(2))
+
 }
 
 const handleDeleteItem = (item,index) =>{ 
@@ -47,6 +56,7 @@ const handleKodRabatowy = () =>{
       buttonZamawiam.style.display = 'none'
       buttonPotwierdz.style.display = 'none'
       alert('kod rabatowy wykorzystany')
+      setZamawiamFlag(true)
     }
 }
 
