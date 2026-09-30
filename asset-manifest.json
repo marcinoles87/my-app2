@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/my-app2/static/css/main.a64a9cc9.css",
+    "main.js": "/my-app2/static/js/main.deb5596e.js",
+    "static/media/logo_header.png": "/my-app2/static/media/logo_header.dc9ce2f84c4844b752a3.png",
+    "static/media/wlLoop.png": "/my-app2/static/media/wlLoop.80cead0a470059c12861.png",
+    "static/media/kaiLoop.png": "/my-app2/static/media/kaiLoop.337b6b6bd6c460ea9b91.png",
+    "static/media/ifLoop.png": "/my-app2/static/media/ifLoop.ad2ab82a84cf8bf6bcb1.png",
+    "static/media/kuchnia.jpg": "/my-app2/static/media/kuchnia.1da662de8f8f86963cfd.jpg",
+    "static/media/restauracja.jpg": "/my-app2/static/media/restauracja.597bab6a0a2a96423977.jpg",
+    "static/media/vi1.jpg": "/my-app2/static/media/vi1.a966f9cdb5ee65e3b632.jpg",
+    "static/media/gw1.jpg": "/my-app2/static/media/gw1.cb01bceb08d166be260e.jpg",
+    "static/media/łopatka1.jpg": "/my-app2/static/media/łopatka1.0d6b50d1476a9036db82.jpg",
+    "static/media/ht1.jpg": "/my-app2/static/media/ht1.bfdebabdfbc965b04e83.jpg",
+    "static/media/chlebak1.jpg": "/my-app2/static/media/chlebak1.8d1f4687a7fc41a3e25c.jpg",
+    "static/media/logoHeader.png": "/my-app2/static/media/logoHeader.d51cc720d89939b39604.png",
+    "static/media/łazienka.jpg": "/my-app2/static/media/łazienka.584501479ab75eb12d66.jpg",
+    "static/media/wl1.jpg": "/my-app2/static/media/wl1.71dd3e865d6ad4d2903f.jpg",
+    "static/media/kai1.jpg": "/my-app2/static/media/kai1.1257e914c2688e2a1797.jpg",
+    "static/media/skk1.jpg": "/my-app2/static/media/skk1.70b7435e351d6bd43286.jpg",
+    "static/media/deska1.webp": "/my-app2/static/media/deska1.05b84d6d4234c9357379.webp",
+    "static/media/gwLogo.webp": "/my-app2/static/media/gwLogo.ff83dcd15b43d12421ed.webp",
+    "static/media/kaiLogo.webp": "/my-app2/static/media/kaiLogo.607fea6b41789ba16e0a.webp",
+    "index.html": "/my-app2/index.html",
+    "main.a64a9cc9.css.map": "/my-app2/static/css/main.a64a9cc9.css.map",
+    "main.deb5596e.js.map": "/my-app2/static/js/main.deb5596e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a64a9cc9.css",
+    "static/js/main.deb5596e.js"
+  ]
+}
