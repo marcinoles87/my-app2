@@ -48,10 +48,10 @@ const handleKodRabatowy = () =>{
     setallPrice(Math.round(allPrice-Number(allPrice*kodRabatowy/100))) 
     if(kodRabatowy){
       const element =  document.querySelector('#input-kodRabatowy')
-      const buttonZamawiam =  document.querySelector('#podsumuj')
+      const buttonPodsumuj =  document.querySelector('#podsumuj')
       const buttonPotwierdz =  document.querySelector('#potwierdzRabat')
       element.style.display = 'none'
-      buttonZamawiam.style.display = 'none'
+      buttonPodsumuj.style.display = 'none'
       buttonPotwierdz.style.display = 'none'
       alert('kod rabatowy wykorzystany')
       setZamawiamFlag(true)
