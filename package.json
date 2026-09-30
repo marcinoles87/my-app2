@@ -1,5 +1,6 @@
 {
-    "homepage": "https://marcinoles87.github.io/my-app2",
+  "homepage": "https://marcinoles87.github.io/my-app2",
+  "name": "my-app2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
