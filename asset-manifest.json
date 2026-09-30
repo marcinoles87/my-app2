@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-app2/static/css/main.a64a9cc9.css",
-    "main.js": "/my-app2/static/js/main.deb5596e.js",
+    "main.js": "/my-app2/static/js/main.ac840f17.js",
     "static/media/logo_header.png": "/my-app2/static/media/logo_header.dc9ce2f84c4844b752a3.png",
     "static/media/wlLoop.png": "/my-app2/static/media/wlLoop.80cead0a470059c12861.png",
     "static/media/kaiLoop.png": "/my-app2/static/media/kaiLoop.337b6b6bd6c460ea9b91.png",
@@ -23,10 +23,10 @@
     "static/media/kaiLogo.webp": "/my-app2/static/media/kaiLogo.607fea6b41789ba16e0a.webp",
     "index.html": "/my-app2/index.html",
     "main.a64a9cc9.css.map": "/my-app2/static/css/main.a64a9cc9.css.map",
-    "main.deb5596e.js.map": "/my-app2/static/js/main.deb5596e.js.map"
+    "main.ac840f17.js.map": "/my-app2/static/js/main.ac840f17.js.map"
   },
   "entrypoints": [
     "static/css/main.a64a9cc9.css",
-    "static/js/main.deb5596e.js"
+    "static/js/main.ac840f17.js"
   ]
 }
